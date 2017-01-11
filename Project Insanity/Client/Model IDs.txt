@@ -1,0 +1,684 @@
+NPC Assembly List - Documented by Grey Cabbage
+
+CURRENT ID PROGRESS: 5819
+-----HEAD-----
+
+Male bald: 230
+Male short hair: 215
+Male close cropped: 235
+Male medium hair: 217
+Male long hair: 214
+Male spikes hair: 203
+Male wild spikes hair: 206
+Male dreadlocks: 210
+Male monk: 223
+Male high ponytail: 204
+Male hood no neckpiece, no drape on back: 208
+Male hood no neckpiece, drape on back: 207
+Male hood neckpiece, drape on back: 221
+Male hood neckpiece, no drape on back: 226
+Male hood Castlewars: 5436
+
+Male elf long hair: 216 (-male elf tag features pointy ears.)
+Male elf long hair long ears: 4020
+Male elf long hair hooded: 4021
+Male elf medium hair: 205
+Male bloody neck headless: 224
+Male vampire head: 227
+Male bald blood marks: 231
+
+Mahjarrat male skull: 209
+Mahjarrat male skull black hood (Death): 5100
+Skeleton skull with pirate's hat sideways: 5214
+Male pirate's bandana: 211
+Male gas mask: 212
+Male full helm solid color: 213
+Male full helm plumed: 218
+Male medium helm circle stripe: 219
+Male medium helm crossed stripe: 233
+Male coif: 220
+Male ardougne guard helm: 225
+Male highwayman mask: 228
+Demon human size head: 229/402
+Male Ulizius helmet visor: 232
+Male short beard eskimo hood: 234
+Male Tyras helm: 4019
+Male Bearhead: 5669
+Male Spiny helm: 5795
+Male Gold helmet: 5818
+
+Female bald: 403
+Female bun: 378
+Female short hair crewcut: 391
+Female close cropped: 408
+Female medium hair: 393
+Female long hair: 390
+Female dreadlocks: 387
+Female pigtails: 399
+Female ponytail:
+Female spikes: 379
+Female wild spikes: 382
+Female blood marks long hair: 404
+Female hood no neckpiece, no drape on back: 383
+Female hood no neckpiece, drape on back: 384
+Female hood neckpiece, drape on back: 385
+Female hood neckpiece, no drape on back: 398
+Female hood downwards HAM/Ahrim style: 5435
+
+Female elf ponytail: 380
+Female elf long hair: 392
+Female elf medium hair: 381
+Female witch head: 405
+
+Mahjarrat female skull: 386
+Female pirate bandana: 388
+Female gas mask: 389
+Female steel full helm with plume: 394
+Female medium helm circle stripe: 395
+Female medium helm crossed stripe: 407
+Female coif: 396
+Female ardougne guard helm: 400
+Female high ponytail highwayman mask bandit hair: 401
+Female Ulizius helmet visor: 232
+Female Bearhead: 5676
+Female Spiny helm: 5796
+Female Gold helmet: 5819
+
+-----BEARD----
+
+Clean shaven: 246
+Goatee: 249
+Short beard chinline: 248
+Medium beard: 251
+Long beard: 250
+Moustache: 247
+Short full: 253
+Split beard: 252
+Handlebar: 10039
+Santa's beard: 4925
+Sensei's beard: 5215
+
+-----BODY-----
+
+Male plain top: 292
+Male ragged torn top: 310
+Male bare chest no shirt: 315
+
+Male strapped leather body: 293
+Male chainbody dark iron: 294
+Male chainbody bright steel: 301
+Male Mourner jacket chest: 295
+Male leather body: 311
+Male hardleather body: 296
+Male studded body: 303
+Male two-toned default top: 297
+Male apron: 305
+Male steel platebody torso: 306
+Male midriff exposing body: 307
+Male anorexic plain top: 308
+Male tribal/Duradel tarzan shirt: 309
+Male Paladin platebody torso: 313
+Male Green dragonhide body: 314
+Male Splitbark body torso: 4117
+Male Mystic body torso: 5028
+Male Desert shirt overcoat chest: 5221
+Male Robin Hood top overcoat chest: 5222
+Male Mountain camp settler body light: 5673
+Male Mountain camp settler body heavy fur coat: 5674
+
+Male fat plain top: 299
+Male fat body with strapped leather body: 291
+Male fat chainbody dark iron: 298
+Male fat chainbody bright steel: 300
+Male fat apron: 302
+Male fat platebody torso: 312
+
+Female plain top belly: 456
+Female top exposing: 469
+Female top very exposing belly: 472
+Female top v-cut: 470
+Female top turtleneck: 471
+Female top ragged: 474
+Female top two-toned: 460
+
+Female strapped leather body: 457
+Female chainbody dark iron: 458
+Female chainbody bright steel: 464
+Female Mourner jacket chest: 459
+Female leather body: 475
+Female hardleather body: 5734
+Female studded body: 466
+Female green dragonhide body: 477
+Female apron: 467
+Female steel platebody torso: 468
+Female tribal/Duradel tarzan shirt: 473
+Female barbarian woman exposing belly: 478
+Female Splitbark body torso: 4123
+Female Mystic robe top torso: 5035
+Female Mountain camp settler anorexic body: 5678
+
+Female fat body with strapped leather body: 455
+Female fat chainbody dark iron: 461
+Female fat chainbody bright steel: 463
+Female fat plain top: 462
+Female fat apron: 465
+Female fat steel platebody torso: 476
+
+-----ARMS-----
+
+Male short sleeves: 151
+Male steel armbands no shoulders: 152
+Male arms no shoulders: 156
+Male thin steel armbands no shoulders: 157
+Male steel armbands and shoulderpads: 158
+Male steel armbands and short sleeves: 159
+Male cuffed sleeves no shoulders: 160
+Male long sleeves no shoulders: 161
+Male long sleeves cuffed: 162
+Male long sleeves: 163
+Male platebody arms: 164
+Male koschei arms: 165
+Male short sleeves muscular: 167
+Male steel armbands with thin shoulders: 168
+Male shoulder pads: 169
+Male baggy robe sleeves: 170
+Demon short sleeves: 171
+Male steel armbands medium width shoulders: 173
+Male baggy robe sleeves no shoulders: 174
+Male steel armbands with really big shoulder pads: 340
+Male huge cuffs no shoulders: 342
+Male huge cuff sleeves: 343
+
+Male fat short sleeves: 332
+Male fat steel armbands no shoulders: 333
+Male random arms: 337, 338, 341, 346, 347, 348, 351, 352, 
+Male thin steel platebody arms: 344
+Demon arms: 349
+Male Mourner arms with long gloves: 150
+Male Nardah elidinis sleeves: 10123
+Male Splitbark body arms no shoulders: 4112
+Male Mystic body arms: 4952
+Male Mountain camp settler sleeves: 5668
+
+Female short sleeves: 332/346
+Female bare arms:
+Female bare arms no shoulders: 337
+Female cut sleeves:
+Female long sleeves:
+Female steel bands with shoulder pads: 340
+Female steel bands: 333/339/341/351
+Female long sleeves no shoulders: 352
+Female long sleeves: 348
+Female cuffed sleeves: 343
+Female cuffed sleeves no shoulders: 342
+
+Female platebody arms: 344
+Female bare arms anorexic: 347
+
+Female Mourner arms with thin gloves: 331
+Female Nardah Elidinis sleeves: 10126
+Female Splitbark body arms no shoulders: 4118
+Female Mystic body arms: 5029
+Female Mountain camp settler sleeves: 5667, Small:5675
+
+-----LEGS-----
+
+Male plain legs: 254
+Male shorts: 271
+Male pants with cuffs and stitches on side: 274
+Male pants ragged torn: 275
+Male flared legs: 267
+Male robe bottom: 256
+Male fat pirate legs: 263
+Male prince leggings with boots: 257
+Male prince leggings with more flared boots: 261
+Male shorts with more flared boots: 272
+
+Male leather chaps: 262
+Male studded chaps: 277
+Male green dragonhide chaps: 258
+Male plateskirt: 266
+Male platelegs: 268
+Male Khazard trooper legs: 269
+Male pirate peg leg: 259
+Female demon pants with tail: 278
+Male mourner legs with boots: 273
+Male pocket symbols: 276
+Male Genie legs floating: 264
+Male Elf trousers and boots: 4022
+Male Splitbark legs: 4116
+Male Dragon platelegs: 5024
+Male Infernal robe bottom: 5105
+Male Mountain camp settler legs with big boots: 5672
+Male Mountain camp settler legs with small boots: 5671
+
+Female plain legs: 419
+Female short skirt: 433
+Female flare legs: 431
+Female long thin skirt: 440
+Female long thick skirt: 421
+Female cuffed legs: 437
+Female flared skirt: 429
+Female torn bloody legs: 438
+Female short skirt with high Tassie boots: 435
+Female thick barbarian woman cloth with high boots: 255
+Female thin barbarian woman cloth with high boots: 420
+Female barbarian woman cloth: 279/443
+Female short prince leggings with boots: 434
+Female prince leggings with boots: 422
+Female pirate peg leg: 424
+Female fat pirate legs: 426
+Female genie legs floating: 427
+
+Female leather chaps: 425
+Female studded chaps: 441
+Female green dragonhide chaps: 423
+Female plateskirt: 430
+Female platelegs: 432
+
+Female mourner legs with boots: 436
+Female pocket symbols: 439
+Female demon pants with tail: 442
+Female Nardah Elidinis robe bottom: 10125
+Female Splitbark legs: 4122
+Female Dragon platelegs: 5025
+Female Mystic robe bottom: 5034
+Female Mountain camp settler legs with no coverage: 5677
+
+-----GLOVES---
+
+Male bare hands with steel armband: 176
+Male leather vambraces: 177
+Male dragonhide vambraces: 178
+Male leather gloves: 179
+Demon hands straight: 180
+Demon hands curvier: 357
+Male splitbark gloves: 4113
+Male mystic gloves: 4953
+
+Female bare hands with steel armband: 353
+Female leather vambraces: 354
+Female dragonhide vambraces: 355
+Female leather gloves: 356
+Female splitbark gloves: 4119
+Female mystic gloves: 5030
+
+-----BOOTS----
+
+Male plain boots: 181
+Demon feet: 182
+High heeled demon feet: 359
+Male plain pointed boots: 183
+Male grey leather boots: 184
+Male leather boots: 185
+Male Nardah boots: 10124
+Male Splitbark boots: 4114
+Male Ranger boots: 4929
+Male Steel metal boots: 4954
+Male Mystic boots: 4955
+
+Female plain boots: 358
+Female larger plain boots: 360
+Female leather boots: 361
+Female Nardah boots: 10127
+Female Splitbark boots: 4120
+Female Ranger boots: 4930
+Female Steel metal boots: 5031
+Female Mystic boots: 5032
+
+-----HATS-----
+
+Male cavalier hat: 186
+Male partyhat: 187
+Male desert headpiece: 188
+Male santa hat: 189
+Male pirate hat skulled: 190
+Male al-kharid warrior helmet: 191
+Male king lathas crown yellow spiked: 192
+Male pirate hat sideways no skull: 193
+Male sailor hat: 194
+Male glod/skeleton hat: 195
+Male forester's hat: 196
+Male larger forester's elf hat: 197
+Male beret: 198
+Male chef hat: 199
+Male forester's winged hat: 200
+Male headband: 201
+Male wizard's hat: 202
+Male eye patch: 236
+Male monocle thin gold: 238
+Male dragon med helm horns: 239
+Male plume for full helm: 240
+Male Duradel high ponytail: 241
+Male Dron curved horns: 242
+Male highwayman mask no face: 243
+Male Reldo's down ponytail: 244
+Male brown glasses: 245
+Male Splitbark helm: 4115
+Male Fremmenik helm: 4219, head: 4220
+Berserker horns: 4222
+Farseer horns: 4223
+Archer horns: 4224
+Warrior horns: 4225
+Male Ramskull helm: 4987
+Male Mystic hat: 5027
+Male Infernal mage hat: 5099
+Male Infernal mage red eyes: 5103
+Male Nosepeg: 5101
+Male Earmuffs: 5102
+Male Facemask: 5104
+Male Mountain camp hat: 5670
+
+Brown bowler hat: 10037
+Top hat: 10038
+Medium Pointed snelm: 4102
+Long Pointed snelm: 4100
+ROunded snelm: 4101
+
+Female cavalier hat: 362
+Female partyhat: 363
+Female desert headpiece: 364
+Female desert headpiece with mouth cover: 365
+Female santa hat: 366
+Female pirate hat skulled: 367
+Female king lathas crown yellow spiked: 368
+Female pirate hat sideways no skull: 369
+Female sailor hat: 370
+Female forester's hat: 371
+Female larger forester's elf hat: 372
+Female beret: 373
+Female chef hat: 374
+Female forester's winged hat: 375
+Female headband: 376
+Female wizard's hat: 377
+Female plume: 409
+Female eye patch: 410
+Female monocle thin gold: 412
+Female dragon med helm horns: 413
+Female Duradel/Barbarian woman high ponytail: 414
+Female Dron curved horns: 415
+Female highwayman mask no face: 416
+Female Reldo's down ponytail: 417
+Female brown glasses: 418
+Female Splitbark helm: 4121
+Female Fremmenik helm: 4228, head:
+Berserker horns: 4230
+Farseer horns: 4231
+Archer horns: 4232
+Warrior horns: 4233
+Female Mystic hat: 5033
+Female nosepeg: 5107
+Female earmuffs: 5108
+Female facemask: 5109
+
+-----CAPES----
+
+Male solid color cape: 317
+Male tri-color basic cape: 323
+Male Castlewars hooded cloak: 4605
+Male Spotted cape: 4606
+Male Bonesack: 4986
+Male Team cape VH: 5584
+Male Team cape FOE: 5585
+Male Team cape X Cross: 5586
+Male Team cape TT Cross: 5587
+Male Team cape # Cross: 5588
+Male Team cape Striped bars: 5589
+Male Team cape MM: 5590
+Male Team cape Scarab: 5591
+Male Team cape O: 5592
+Male Team cape HF: 5593
+Male Mountain camp fur cape: 5726
+Male Castlewars cloak with no neckline: 5737
+
+Team cape trader sack: 5614
+
+Female solid color cape: 479
+Female tri-color basic cape: 481
+FeMale Team cape VH: 5594
+FeMale Team cape FOE: 5595
+FeMale Team cape X Cross: 5596
+FeMale Team cape TT Cross: 5597
+FeMale Team cape # Cross: 5598
+FeMale Team cape Striped bars: 5599
+FeMale Team cape MM: 5600
+FeMale Team cape Scarab: 5601
+FeMale Team cape O: 5602
+FeMale Team cape HF: 5603
+
+-----AMULETS--
+
+Male jacket shirt symbols: 320
+Male pocketed shirt symbols: 321
+Male brown horizontal line stitches shirt symbols: 324
+Male X stitches shirt symbols: 326
+
+Male jacket shirt symbols FAT: 330
+Male brown horizontal line stitches shirt symbols FAT: 329
+Male Fremennik X stitches on side of pants symbols: 4390
+
+Male Fremennik jacket V cut long symbols: 4391
+Male Fremennik jacket V cut short symbols: 4391
+Santa's shirt symbols: 4926
+Male Mountain camp jacket symbols three brown bars: 5725
+
+Male Amulet of Ghostspeak base: 280
+Male Gold necklace: 281
+Male Gold amulet: 290
+Male Pendant of Lucien base: 282
+Male Gnome amulet: 283
+Male 3D symbol of Saradomin star: 284
+Male Beads of the Dead: 285
+Male 2D Hazeel mark/Zamorak: 286
+Male 2D Triangle mark: 287
+Male 2D Christian cross mark: 288
+Male Cat training medal: 289
+Male 2D J letter mark: 316
+Male 2D gnome marks: 318
+Male parrot on shoulder: 319
+Male 2D three yellow bar mark: 322
+Male purple Iban symbols/priest symbols: 325
+Male black skull symbols: 328
+Male Monkeyspeak amulet: 4666
+Male 10th Squad Sigil: 4667
+Male Salve amulet: 4932
+Male Infernal mage neck cushion: 5106
+
+Female Amulet of Ghostspeak base: 444
+Female Gold necklace: 445
+Female Gold amulet: 454
+Female pendant of lucien base: 446
+Female Gnome amulet: 447
+Female 3D symbol of Saradomin star: 448
+Female Beads of the Dead: 449
+Female 2D Hazeel mark/Zamorak: 450
+Female 2D Triangle mark: 451
+Female 2D Christian cross mark: 452
+Female Cat training medal: 453
+Female 2D three yellow bar mark: 480
+Female Monkeyspeak amulet: 4668
+Female 10th Squad Sigil: 4669
+Female Salve amulet: 4933
+
+Female brown horizontal line stitches shirt symbols: 482
+Female fat brown horizontal line stitches shirt symbols: 485
+Female X stitches shirt symbols: 483
+Female jacket shirt symbols: 484
+
+-----WEAPONS--
+
+Hatchet: 510
+Broken hatchet: 487
+Hatchet handle: 557
+Hatchet head: 498
+Pickaxe: 509
+Broken pickaxe: 530
+Pickaxe handle: 558
+Tinderbox: 488
+Spade: 496
+Harpoon: 503
+Fishing rod: 562
+Lobster cage: 531
+Fishing net: 532/551
+Mortar (stick): 529
+Pestle (bowl): 506
+Glassblowing pipe: 515
+White bead: 516
+Smithing hammer: 491
+Shears: 525
+Small brown stick possibly knife: 494
+Gnomeball: 528
+Farmer's fork: 495
+Ghostly Farmer's fork: 5231
+Vampire slayer stake: 535
+Cleaver: 536
+Cattle prod: 537
+Bucket of sand: 543
+Choc-ice: 10128
+Crystal pike: 4033
+Fletching knife: 4045
+Crafting Needle: 4047
+Fletching log: 4048
+Lyre: 4394
+Pet rock: 4395
+Tankard: 4396
+Monkey talisman: 4670
+Pat of butter in a lid: 4876
+Yo-yo: 4927
+Sled: 4937
+Bag of salt: 5110
+Long Fenkenstrain broom: 5146
+Hoe (for farming, you noob): 5442
+Rubber Chicken: 5812
+
+Plain vial: 552/561
+Sparkly vial of holy water: 497
+Mourner vial: 499
+Exploding potion: 538
+
+Dragon dagger:
+Dragon dagger poisoned: 539
+Dragon spear poisoned: 505
+Dragon mace: 493
+Dragon battleaxe: 559
+Dragon longsword: 564
+
+Scimitar: 490
+Longsword solid grey color: 511
+Yellow hilt longsword: 518
+Yellow hilt shortsword: 519
+Two-handed 2h sword: 546
+Battleaxe: 550
+Dagger: 533
+Dagger poisoned: 504
+Mace basic regular color: 502
+Mace solid grey color: 520
+Warhammer: 542
+Spear: 540
+Scythe: 507
+Halberd: 555
+Machete: 566
+
+Silverlight: 513
+Excalibur: 501
+Iban's staff: 514
+Blurite sword: 522
+Dark dagger: 524
+Glowing dagger: 5116
+Fremennik sword: 4236
+Leaf bladed spear: 5111
+Rock hammer: 5113
+Mazchna's sword: 5114
+Katana and sheath: 5233
+Granite maul: 5410
+
+Saradomin staff: 554
+Guthix staff: 527
+Zamorak staff: 544
+Curved regular staff: 534
+Straight staff: 553
+Staff orb: 567
+Slayer's staff: 5036
+Ghostly Polypore shape curled staff: 5230
+Ghostly Necrovarus crescent staff: 5232
+Mountain camp pole vault staff stick: 5679
+
+Phoenix crossbow: 508
+Shortbow: 512
+Longbow: 563
+Ranged throwing axe: 545
+Ranged poison javelin: 547
+Ranged throwing knife: 548
+Ranged Dart: 492
+Ranged Dart poisoned: 500
+Crystal bow: 5197
+
+-----SHIELDS--
+
+Square shield: 541
+Kiteshield: 486
+Roundshield wooden: 517
+Roundshield crossed: 521
+Roundshield inward: 523
+Anti-dragon shield: 526
+
+Dragon square shield: 565
+Book with spine facing downwards: 556
+Piece of leather: 4046
+Fremennik shield: 4235
+Mirror shield: 5112
+Crystal shield: 5196
+
+
+
+
+4636-4650: Happy Birthday! Objects
+4974: Skeletal hellhound
+5044: Fairy Chaeldar with armor
+508: Pyrefiend
+5236: Rune with S symbol
+5238: Giant lobster
+5443: Crow
+5654: Slaglith
+Kendal: 5722 torso and head, 5723 legs
+5786: Cave slime
+
+
+
+
+
+- GOBLIN ASSEMBLY -
+
+^^^^^HEADS^^^^
+5535: Goblin head metal helmet with stripe through middle
+5536: Goblin head metal helmet
+5537: Mohawk
+5538: Ponytail
+5781: Cave goblin head
+
+^^^^^BODIES^^^^
+5539: Goblin leather armour
+5540: Goblin leather armor with less surface area
+5541: X Strap over body
+5542: Goblin naked body with strap over groin
+5543: / Strap over body with bone shards
+5782: Cave goblin body
+
+^^^^^ARMS^^^^^^
+5544: Goblin arms with metal shoulders with spikes
+5545: Bare goblin arms
+5546: Goblin arms with metal shoulders with spikes with sleeves
+5783: Cave goblin arms
+
+^^^^^LEGS^^^^^^
+5547: Bare goblin legs with long boots
+5548: Bare goblin legs with short boots
+5784: Cave goblin legs with pants
+
+^^^^^WEAPONS^^^
+5549: Goblin Battleaxe
+5550: Goblin Hatchet
+5551: Goblin Warhammer
+5553: Goblin Branch staff
+5554: Goblin Machete
+5552: Goblin Shield
