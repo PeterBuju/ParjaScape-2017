@@ -7,6 +7,7 @@ import server.model.players.Client;
 import server.model.players.DialogueHandler;
 import server.model.players.SkillMenu;
 import server.model.players.PacketType;
+import server.model.players.skills.Smelting;
 import server.util.Misc;
 
 /**
@@ -26,6 +27,16 @@ public class ClickingButtons implements PacketType {
                     c.sendMessage(c.playerName+ " - actionbutton: "+actionButtonId);
                 }
                 DialogueHandler.HandleDialogue(actionButtonId, c);
+                if ((actionButtonId > 15000 && actionButtonId < 30000) || (actionButtonId == 9110) || (actionButtonId == 10247)) {
+			for(int n = 0;n < Smelting.buttons.length;n++){
+				for(int h = 0;h < Smelting.buttons[n].length;h++){
+					if(actionButtonId == Smelting.buttons[n][h]){
+						Smelting.startSmelting(c, actionButtonId, n, h);
+						return;
+					}
+				}
+			}
+		}
 		switch (actionButtonId){
 			//crafting + fletching interface:
 			case 150:

@@ -8,6 +8,7 @@ import org.apache.mina.common.IoSession;
 
 import server.Config;
 import server.Server;
+import server.event.CycleEventHandler;
 import server.model.items.ItemAssistant;
 import server.model.shops.ShopAssistant;
 import server.net.HostList;
@@ -128,6 +129,7 @@ public class Client extends Player {
 	public void destruct() {
 		if(session == null) 
 			return;
+                CycleEventHandler.getSingleton().stopEvents(this);
 		//PlayerSaving.getSingleton().requestSave(playerId);
 		getPA().removeFromCW();
 		if (inPits)
@@ -723,6 +725,7 @@ public class Client extends Player {
 	public void logout() {
 		synchronized (this) {
 			if(System.currentTimeMillis() - logoutDelay > 10000) {
+                                CycleEventHandler.getSingleton().stopEvents(this);
 				outStream.createFrame(109);
 				properLogout = true;
 			} else {

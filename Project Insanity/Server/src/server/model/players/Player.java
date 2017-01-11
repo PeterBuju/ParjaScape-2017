@@ -7,6 +7,7 @@ import server.model.items.Item;
 import server.model.npcs.NPC;
 import server.model.npcs.NPCHandler;
 import server.model.perks.Perk;
+import server.model.players.skills.Smelting;
 import server.util.ISAACRandomGen;
 import server.util.Misc;
 import server.util.Stream;
@@ -341,10 +342,23 @@ public abstract class Player {
 	public int[] mining = new int [3];
 	public int miningTimer = 0;
 	public boolean fishing = false;
-	public int fishTimer = 0;
-	public int smeltType; //1 = bronze, 2 = iron, 3 = steel, 4 = gold, 5 = mith, 6 = addy, 7 = rune
-	public int smeltAmount;
-	public int smeltTimer = 0;
+	public int fishTimer = 0;    
+        
+        /**
+	 * Player Smelting Variables
+	 */
+	public int
+		smeltAmount = 0,smeltEventId = 5567, smeltType, //1 = bronze, 2 = iron, 3 = steel, 4 = gold, 5 = mith, 6 = addy, 7 = rune
+                smeltTimer = 0;
+	public String
+		barType = "";
+	public Smelting.Bars
+		bar = null;
+	public boolean
+		isSmelting = false;
+	public long
+		lastSmelt = 0;
+        
 	public boolean smeltInterface;
 	public boolean patchCleared;
 	public int[] farm = new int[2];

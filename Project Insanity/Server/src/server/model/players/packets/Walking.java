@@ -3,6 +3,7 @@ package server.model.players.packets;
 import server.Server;
 import server.model.players.Client;
 import server.model.players.PacketType;
+import server.model.players.PlayerAssistant;
 
 /**
  * Walking packet
@@ -19,6 +20,7 @@ public class Walking implements PacketType {
 				c.getPA().resetFollow();
 		}		
 		c.getPA().removeAllWindows();
+                PlayerAssistant.stopSkilling(c);
 		if(c.duelRule[1] && c.duelStatus == 5) {
 			if(Server.playerHandler.players[c.duelingWith] != null) { 
 				if(!c.goodDistance(c.getX(), c.getY(), Server.playerHandler.players[c.duelingWith].getX(), Server.playerHandler.players[c.duelingWith].getY(), 1) || c.attackTimer == 0) {

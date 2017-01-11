@@ -32,6 +32,7 @@ import server.model.objects.Doors;
 import server.model.objects.DoubleDoors;
 import server.clip.region.Region;
 import server.clip.region.ObjectDef;
+import server.event.CycleEventHandler;
 import server.model.perks.PerkHandler;
 
 /**
@@ -156,6 +157,7 @@ public class Server {
 				else
 					Thread.sleep(600);
 				engineTimer.reset();
+                                CycleEventHandler.getSingleton().process();
 				itemHandler.process();
 				playerHandler.process();	
                                 npcHandler.process();

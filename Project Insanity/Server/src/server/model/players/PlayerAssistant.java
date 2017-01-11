@@ -3,6 +3,7 @@ package server.model.players;
 import server.Config;
 import server.Server;
 import server.model.npcs.NPCHandler;
+import server.model.players.skills.Smelting;
 import server.util.Misc;
 import server.world.map.VirtualWorld;
 
@@ -29,6 +30,11 @@ public class PlayerAssistant{
 		}
 	}
 	
+        public static void stopSkilling(Client c) {
+		if (c.smeltAmount > 0)
+			Smelting.resetSmelting(c);
+	}
+        
 	public void clearClanChat() {
 		c.clanId = -1;
 		c.getPA().sendFrame126("Talking in: ", 18139);

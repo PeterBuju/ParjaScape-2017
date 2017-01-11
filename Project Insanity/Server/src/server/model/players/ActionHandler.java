@@ -5,6 +5,7 @@ import server.Server;
 import server.model.npcs.NPC;
 import server.model.npcs.NPCHandler;
 import server.model.objects.Object;
+import server.model.players.skills.Smelting;
 import server.util.Misc;
 import server.util.ScriptManager;
 
@@ -738,8 +739,8 @@ public class ActionHandler {
 				c.getPA().walkTo(0,-1);
 		break;
 		case 3044:
-			c.getSmithing().sendSmelting();
-		break;
+			Smelting.openInterface(c);
+			break;
 		case 733:
 			c.startAnimation(451);
 			/*if (Misc.random(1) == 1) {
