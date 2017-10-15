@@ -8,11 +8,30 @@ package sign;
 import java.applet.Applet;
 import java.io.*;
 import java.net.*;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.Sequence;
+import javax.sound.midi.Sequencer;
+import javax.sound.sampled.AudioFormat;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.DataLine;
+import javax.sound.sampled.FloatControl;
+import javax.sound.sampled.SourceDataLine;
 
 public final class signlink
     implements Runnable
 {
 
+    private Sequence sequence;
+    private Sequencer sequencer;
+    
+    enum Position {
+
+            LEFT, RIGHT, NORMAL
+    };
+    private final int EXTERNAL_BUFFER_SIZE = 524288; // 128Kb
+    private Position curPosition;
+    
     public static void startpriv(InetAddress inetaddress)
     {
         threadliveid = (int)(Math.random() * 99999999D);
@@ -105,14 +124,87 @@ public final class signlink
                         fileoutputstream.close();
                     }
                     catch(Exception _ex) { }
-                if(waveplay)
-                {
+                if (waveplay) {
                     String wave = s + savereq;
                     waveplay = false;
+                    AudioInputStream audioInputStream = null;
+                    try {
+                        audioInputStream = AudioSystem.getAudioInputStream(new File(wave/*soundFile*/));
+                    } catch (Exception e1) {
+                        e1.printStackTrace();
+                        return;
+                    }
+
+                    AudioFormat format = audioInputStream.getFormat();
+                    SourceDataLine auline = null;
+                    DataLine.Info info = new DataLine.Info(SourceDataLine.class, format);
+
+                    try {
+                        auline = (SourceDataLine) AudioSystem.getLine(info);
+                        auline.open(format);
+                        /*  if (auline.isControlSupported(FloatControl.Type.MASTER_GAIN)) {
+            double[] volumes = {
+                    0.0, 0.25, 0.5, 0.75, 1.0
+            };
+            float dB = (float)(Math.log(volumes[volumeType]) / Math.log(10.0) * 20.0);
+            FloatControl pan = (FloatControl) auline.getControl(FloatControl.Type.MASTER_GAIN);
+            pan.setValue(dB);
+    }*/
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        return;
+                    }
+
+                    if (auline.isControlSupported(FloatControl.Type.PAN)) {
+                        FloatControl pan = (FloatControl) auline.getControl(FloatControl.Type.PAN);
+                        if (curPosition == Position.RIGHT) {
+                            pan.setValue(1.0f);
+                        } else if (curPosition == Position.LEFT) {
+                            pan.setValue(-1.0f);
+                        }
+                    }
+
+                    auline.start();
+                    int nBytesRead = 0;
+                    byte[] abData = new byte[EXTERNAL_BUFFER_SIZE];
+
+                    try {
+                        while (nBytesRead != -1) {
+                            nBytesRead = audioInputStream.read(abData, 0, abData.length);
+                            if (nBytesRead >= 0) {
+                                auline.write(abData, 0, nBytesRead);
+                            }
+                        }
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        return;
+                    } finally {
+                        auline.drain();
+                        auline.close();
+                    }
                 }
                 if(midiplay)
                 {
                     midi = s + savereq;
+                    try {
+                        if (sequence != null) {
+                            sequencer.stop();
+                            sequencer.close();
+                        }
+                        sequence = null;
+                        sequencer = null;
+                        File music = new File(midi);
+
+                        if (music.exists()) {
+                            sequence = MidiSystem.getSequence(music);
+                            sequencer = MidiSystem.getSequencer();
+                            sequencer.open();
+                            sequencer.setSequence(sequence);
+                            sequencer.start();
+                        }
+                    } catch (Exception ex) {
+                        ex.printStackTrace();
+                    }
                     midiplay = false;
                 }
                 savereq = null;

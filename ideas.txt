@@ -1,0 +1,135 @@
+Kingdom of Asgarnia
+	Capital: Falador
+	God: Saradomin
+
+Kingdom of Misthalin
+	Capital: Varrock
+	God: Saradomin
+
+Morytania
+	Capital: Port Phasmatys or Canifis
+	God: Zamorak
+
+Al Kharid
+	Capital: Al Kharid
+	God: Zamorak
+
+Freminnik Province
+	Capital: Relekka
+	God: Zamorak
+
+Kingdom of Kandarin:
+	Capital: Ardougne East
+	God: Guthix
+	
+Kingdom of Goblins
+	Capital: Lumbridge
+	God: 
+	
+Elemental: Fire, Water, Air, Earth
+
+
+Stats:
+
+Wisdom: Magic, Prayer, Runecrafting
+
+Constitution: Attack, Strength, Hitpoints
+
+Speed: Thieving, Range, Agility
+
+Endurance: Mining, Smithing, Defence
+
+Intelligence: Firemaking, Fishing, Cooking, Herblore
+
+Dexterity: Woodcutting, Farming, Crafting, Fletching
+
+Charisma: Lowers buying prices and increases selling prices
+
+
+Classes:
+
+Mage:
+-Magic robe
+-Magic hat
+-Pink skirt
+-Wooden staff
+-Leather boots
+-Leather gloves
+//-Amulet of magic
+-Blue cape
+-100 air/ mind runes
+
+Archer: 
+-Shortbow
+-Bronze arrows x100
+-Leather body
+-Cowl
+-Leather chaps
+-Leather boots
+-Leather gloves
+//-Amulet of power
+-red cape
+
+
+Warrior:
+-Iron scimitar
+-Leather gloves
+-Leather boots
+-Bronze chainbody
+-Bronze platelegs
+-Bronze medhelm
+//-Amulet of strength
+-Black cape
+
+Skiller:
+-Bronze pickaxe
+-Bronze axe
+-Needle
+-Rune essence x100
+-Vial of water x50
+-Grimy guam x 25
+-Eye of newt x 25
+-Knife
+-Hammer
+-Small fishing net
+-Tinderbox
+-Rake
+-Yellow cape
+
+
+Slayer shop:
+-Enchanted gem
+-Unfinished broad bolts
+-Broad arrowheads
+-Slayer's staff
+
+-Mirror shield
+-Leaf-bladed spear
+-Bag of salt
+-Rock hammer
+-Facemask
+-Earmuffs
+-Nose peg
+-Spiny helmet
+-Fishing explosive
+-Ice cooler
+-Slayer gloves
+-Unlit bug lantern
+-Insulated boots
+-Fungicide spray 10
+
+
+General store:
+Empty Pot 1931/ 1932
+Jug 3732
+Shears 1735/ 1736/ 5603
+Bucket 1925/ 1926
+Bowl 1923/ 1924
+Cake tin 1887/ 1888
+Tinderbox 590
+Chisel 1755
+Hammer 2347
+Newcomer map 550
+Security book 9903/ 9914
+
+

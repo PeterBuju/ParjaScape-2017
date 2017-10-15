@@ -1,0 +1,50 @@
+re
+
+help
+
+player.help [<method>]
+player.commands
+player.coords
+player.tele <location> ; player.tele <direction> <distance>; player.tele <x> <y> [<z>]
+player.emote <id>
+player.showstat all; player.showstat <id>
+player.changestat <id> <newValue>
+player.addperk <id>
+player.showperks
+player.additem
+
+
+debug.help [<method>]
+debug.commands
+debug.enable
+debug.disable
+debug.restart
+debug.showInterface <id>
+debug.bank
+debug.list 
+debug.rebuild
+debug.playSound
+debug.playMusic
+debug.players
+debug.perklist
+debug.openshop <id>
+showRecipe [<id>]
+addObject <id>
+
+
+npc.help [<method>]
+npc.commands
+npc.npcs
+npc.spawn <id> -args
+npc.showgroup
+
+
+firemaking.help [<method>]
+firemaking.commands
+firemaking.showFire [<id>]
+firemaking.extinghuishFires [<id>]
+firemaking.destroyFire [<id>]
+firemaking.dieTime <seconds>
+firemaking.disappearTime <seconds>
+firemaking.allowReplaceFire [<value>]
+firemaking.maximumFires [<value>]

@@ -61,8 +61,8 @@ public class ObjectHandler {
 			if(c != null) {
 				if(c.heightLevel == o.getObjectHeight() && o.objectTicks == 0) {
 					if (c.distanceToPoint(o.getObjectX(), o.getObjectY()) <= 60) {
-						c.getPA().object(o.getObjectId(), o.getObjectX(), o.getObjectY(), o.getObjectFace(), o.getObjectType());
-					}
+                                                    c.getPA().object(o.getObjectId(), o.getObjectX(), o.getObjectY(), o.getObjectFace(), o.getObjectType());
+                                        }	
 				}		
 			}
 		}
@@ -86,9 +86,7 @@ public class ObjectHandler {
 			Client person = (Client)p;
 				if(person != null){
 					if(person.heightLevel == o.getObjectHeight() && o.objectTicks == 0) {
-						if (person.distanceToPoint(o.getObjectX(), o.getObjectY()) <= 60) {
-							person.getPA().object(o.getObjectId(), o.getObjectX(), o.getObjectY(), o.getObjectFace(), o.getObjectType());
-						}
+                                                        person.getPA().object(o.getObjectId(), o.getObjectX(), o.getObjectY(), o.getObjectFace(), o.getObjectType());
 					}		
 				}
 			}

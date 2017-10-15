@@ -268,198 +268,162 @@ public final class ObjectDef {
 		return model_3;
 	}
 
-	private void readValues(Stream stream)
-	{
-		int i = -1;
-label0:
-		do
-		{
-			int j;
-			do
-			{
-				j = stream.readUnsignedByte();
-				if(j == 0)
-					break label0;
-				if(j == 1)
-				{
-					int k = stream.readUnsignedByte();
-					if(k > 0)
-						if(anIntArray773 == null || lowMem)
-						{
-							anIntArray776 = new int[k];
-							anIntArray773 = new int[k];
-							for(int k1 = 0; k1 < k; k1++)
-							{
-								anIntArray773[k1] = stream.readUnsignedWord();
-								anIntArray776[k1] = stream.readUnsignedByte();
-							}
+    private void readValues(Stream stream) {
+        int i = -1;
+        label0:
+        do {
+            int j;
+            do {
+                j = stream.readUnsignedByte();
+                if (j == 0) {
+                    break label0;
+                }
+                if (j == 1) {
+                    int k = stream.readUnsignedByte();
+                    if (k > 0) {
+                        if (anIntArray773 == null || lowMem) {
+                            anIntArray776 = new int[k];
+                            anIntArray773 = new int[k];
+                            for (int k1 = 0; k1 < k; k1++) {
+                                anIntArray773[k1] = stream.readUnsignedWord();
+                                anIntArray776[k1] = stream.readUnsignedByte();
+                            }
 
-						} else
-						{
-							stream.currentOffset += k * 3;
-						}
-				} else
-				if(j == 2)
-					name = stream.readString();
-				else
-				if(j == 3)
-					description = stream.readBytes();
-				else
-				if(j == 5)
-				{
-					int l = stream.readUnsignedByte();
-					if(l > 0)
-						if(anIntArray773 == null || lowMem)
-						{
-							anIntArray776 = null;
-							anIntArray773 = new int[l];
-							for(int l1 = 0; l1 < l; l1++)
-								anIntArray773[l1] = stream.readUnsignedWord();
+                        } else {
+                            stream.currentOffset += k * 3;
+                        }
+                    }
+                } else if (j == 2) {
+                    name = stream.readString();
+                } else if (j == 3) {
+                    description = stream.readBytes();
+                } else if (j == 5) {
+                    int l = stream.readUnsignedByte();
+                    if (l > 0) {
+                        if (anIntArray773 == null || lowMem) {
+                            anIntArray776 = null;
+                            anIntArray773 = new int[l];
+                            for (int l1 = 0; l1 < l; l1++) {
+                                anIntArray773[l1] = stream.readUnsignedWord();
+                            }
 
-						} else
-						{
-							stream.currentOffset += l * 2;
-						}
-				} else
-				if(j == 14)
-					anInt744 = stream.readUnsignedByte();
-				else
-				if(j == 15)
-					anInt761 = stream.readUnsignedByte();
-				else
-				if(j == 17)
-					aBoolean767 = false;
-				else
-				if(j == 18)
-					aBoolean757 = false;
-				else
-				if(j == 19)
-				{
-					i = stream.readUnsignedByte();
-					if(i == 1)
-						hasActions = true;
-				} else
-				if(j == 21)
-					aBoolean762 = true;
-				else
-				if(j == 22)
-					aBoolean769 = true;
-				else
-				if(j == 23)
-					aBoolean764 = true;
-				else
-				if(j == 24)
-				{
-					anInt781 = stream.readUnsignedWord();
-					if(anInt781 == 65535)
-						anInt781 = -1;
-				} else
-				if(j == 28)
-					anInt775 = stream.readUnsignedByte();
-				else
-				if(j == 29)
-					aByte737 = stream.readSignedByte();
-				else
-				if(j == 39)
-					aByte742 = stream.readSignedByte();
-				else
-				if(j >= 30 && j < 39)
-				{
-					if(actions == null)
-						actions = new String[5];
-					actions[j - 30] = stream.readString();
-					if(actions[j - 30].equalsIgnoreCase("hidden"))
-						actions[j - 30] = null;
-				} else
-				if(j == 40)
-				{
-					int i1 = stream.readUnsignedByte();
-					modifiedModelColors = new int[i1];
-					originalModelColors = new int[i1];
-					for(int i2 = 0; i2 < i1; i2++)
-					{
-						modifiedModelColors[i2] = stream.readUnsignedWord();
-						originalModelColors[i2] = stream.readUnsignedWord();
-					}
+                        } else {
+                            stream.currentOffset += l * 2;
+                        }
+                    }
+                } else if (j == 14) {
+                    anInt744 = stream.readUnsignedByte();
+                } else if (j == 15) {
+                    anInt761 = stream.readUnsignedByte();
+                } else if (j == 17) {
+                    aBoolean767 = false;
+                } else if (j == 18) {
+                    aBoolean757 = false;
+                } else if (j == 19) {
+                    i = stream.readUnsignedByte();
+                    if (i == 1) {
+                        hasActions = true;
+                    }
+                } else if (j == 21) {
+                    aBoolean762 = true;
+                } else if (j == 22) {
+                    aBoolean769 = true;
+                } else if (j == 23) {
+                    aBoolean764 = true;
+                } else if (j == 24) {
+                    anInt781 = stream.readUnsignedWord();
+                    if (anInt781 == 65535) {
+                        anInt781 = -1;
+                    }
+                } else if (j == 28) {
+                    anInt775 = stream.readUnsignedByte();
+                } else if (j == 29) {
+                    aByte737 = stream.readSignedByte();
+                } else if (j == 39) {
+                    aByte742 = stream.readSignedByte();
+                } else if (j >= 30 && j < 39) {
+                    if (actions == null) {
+                        actions = new String[5];
+                    }
+                    actions[j - 30] = stream.readString();
+                    if (actions[j - 30].equalsIgnoreCase("hidden")) {
+                        actions[j - 30] = null;
+                    }
+                } else if (j == 40) {
+                    int i1 = stream.readUnsignedByte();
+                    modifiedModelColors = new int[i1];
+                    originalModelColors = new int[i1];
+                    for (int i2 = 0; i2 < i1; i2++) {
+                        modifiedModelColors[i2] = stream.readUnsignedWord();
+                        originalModelColors[i2] = stream.readUnsignedWord();
+                    }
 
-				} else
-				if(j == 60)
-					anInt746 = stream.readUnsignedWord();
-				else
-				if(j == 62)
-					aBoolean751 = true;
-				else
-				if(j == 64)
-					aBoolean779 = false;
-				else
-				if(j == 65)
-					anInt748 = stream.readUnsignedWord();
-				else
-				if(j == 66)
-					anInt772 = stream.readUnsignedWord();
-				else
-				if(j == 67)
-					anInt740 = stream.readUnsignedWord();
-				else
-				if(j == 68)
-					anInt758 = stream.readUnsignedWord();
-				else
-				if(j == 69)
-					anInt768 = stream.readUnsignedByte();
-				else
-				if(j == 70)
-					anInt738 = stream.readSignedWord();
-				else
-				if(j == 71)
-					anInt745 = stream.readSignedWord();
-				else
-				if(j == 72)
-					anInt783 = stream.readSignedWord();
-				else
-				if(j == 73)
-					aBoolean736 = true;
-				else
-				if(j == 74)
-				{
-					aBoolean766 = true;
-				} else
-				{
-					if(j != 75)
-						continue;
-					anInt760 = stream.readUnsignedByte();
-				}
-				continue label0;
-			} while(j != 77);
-			anInt774 = stream.readUnsignedWord();
-			if(anInt774 == 65535)
-				anInt774 = -1;
-			anInt749 = stream.readUnsignedWord();
-			if(anInt749 == 65535)
-				anInt749 = -1;
-			int j1 = stream.readUnsignedByte();
-			childrenIDs = new int[j1 + 1];
-			for(int j2 = 0; j2 <= j1; j2++)
-			{
-				childrenIDs[j2] = stream.readUnsignedWord();
-				if(childrenIDs[j2] == 65535)
-					childrenIDs[j2] = -1;
-			}
+                } else if (j == 60) {
+                    anInt746 = stream.readUnsignedWord();
+                } else if (j == 62) {
+                    aBoolean751 = true;
+                } else if (j == 64) {
+                    aBoolean779 = false;
+                } else if (j == 65) {
+                    anInt748 = stream.readUnsignedWord();
+                } else if (j == 66) {
+                    anInt772 = stream.readUnsignedWord();
+                } else if (j == 67) {
+                    anInt740 = stream.readUnsignedWord();
+                } else if (j == 68) {
+                    anInt758 = stream.readUnsignedWord();
+                } else if (j == 69) {
+                    anInt768 = stream.readUnsignedByte();
+                } else if (j == 70) {
+                    anInt738 = stream.readSignedWord();
+                } else if (j == 71) {
+                    anInt745 = stream.readSignedWord();
+                } else if (j == 72) {
+                    anInt783 = stream.readSignedWord();
+                } else if (j == 73) {
+                    aBoolean736 = true;
+                } else if (j == 74) {
+                    aBoolean766 = true;
+                } else {
+                    if (j != 75) {
+                        continue;
+                    }
+                    anInt760 = stream.readUnsignedByte();
+                }
+                continue label0;
+            } while (j != 77);
+            anInt774 = stream.readUnsignedWord();
+            if (anInt774 == 65535) {
+                anInt774 = -1;
+            }
+            anInt749 = stream.readUnsignedWord();
+            if (anInt749 == 65535) {
+                anInt749 = -1;
+            }
+            int j1 = stream.readUnsignedByte();
+            childrenIDs = new int[j1 + 1];
+            for (int j2 = 0; j2 <= j1; j2++) {
+                childrenIDs[j2] = stream.readUnsignedWord();
+                if (childrenIDs[j2] == 65535) {
+                    childrenIDs[j2] = -1;
+                }
+            }
 
-		} while(true);
-		if(i == -1)
-		{
-			hasActions = anIntArray773 != null && (anIntArray776 == null || anIntArray776[0] == 10);
-			if(actions != null)
-				hasActions = true;
-		}
-		if(aBoolean766)
-		{
-			aBoolean767 = false;
-			aBoolean757 = false;
-		}
-		if(anInt760 == -1)
-			anInt760 = aBoolean767 ? 1 : 0;
-	}
+        } while (true);
+        if (i == -1) {
+            hasActions = anIntArray773 != null && (anIntArray776 == null || anIntArray776[0] == 10);
+            if (actions != null) {
+                hasActions = true;
+            }
+        }
+        if (aBoolean766) {
+            aBoolean767 = false;
+            aBoolean757 = false;
+        }
+        if (anInt760 == -1) {
+            anInt760 = aBoolean767 ? 1 : 0;
+        }
+    }
 
 	private ObjectDef()
 	{

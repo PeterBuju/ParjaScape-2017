@@ -42,6 +42,22 @@ public class ItemAssistant {
 			}
 		}
 	}
+	
+        /*public void deleteItem1(int id, int amount) {
+		if(id <= 0)
+			return;
+		for (int j = 0; j < c.playerItems.length; j++) {
+			if (amount <= 0)
+				break;
+			if (c.playerItems[j] == id+1) {
+				c.playerItems[j] = 0;
+				c.playerItemsN[j] = 0;
+				amount--;			
+			}	
+		}
+		updateInventory = true;
+		//resetItems(3214);
+	}*/
         
 	public int getItemCount(int itemID) {
 		int count = 0;	

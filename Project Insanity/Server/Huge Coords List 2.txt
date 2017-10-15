@@ -1,0 +1,1719 @@
+1800, 4891, 0 -- wtf is this lol?
+2720, 4912, 0 -- place from that old 317
+2641, 4914, 2 -- rubium`
+4450, 4840, 0 -- again
+4080, 4840, 0 -- I figured out they are different clan citadels
+4000, 4840, 0 -- cool/no mapdata
+3600, 4840, 0 -- Bunch of small rooms with 4 portals in each
+3021, 5194, 0 -- Ice Bridge Small room surronded by other areas similar?
+2988, 5004, 1 -- Romage Den Agility Course
+2780, 10283, 0 -- Twist and turns, narrow tunnel
+3680, 9980, 0 -- Ecto Plasma bottom level
+3507, 10084, 0 -- Really small dungeon with "Examine small tablet
+2298, 5752, 0 -- Lumbridge region maybe a quest
+2197, 5641, 0 -- Dwarf odd mining place
+2778, 5304, 0 -- Walkable Black area
+2758, 4641, 0 -- Large open green area
+2799, 4429, 0 -- Pink, no mapdata
+2784, 4385, 0 -- No Clue its just blackish
+2032, 4887, 0 -- Fish Trawler walkable water
+2780, 4327, 0 -- Weird Bumpy ground area
+2834, 3858, 0 -- Top of Some Ice Mountain
+2773, 3856, 0 -- Big Open Snow Area?
+2010, 4712, 1 -- Really wierd place check out later
+2393, 4712, 0 -- Cool Mazy Dungeon Place
+2594, 4710, 0 -- Open Flat Green Area?
+2133, 4909, 0 -- Draynor Another One ;D
+2141, 4955, 0 -- Quest Cut Scene Area
+2205, 4960, 0 -- Game Room
+2366, 4961, 0 -- Boss Area
+2645, 10423, 0 -- Empty Blank White Area
+2825, 10166, 0 -- A random Dwarf Cannon?
+3023, 10249, 0 -- Small Lava Dungeon Place
+2517, 4957, 0 -- Some More areas
+2560, 4958, 0 -- Another Area
+2778, 4963, 1 -- Desert Treasure Pyramid
+3048, 4973, 1 -- Romage Den
+3167, 4949, 0 -- Lumbridge Mining Underground
+3303, 4970, 0 -- Lumbrdige Tutorial but you cant walk :D
+2933, 4295, 0 -- Corp Quest
+2708, 10133, 0 -- Dungeon Place
+2649, 10084, 2 -- Giant Puzzle Place
+3039, 4396, 0 -- Cool place
+2784, 10138, 0 -- Path Tunnel
+3082, 4333, 0 -- Epic Place w/ Red Door Mystic?
+2349, 4240, 1 -- Ontop of Chair
+2581, 4186, 0 -- Random Area?
+2780, 4253, 0 -- Zammy Altar perhaps end to quest
+
+POH AREA: 1884 5106
+TUTORIAL PLACE UNDER LUMMY:::2522 5000
+2352, 5069, 0 -- FUNCKY PLACE?
+2847 5211, 0 -- Jmod Area
+3211 9621, 0 -- Lumbridge basement with chest
+2267, 5013, 0 -- Swampish area
+2280, 5040, 0 -- Basically the same thing
+2250, 5040, 0 -- Basically the same thing
+2383, 5035, 0 -- Cooler swamp area
+2263, 4629, 2 -- Daeyalt rocks mine
+2269, 4756, 0 -- Cave with a bed in it?
+2348, 4241, 0 -- Its like Fucken Atlantis AMAZING LOOK ATIT
+2348, 4275, 0 -- Same Place? But the statues are now blocking the portal o.0
+2380 4240, 0 -- cave full of fallen rocks that you can climb over
+2420, 4250, 0 -- same cave, but fallen rocks are not there, and zanik is there
+2462, 4250, 0 -- Blank square no mapdata area
+2481, 4453, 0 -- Entrana i think? could be a similar place
+2459, 4309, 0 -- Its a copy of my fucken home? but npcs are there? FUCKENAWESOME?
+2461, 4358, 0 -- Some dungeon with a portal, i thought it was clan wars at first
+2337, 4321, 0 -- Some wierd place with markings on wall, pretty big area i guess
+2453, 4586, 0 -- Island, path, that leads to a giant building, i also see my 1's there.... >.>
+2272, 4832, 0 -- random brown spots on the ground.
+1644 5365, 0 -- SECRET VARROCK neW HOME??? awesome!`
+1711, 4460, 0 - Blank Mapdata Area...
+1934, 5010, 0 -- Coffin random (no mapdata)
+1971, 5055, 0 -- Pinball Random (no mapdata)
+1916, 5090, 0 -- Construction
+1944, 4700, 0 -- Rat Place
+1958, 5146, 0 -- Elemental Work Shop thingy?
+1941, 4960, 0 -- Smelting Place with giant Pot
+1909, 4639, 0 -- Blank Mapdata Area
+2073, 3900, 0 -- Some Town
+1621, 4703, 0 - Vine Sweeper Area i bet
+1819, 4266, 0 -- Blank Grown Square Ground No mapdata area
+1699, 4254, 0 - Blank Mapdata Structure ( 3 stories high)
+1641, 5021, 0 - Walkable on Water Place 
+1637, 4834, 0 - Blank No mapdata, just walking place
+1867, 4238, 0 -- Underneath something, "basement"
+1876, 5118, 0 -- House Building
+1737, 5110, 2 -- Quest Nicky Said, looks epic
+2195, 4261, 1 -- Cool Place with Poison Shit surronding, quest or minigame im guessing
+2889, 5929, 0 -- ANOTHER CLAN WARS PLACE :)
+1951, 5707, 0 -- Steal Creations
+1969, 5330, 0 -- Blank Mapdata Square Area
+3020, 10032, 2 -- Some sort of Dungeon Area Place
+3031, 9966, 1 -- Continued Of above
+2336, 5227, 0 -- Security Strong Hold Bottom Level
+2332, 5719, 0 -- Lumbridge Blank
+2335, 4770, 0 -- Random Area 
+1899, 4269, 0 - Some Jail that Sir...people are forced into quest im guessing
+
+1989, 4493 -- Red Room Area
+2006, 4251, 1 -- Cool Place...can't describe?
+2002, 4187, 1 -- Cont...
+2018, 4169, 1 -- Cont...
+2609, 3838, 0 -- Blank No Mapdata Kind of Area
+1887, 5600, 0 -- Wierd Varrock City
+2021, 4384, 0 -- Idk.
+2702 9993 - Neat small cave, green grass
+3523 3358 1 - waste pipes
+3360, 10002, 0 -- Blank Flag area, looks like water should be in here
+
+3233, 10011, 0 - Blank No mapdata, walking area sort of.
+-*/Pyramid Plunder/*-
+1928 4470 - Lvl 21
+1956 4466 - Lvl 31
+1936 4453 - Lvl 41
+1955 4448 - Lvl 51
+1927 4437 - Lvl 61
+1949 4429 - Lvl 71
+1973 4430 - Lvl 81
+1760 5163 - Mole place, under fally
+1752, 5236 - Mole Place Entrance
+2860 9739 - ENTRANA CAVE, DRAMEN TREE
+-*/Islands/*-
+3504 3575 - Grave island
+2961 3028 - Nice island
+2615 2890 - A hut on beach
+2770 2980 - Island, idk..
+1890 4368 - WEIRD cave WITH WATER in too.
+1825 5086 2 - Dream place
+1765 5087 - More dream place
+1735 5064 - more
+-Weird U-Shape Cave with Entrace & Exit, also there's a Fire xD
+X: 2923
+Y: 10032
+-Huge Cave with agil shortcut and Small Obelisk
+X: 2786
+Y: 9992
+-Awesome, Huge Cave :
+X: 2636
+Y: 9522
+
+-Really weird like maze thing :O :
+X: 2585
+Y: 9605
+
+-Dive In Whirpool
+X: 2512
+Y: 3511
+
+-A cellar, Big hole in the middle of it? :O
+X: 2988
+Y: 9872
+3214 9693 - Drilling machine in cave
+2486 4973 - Fox, Chicken nd grain sack quest palce
+
+2563 4958 - HUGE GREY AREA with 4 mini blue fires
+
+Real Bork lair - 3099, 5538 0
+
+
+2592, 4317 - IMP LOOTING PLACE [6594 ANIM WALKING THRU GRASS STUFF]
+3365, 9637 2 - Alchemists Portal :)
+
+3177 9753 -- FIGHTING AREA!!!!!!!!!!!
+2801, 3166, 0 - Brimhaven
+3112, 9839, 0 -- Hill Giant Place
+2793, 9818, 0 -- Crate Wall Thing?
+2610, 9825, 0 -- Dungeon?
+2409, 9816, 0 -- different place
+2703, 3383, 0 -- Halaween Place
+2403, 10227, 0 -- Mining Place
+1886 5472 - barbian assult room 1
+1886 5410 - barbain assult room 2
+2592 5260 - barbian assult waiting room 
+2871 5318 - Godwars (height = 2)
+3082 4229 - Safety First dungeon - Starting Point
+3160 4246 - Safety First dungeon - 1st Floor
+3140 4230 - Safety First dungeon - 2nd Floor
+3171 4271 - Safety First dungeon - 3rd Floor
+3231 5091 - Duel Arena tournament
+1759 4958 - Varrock museum (downstairs)
+1675 5599 - Fist of guthix (main room)
+3242 3572 - Fist of guthix (entrance)
+3273 3686 - Clan Wars (PORTAL ROOM)
+3299 3722 - Clan Wars (SOUTH PORTAL)
+3295 3776 - Clan Wars (CENTER)
+3289 3829 - Clan Wars (NORTH PORTAL)
+3179 3685 - BH OUTSIDE
+3129 3713 - BH INSIDE
+3222 3217 - Lumbridge
+3211 3424 - VARROCK
+2966 3379 - FALADOR
+2758 3479 - CAMALOT
+2659 3661 - RELLEKKA
+2661 3310 - ARDOUGNE
+3161 3486 - GE
+2868 3546 - Warriors guild
+3184 9832 - under varrock bank
+3236 9767 - varrock sewers
+3096 9880 - under edgeville
+3104 9576 - under wizards tower
+3080 9664 - draynor sewers
+3208 9616 - under lumbridge
+3224 9800 - under varrock blue moon pub
+3240 9776 - black arms gang hideout
+2008 4762 - Mime Random
+2764 9103 - Ape atol - dungeon (one for monkey madness)
+2207 5346 - pikkuspix house downstair (summoning one)
+
+2142 4836 - cosmic altar
+2157 3862 - Astral altar
+2207 4836 - Death altar
+2269 4840 - chaos altar
+2400 4844 - nature altar
+2462 4891 1 - blood altar
+2466 4833 - law altar
+2522 4842 - body altar
+2587 4836 - fire altar
+2657 4830 - earth altar
+2784 4843 - mind altar
+2846 4836 - air altar
+3050 4840 - abbysal rift
+3482 4838 - water altar
+
+2213 3794 - Lunar Boat 
+2110 3915 - Lunar Isle
+2329 10353 - Lunar Mine 
+2509 3845 - Miscellania
+2509 10245 - underground place on miscellania
+2619 10265 - other side of underground
+2405 3782 - Jastizo 
+2310 3782 - Netiznot 
+2931 4711 - Watchtower tele 3rd floor
+2728 3349 - Legends Guild 
+3061 4984 - Rogues Den
+2912 5474 - Squire Garden minigame
+3363 3300 - Magic Arena (north of duel arena)
+3047 9756 - Mining Guild
+1694 5464 - Runecrafting Guild
+2841 3538 - Warriors Guild
+3483 9510 - Kalphite Queen Entrance 
+3508 9493 - Kalphite Queen zone 
+2520 5000 - under lumbridge
+2328 5736 - quarantend lumby
+3168 4940 - quarantend lumby mine
+3193 9832 - under varrock bank
+3232 9856 - varrock sewers
+3096 9880 - under edgeville
+3104 9576 - under wizards tower
+3085 9672 - draynor sewers
+3208 9616 - under lumbridge
+3232 9801 - under varrock blue moon pub
+3240 9770 - black arms gang hideout
+1676 5599 - fist of guthix first part
+1860 5245 - first floor
+2040 5232 - second floor
+2128 5288 - third floor
+2304 5200 - fourth floor
+3040 9776 - under fally mine
+3105 9755 - under draynor manor
+3075 9770 - under draynor manor - vampire bit
+3008 9544 - cave with blurite
+2480 5175 - tzhaar 
+2936 3144 - karamja 
+2649 9393 - Rantz cave
+2619 9767 - gobllin cave south-east fishing guild - (missing mapdata =10391)
+2716 9888 - Elemental workshop
+2719 3780 - Hunting area north-east Rellekka
+2716 3902 - Hunting area north-east Rellekka Upsteps (height = 1)
+2773 10162 - Tunnel Before Keldagrim (start of Giant dwaft)
+2795 3720 - Snowy area Thro a door in the tunnel before keldagrim
+2838 10124 - Start of The big dwaft Quest
+2827 10216 - Keldagrim
+1940 4958 - Blast furnace
+
+3363 3275 - Duel Arena
+
+
+2867 9955 - Ice Queen Lair
+3429 3538 - Slayer Tower
+2710 9466 - Brimhaven Dungeon
+2856 3812 - Ice Path
+2480 3437 - Gnome Agility Training
+3281 2765 - Pyramid Plunder room
+3345 3251 - Duel Arena
+2717 9808 - King Black Dragon Cave
+3044 4973 - Rouges Den
+2979 3611 - Green Dragons
+Big water fall ::tele 2534,3511
+Very back of wild ::tele 3100,3957
+Varrock east bank ::tele 3250,3423
+Varrock ::tele 3210,3424
+Falador ::tele 2964,3378
+Lumbridge ::tele 3222,3218
+Camelot ::tele 2757,3477
+East Ardougne ::tele 2662,3305
+West Ardougne ::tele 2529,3307
+King Lathas Training Grounds ::tele 2516,3369
+Tree Gnome Stronghold ::tele 2461,3443
+Al Kharid ::tele 3293,3174
+Shantays Pass ::tele 3304,3116
+Kalphite Lair ::tele 3226,3107
+Pyramid ::tele 3233,2902
+Pollnivneach ::tele 3359,2910
+Menaphos/Sophanem ::tele 3274,2784
+Yanille ::tele 2606,3093
+Gul'Tanoth ::tele 2516,3044
+Tutorial Island ::tele 3094,3107
+Barbarian Village ::tele 3082,3420
+Entrana ::tele 2834,3335
+Heroes Guild ::tele 2902,3510
+Rangers Guild ::tele 2658,3439
+Coal Trucks ::tele 2582,3481
+Goblin Village ::tele 2956,3506
+Druids Circle ::tele 2926,3482
+Burthorpe ::tele 2926,3559
+White wolf mountain ::tele 2848,3498
+Catherby ::tele 2813,3447
+Seers village ::tele 2708,3492
+Fishing guild ::tele 2603,3414
+Barbarian Agility Course ::tele 2541,3546
+Prifddinas ::tele 2242,3278
+Elf camp (Tirannwn) ::tele 2197,3252
+Isafdar (Tirannwn) ::tele 2241,3238
+Duel arena ::tele 3360,3213
+Desert mining camp ::tele 3286,3023
+Bedabin camp ::tele 3171,3026
+Bandit camp ::tele 3176,2987
+Sophanem ::tele 3305,2755
+Ruins of Uzer ::tele 3490,3090
+Mort'ton ::tele 3489,3288
+Canifis ::tele 3506,3496
+Port Phasmatys ::tele 3687,3502
+Fenkenstrain's castle ::tele 3550,3548
+Dig site ::tele 3354,3402
+Exam centre ::tele 3354,3344
+Edgeville ::tele 3093,3493
+Crafting guild ::tele 2933,3285
+Port Sarim ::tele 3023,3208
+Rimmington ::tele 2957,3214
+Draynor village ::tele 3093,3244
+Fight arena ::tele 2585,3150
+Tree gnome village ::tele 2525,3167
+Port Khazard ::tele 2665,3161
+Monastery ::tele 3051,3490
+Karamja ::tele 2948,3147
+Crandor ::tele 2851,3238
+King Black Dragon Lair ::tele 2717,9816
+KQ Lair ::tele 3487,9493
+Underground pass level 2 ::tele 2337,9798
+Weird water place ::tele 2676,3008
+Members Karajama ::tele 2815,3182
+Grave island ::tele 3504,3575
+HAM camp ::tele 3165,9629
+Pyramid under Sophanem ::tele 3277,9171
+Juna the snake ::tele 3251,9517
+Smoky tunnels/dark room (This place needs more tests) 3206,9379
+Underground pass level 1 ::tele 2495,9715
+Mage Arena ::tele 3107,3937
+Ape Atoll ::tele 2755,2784
+Jungle demon area bottom level ::tele 2714,9183
+Jungle demon area top level (use Burst of Strength) ::tele 2703,9178
+Wilderness Agility Course ::tele 3003,3934
+Keldagram ::tele 2937,9999
+Brimhaven Agility Course ::tele 2761,9557
+Metal dragon dungeon (back) ::tele 2713,9459
+Metal dragon dungeon (front) ::tele 2713,9564
+Inside the desert treasure pyramid ::tele 3233,9315
+Tree gnome hanger ::tele 2390,9886
+Fishing platform ::tele 2782,3273
+Boat crash island place ::tele 2795,3321
+Legends quest jungle dungeon ::tele 2772,9341
+TzHaar ::tele 2480,5175
+Essence mine ::tele 2911,4832
+Morings end part 1 mine ::tele 2044,4649
+Dwarf cut scene meeting area ::tele 2035,4529
+New KBD lair ::tele 2273,4695
+Elven forest cut scene area ::tele 2309,4597
+Gold mine rock ::tele 2358,4959
+White knight tasks area ::tele 2443,4956
+Rouge maze (Press Burst of Strength) ::tele 3050,5071
+The shadow guys dungeon ::tele 2738,5081
+Barrows top ::tele 3564,3288
+Barrows tunnel ::tele 3568,9695
+Barrows chest ::tele 3551,9694
+CW bank= 2441,3090
+CW center= 2400,3103
+Blue dragons= 2910,9801
+Black demons= 2860 9775
+Hell Hounds= 2867,9844
+Black dragons= 2829,9826
+Chaos rune crafting alter ::tele 2269,4843
+Legends dungeon prt2 ::tele 2375,4705
+Mage arena dungeon ::tele 2519,4719
+Evil Bobs island "scaperune" ::tele 2525,4776
+Distant kingdom (alive) 2576,4655
+Distant kingdom (dead) 2803,4723
+Forester random event ::tele 2602,4775
+Alt area ::tele 2527,4547
+Fremmy maze ::tele 2653,10004
+
+Cosmic alter ::tele 2162,4833
+Middle of under ground pass ::tele 2168 4726
+Quiz random event ::tele 1952,4768
+Trawler boat ::tele 2013,4820
+Sunk trawler mini game boat ::tele 1951,4825
+Trawler boat empty of water ::tele 1886,4830
+Mime stage ::tele 2008,4762
+"Draynor" ::tele 2130,4913
+Game room ::tele 2196,4961
+Mind alter ::tele 2796,4818
+Air Alter ::tele 2845,4832
+Water Alter ::tele 2713,4836
+Earth Alter ::tele 2660,4839
+Fire Alter ::tele 2584,4836
+Body Alter ::tele 2527,4833
+Law Alter ::tele 2464,4834
+Nature Alter ::tele 2398,4841
+Gas hole ::tele 2464,4782
+Edge of maze ::tele 2885,4550
+Center of maze ::tele 2912,4576
+Falador mine ::tele 3038,9800
+::tele 3157 4822 = drill deamon camp
+
+::tele 2477 4768 = frog cave
+
+::tele 2596 4780 = freaky forester
+
+::tele 2095 4428 = prison pete
+
+::tele 1952 4764 = quiz show
+
+::tele 2338 4747 = Lost and found
+
+::tele 1960 4824 = Twarler Mini-Game
+
+::tele 2015 4826 = twarler mini-game inside
+
+::tele 1971 5001 = WIERD CHRUCH! NOT ON RUNESCAPE!
+
+::tele 1928 5002 = Grave digger
+
+::tele 2584 4838 = fire alter
+
+::tele 2966 9633 = somekind of rat-hole never seen this
+
+::tele 2929 9649 = dragon slayer mace
+
+::tele 2981 9914 = recipes goblin cook place
+
+::tele 2916 9912 = heroes guild cave
+
+::tele 2932 9848 = chaos druids
+
+::tele 2898 9766 = baby bluedragons
+
+::tele 3048 9582 = ice-warriors & giants
+
+::tele 2977 9515 = recipes crabs
+
+::tele 2973 9505 = recipe water "mini-quest"
+
+::tele 2783 9574 = agility arena
+
+::tele 2835 9562 = karamja lessers
+
+::tele 1891 4947 = quest place (dont remember (or newer seen) what quest)
+
+::tele 2007 4431 = x-mas workshop event wooot!
+
+::tele 2400 4850 = nature altar!
+
+::tele 3421 9622 = quest place (dont remember (or newer seen) what quest)
+
+::tele 1865 5330 = recipe the lum kitchen when started recipe near the secret sky must check if it is possible to see in rs.
+
+::tele 1860 5345 = same as above but no barrier & no chairs expet one why?
+
+::tele 2393 4713 = i don't know prob: quest place (dont remember (or newer seen) what quest)
+
+::tele 2385 4685 = have a relation to the place above what is that?
+
+::tele 2525 4776 = evil bob's island
+
+::tele 2633 4700 = quest place (dont remember (or newer seen) what quest)
+
+::tele 2650 4565 = monkey sadness fight the jungle demon?
+
+::tele 2650 4508 = monkey sadness the gnome glider puzzle!
+
+::tele 3300 9825 = A Soul's Bane quest
+
+::tele 3345 9715 = mage training arena (telegrab) ftw
+
+::tele 3350 9680 = mage training arena (telegrab) ftw another one
+
+::tele 3345 9712 = mage training arena (telegrab) ftw another one NOTE: if you see the same arenas try changin height level!
+
+::tele 2152 5095 = Secret island
+
+::tele 2721 4828 = water alter
+
+::tele 2784 4840 = mind alter
+
+::tele 2842 4835 = air alter
+
+::tele 2898 4819 = rune essent mining
+
+::tele 3029 4834 = abyss
+
+::tele 2528 4833 = wierd alter
+
+::tele 2471 4838 = law alter
+
+::tele 1823 4835 = two ships
+
+::tele 3105 3930 = mage arena
+
+::tele 1894 5333 = secret sky
+
+::tele 1865 5341 = recipie for desaster feast
+
+::tele 3424 9891 = under passage way to canfis
+
+::tele 3681 9889 = ecto plasm floor
+
+::tele 2470 9899 = under gnomes grand tree
+
+::tele 2319 9804 = i'bans trap drop
+
+::tele 2856 3809 = slippery ice path
+
+::tele 3551 9693 = barrows chest
+
+::tele 3177 9753 = under draynore mannor
+
+::tele 3040 9741 = faladore mining guild
+
+::tele 3079 9505 = toturial mining
+
+::tele 3110 9512 = toturial combat train
+
+::tele 3232 2896 = top of piramid for desert tresure
+
+::tele 3291 2764 = desert city
+
+::tele 3298 9179 = under desert city
+
+::tele 2861 3165 = volcano
+
+::tele 2863 9570 = under volcano
+
+::tele 2835 3268 = candor
+
+::tele 2766 3277 = fishing docks
+
+::tele 2446 10147 = daganoth cave ( go to "::tele 2446 9999" then keep walking the right direction then ul get there )
+
+::tele 2438 5172 = volcano lava
+
+::tele 2395 5154 = fight pits
+
+::tele 3234 9896 = wierd place
+
+::tele 3132 9909 = under edgevill
+
+::tele 3233 9313 = under piramid at acent alter
+
+::tele 3363 9639 = mage train up ( shapes )
+
+::tele 3363 9637 = mage train up ( bones )
+
+::tele 3365 9637 = mage train up ( alching )
+
+::tele 3363 2984 = a desert city
+
+::tele 2396 5093 = fight caves
+
+::tele 3559 9895 = football traning corse
+
+::tele 3541 9891 = jumping corse
+
+::tele 3528 9871 = zip line
+
+::tele 3539 9872 = jumping steps
+
+::tele 3555 9947 = cave
+
+::tele 2972 9507 = Under water
+
+::tele 2545 4715 = mage arena room
+
+::tele 2505 4707 = mage arena statues
+
+::tele 3551 9712 = barrows coffins
+
+::tele 2716 9816 = black king dragon
+
+::tele 3487 9493 = kaphite queen place
+
+::tele 2744 3444 = camalot flax
+
+::tele 2273 4695 = king black drags
+
+::tele 2516 4646 = daganoth quest place mother
+
+::tele 2121 4918 = Draynor private from map
+
+::tele 2142 4834 = cosmic alter
+
+::tele 2134 4717 = slave cages ( look up to see them,,cannot be walked on )
+
+::tele 2091 3210 = wierd grass land??
+
+
+/*Guilds*/
+rangeguild = 2657	3439
+rangingguild = 2657	3439
+
+fishguild = 2611	3393
+fishingguild = 2611	3393
+
+mineguild = 3016	3339
+miningguild = 3016	3339
+
+craftguild = 2933	3289 
+craftingguild = 2933	3289 
+
+heroguild = 2902	3510
+herosguild = 2902	3510
+heroesguild = 2902	3510
+
+/*End Guilds*/
+
+crystalchest = 2914	3450
+
+/*Altars*/
+deathaltar =  2207	4836 
+cosmicaltar =  2162	4833 
+chaosaltar =  2269	4843 
+mindaltar =  2796	4818 
+airaltar =  2845	4832
+wateraltar =  2713	4836
+earthaltar =  2660	4839
+firealtar =  2584	4836
+bodyaltar =  2527	4833
+lawaltar =  2464	4834
+naturealtar =  2398	4841
+
+/*End Altars*/
+
+falador = 2965	3380
+goblinvillage = 2956	3506
+druidscircle = 2926	3482
+burthrope = 2926	3561
+
+whitewolf = 2848	3498
+catherby = 2815	3447
+camelotcastle = 2758	3495
+seersvillage = 2708	3492
+
+
+barbagil = 2541	3546
+grandtree1 = 2480	3488
+grandtree2 = 2466	3490
+treegnome = 2441	3429
+westardy = 2535	3305
+eastardy = 2659	3308
+prifddinas = 2242	3278
+elfcamp = 2197	3252
+isafdar = 2241	3238
+duelarena = 3360	3213
+alkharid = 3288	3189
+desertmine = 3286	3023
+bedabincamp = 3171	3026
+banditcamp = 3176	2987
+pollnivneach = 3365	2970
+pyramid = 3233	2901
+sophanem = 3305	2755
+uzer = 3490	3090
+mortton = 3489	3288
+canifis = 3506	3496
+phasmatys = 3687	3502
+fenkencastle = 3550	3548 
+digsite = 3354	3402 
+examcentre = 3354	3344 
+varrock = 3214	3424
+barbvillage = 3081	3424 
+edgeville = 3093	3493 
+
+sarim = 3023	3208 
+rimmington = 2957	3214 
+draynor = 3093	3244 
+lumbridge = 3223	3218 
+fightarena = 2585	3150 
+gnomevillage1 = 2521	3177
+gnomevillage2 = 2525	3167
+khazard = 2665	3161
+yanille = 2569	3098
+monestary = 3051	3490
+karamja = 2814	3182
+crandor = 2851	3238
+tutisland = 3123	3100
+tzhaar = 2480	5175
+mineess = 2911	4832
+bobsiland = 2526	4777
+
+membersdungeon = 2884	9798
+dramentree = 2861	9736
+karamjadungeon = 2843	9636
+steeldragons = 2719	9433
+bluedragons = 2591	9439
+theogre = 2584	9737 
+shadowwarrior = 2705	9758 
+subwhitewolf = 2822	9882 
+gloryfountain = 2918	9895 
+spampdungeon = 3168	9572 
+barrowscenter = 3551	9693 
+canifis = 3477	9845 
+werewolfagil = 3549	9865
+eledungeon = 2715	9889 
+blurite = 3007	9550 
+miniagil = 2759	9557
+runerocks = 3061	3886
+kalphites = 3485	9509
+smokedungeon = 3207	9377
+pyramid4 = 3233	9313 
+crashisland = 2893	2724
+apeatoll = 2801	2704 
+marimpray = 2807	9201 
+marimcreate = 2764	9164 
+apeatolldungeon = 2805	9142 
+kharazi = 2822	2911 
+jungledemon = 2657	4568 
+hangar = 2584	4516 
+gnomedungeon = 2596	4435
+purplecrystal = 2792	4427 
+submage = 2538	4717
+godpray = 2507	4718 
+lighttower = 2519	4642 
+bigdwarfs = 2776	10162
+bigdwarfs2 = 2838	10126 
+bigdwarfs3 = 2923	10191 
+waterfall = 2534	3511 
+endwild = 3100	3957 
+eastbank =  3250	3423 
+varrock =  3210	3424 
+falador2 =  2964	3378
+lumbridge =  3222	3218
+camelot =  2757	3477 
+eardy2 =  2662	3305 
+wardy2 =  2529	3307 
+lathas =  2516	3369 
+gnomestrong =  2461	3443
+kharid =  3293	3174 
+shantay =  3304	3116 
+kalphlair =  3226	3107 
+pyramid2 =  3233	2902 
+pollnivneach =  3359	2910
+menaphos =  3274	2784
+yanille =  2606	3093
+gultanoth =  2516	3044
+tutisland2 =  3094	3107
+barbarins =  3082	3420
+entrana =  2834	3335
+
+coaltrucks =  2582	3481
+gvillage =  2956	3506
+stonehenge2 =  2926	3482
+burth =  2926	3559
+wwolf =  2848	3498
+catherb =  2813	3447
+seers =  2708	3492
+barbyagil =  2541	3546
+prifdinas =  2242	3278
+elfcamp2 =  2197	3252
+isafdar2 =  2241	3238
+darena =  3360	3213
+dminecamp =  3286	3023
+bedcamp =  3171	3026
+bandcamp =  3176	2987
+soph =  3305	2755
+uzerruins =  3490	3090
+morton =  3489	3288
+canif =  3506	3496
+portp =  3687	3502
+fenken =  3550	3548
+dsite =  3354	3402
+ecentre =  3354	3344
+edgeville =  3093	3493
+
+psarim =  3023	3208
+rimm =  2957	3214
+farena =  2585	3150
+tgvill =  2525	3167
+pkhazard =  2665	3161
+monkies =  3051	3490
+karamj =  2948	3147
+crandor2 =  2851	3238
+thekbd =  2717	9816
+thebigkq =  3487	9493
+thepass2 =  2337	9798
+wiredwater =  2676	3008
+karamja4memb =  2815	3182 
+meetjuna =  3251	9517
+darkroom =  3206	9379
+thepass1 =  2495	9715
+magicarena =  3107	3937
+aatoll =  2755	2784
+jungledemonb =  2714	9183
+jungledemont =  2703	9178
+wagility =  3003	3934
+keldagrim =  2937	9999
+karamjaagil =  2761	9557
+metaldragback =  2713	9459
+metaldragfront =  2713	9564
+desertpyramid =  3233	9315
+thehangar =  2390	9886
+fishplatform =  2782	3273
+boatcrash =  2795	3321
+legendsjungle =  2772	9341
+tzhaar2 =  2480	5175
+mineess2 =  2911	4832
+morningsend =  2044	4649
+dwarfs =  2035	4529
+kbdlair =  2273	4695
+elvenforest =  2309	4597
+goldmine =  2358	4959
+initiate =  2443	4956
+shadowguys =  2738	5081
+barrowstop =  3564	3288
+barrowstunnel =  3568	9695
+barrowschest =  3551	9694
+cwbank =  2441	3090
+castlewars =  2400	3103
+bluedrags =  2910	9801
+blackdemons =  2860	9775
+hellhounds =  2867	9844
+blackdrags =  2829	9826
+
+legends2 =  2377	4705
+magearena =  2519	4719
+scaperune =  2525	4776
+forester =  2602	4775
+theisland =  2527	4547
+fremmymaze =  2652	9999
+
+quizgame =  1952	4768
+trawler =  2013	4820
+sunktrawler =  1951	4825
+emptytrawler =  1886	4830
+mimestage =  2008	4762
+draynor =  2130	4913
+gameroom =  2196	4961
+gashole =  2464	4782
+shilo =  2827	2995
+karamja1 =  2973	2890
+karamja2 =  2973	2910
+greater =  3288	3886
+wildpalace =  3288	3886
+slayertower =  3428	3535
+misc =  2512	3860
+shilo = 2852    2955
+
+party =  2739	3472
+rellaka = 2659 3661
+trollheim = 2910 3612
+tears of guthix = 3257 9517
+
+Pest Control Game: X 2667 Y 2594
+Pest Control Bank: X 2658 Y 2649
+
+
+
+
+Axe hut - 2924/5661-0
+Stone of Jas - 2924/5661-0
+Ancient Guthix temple (tormented demon spawn place) - 2602/5727-0
+Evil chickens lair - 2462/4357-0
+Zanaris - 2391/4454-0
+Dagganoth mother place (under Lighthouse) - 2530 4649-0
+Runeessence mine - 2895/4818-0
+Corporeal beasts cave - 2884/4373-0
+Dagganoth Kings place (real spawn place like RuneScape) - 2907/4449-0
+Camdozaal - 3038/9892-0
+Wilderess lava maze dungeon - 3030/10251-0
+Paterdomus temple - 3419/9897-0
+Moss le Harmelss - 3676/2974-0
+Iceberg (penguin spawn place) - 2635 4045-1
+Sorcerers garden - 2908 5470-0
+Surprise exam evet place - 1886/5023-0
+Graveddiger event place - 1926 4994-0
+Eagles peak (inside the mountain) - 1928/4915-0
+Blast furnance - 1940/4961-0
+Part of Keldaghrim - 1937/4709-0
+Wilderness church - 2951/3821-0
+Lucients camp - 2928/3803-0
+Black knight catacombs (Elite Black knight spawn place) - 3022/9940-1
+
+
+
+
+
+
+1861, 4939, 2 //path between
+
+1907, 4965, 2 //path between
+
+3423, 9891, 0 Perist in Peril Underground Area //use for inbetween place again!
+
+2463, 4774, 0 //swamp area
+
+2892, 5641, 0 //Clan wars Other Area
+
+2493, 916, 0 // Underground pass
+
+
+3036, 2979, 0 //Jail Area!!
+
+3478, 9842, 0 "open interface, saying like "now you must find your way out"
+3500, 9811, 0 "continued of above"
+3545, 9826, 0 "agility part of the above"
+3557, 9773, 0 "final boss area"
+
+
+Black area:
+1888, 5335, 0 
+
+
+NPC ID 3071 -- Skeletal Wyvern
+140	645	2984	2982
+
+Location: 3056, 9562, 0
+
+
+2851, 9637, 0 Elverag Location
+
+
+
+2741, 5538, 0 -- OTHER CLAN TEAM PLACE!!!
+2888, 5513, 0 -- ANOTHER CLANWARS AREA!
+2969, 5512, 0 -- Clan Wars NOT SAFE
+
+
+
+
+2644, 9764, 0 -- Random Room
+
+3598, 3210, 0 -- Cool Place
+
+1772, 5338, 0  -- Looks to be Mithril Dragons Area?
+1778, 5342, 1 -- Mithril Dragons :)
+
+
+
+2847, 9872, 0
+
+
+
+5993
+Experiment No.2 109 776	
+6511         6510
+2903, 9864, 0
+2910, 9912, 0 -- Bottom of Heros guild?
+2865, 9956, 0 -- Ice queen
+2889, 10084, 0
+2863, 10090, 0 -- Giant Crate Area 
+2903, 4550, 0 -- Maze Random Area
+3046, 9753, 0 -- Falador mine
+3055, 9935, 1 
+3169, 5063, 0  Duel Tornaments Area
+(3174, 5071, 0)
+3292, 4938, 0 -- Starting Area?
+
+1694, 5680, 0 -- Inside of Fist of Guthix
+2336, 5384, 0 -- Elf Village never seen before
+
+2569, 9890, 0 -- Waterfall Quest place
+2540, 9908, 0 ^^
+2602, 9911, 0 ^^
+
+
+3162, 9628, 0 -- Ham Area
+
+
+2645, 9903, 0 -- Wierd Guards Area
+
+2979, 9911, 0 -- Kitchen Place? Wierd?!
+
+3530, 9910, 0 -- Death Agility Course, MUST USE
+
+3515, 9957, 0 -- Wierd Tunnels
+
+3501, 9721, 0 
+
+3497, 9627, 0 Creepy Place
+
+2838, 10098 -- Big jail thing
+
+3291, 5480, 0 -- Choas Tunnels
+
+3309, 5451, 0 -- Real bork area!
+
+
+fishing colony: 2345, 3694
+
+2867 9955: Ice Queen Lair
+
+3429 3538: Slayer Tower
+
+2710 9466: Brimhaven Dungeon
+
+2856 3812: Ice Path
+
+2480 3437: Gnome Agility Training
+
+3281 2765: Pyramid Plunder room
+
+3345 3251: Duel Arena
+
+2717 9808: King Black Dragon Cave
+
+3044 4973, 1: Rouges Den
+
+2979 3611: Green Dragons
+
+3157 4822: Drill Deamon Random Area
+
+2477 4768: Frog Cave
+
+2596 4780: Freaky Forester
+
+2095 4428: ScapeRune's Jail
+
+1952 4764: Quiz Show
+
+2338 4747: Lost and Found
+
+1960 4824: Trawler Minigame
+
+2015 4826: Trawler Minigame inside
+
+1971 5001: Church in the middle of nowhere
+
+1928 5002: Grave Digger event
+
+2981 9914: RFD Goblin Chef place
+
+2916 9912: Heroes Guild Cave
+
+2932 9848: Chaos Druids
+
+2898 9766: Baby Blue Dragons
+
+3048 9582: Ice Warriors & Giants Area
+
+2977 9515: RFD underwater
+
+2783 9574: Agility Arena
+
+2835 9562: Karamja Lesser Demons
+
+2007 4431: Christmas 2006/7 Workshop
+
+2400 4850: Nature Altar!
+
+2525 4776: Evil Bob's Island
+
+3300 9825: Tolna's Dungeon
+
+3345 9715: Mage Training (Telegrab)
+
+2152 5095: Secret Island
+
+3029 4834: The Abyss
+
+3105 3930: Mage arena
+
+1865 5341: RFD Feast
+
+3424 9891: Under Canfis
+
+3681 9889: Ectoplasm
+
+2470 9899: Under Grand Tree
+
+2319 9804: Ibans Drop Maze
+
+2856 3809: Slippery Ice Path
+
+3551 9693: Barrows Chest
+
+*****3177 9753: Draynor Mannor Basement
+
+3040 9741: Mining Guild
+
+3110 9512: Tuturial Combat Area
+
+3232 2896: Top of Pyramid of Arandar (or something)- Desert Treasure
+
+2766 3277: Fishing Docks
+
+2446 10147: Dagganoth Cave
+
+2438 5172: Volcano Lava
+
+2395 5154: Fight Pits
+
+3234 9896: Wierd Place
+
+3132 9909: Under Edgeville
+
+3233 9313: Anient Alter
+
+3363 9639: Mage Training Area ( shapes )
+
+3363 9637: Mage Training Area ( bones )
+
+3365 9637: Mage Training Area ( alching )
+
+2396 5093: Fight Caves
+
+3559 9895: Gnomeball
+
+3541 9891: Jumping Course
+
+2545 4715: Mage Arena (inside)
+
+2505 4707: Mage Arena Statues
+
+3551 9712: barrows coffins
+
+2716 9816: black king dragon
+
+3487 9493: kaphite queen place
+
+2744 3444: camalot flax
+
+2273 4695: king black drags
+
+2516 4646: daganoth quest place mother
+
+2121 4918: Draynor private from map
+
+2142 4834: cosmic alter
+
+2134 4717: slave cages
+
+2091 3210: wierd grass land??
+
+Ranging Guild: 2657 3439
+
+Fishing Guild: 2611 3393
+
+Mining Guild: 3016 3339
+
+Crafting Guild: 2933 3289
+
+Heroes Guild: 2902 3510
+
+Crystal Chest: 2914 3450
+
+/ Runecrafting Altars \
+
+Death: 2207 4836
+
+Cosmic: 2162 4833
+
+Chaos: 2269 4843
+
+Mind: 2796 4818
+
+Air: 2845 4832
+
+Water: 2713 4836
+
+Earth: 2660 4839
+
+Fire: 2584 4836
+
+Body: 2527 4833
+
+Law: 2464 4834
+
+Nature: 2398 4841
+
+\ End of Altars /
+
+Falador: 2965 3380
+
+Goblin village: 2956 3506
+
+Druids Circle: 2926 3482
+
+Burthrope: 2926 3561
+
+White Wolf Mountain: 2848 3498
+
+Catherby: 2815 3447
+
+Camelotcastle: 2758 3495
+
+Seersvillage: 2708 3492
+
+Barb Agility Course: 2541 3546
+
+Grand Tree: 2480 3488
+
+Tree Gnome Village: 2441 3429
+
+West Ardougne: 2535 3305
+
+East Ardougne: 2659 3308
+
+Prifddinas: 2242 3278
+
+Elven Camp: 2197 3252
+
+Isafdar: 2241 3238
+
+Duel Arena: 3360 3213
+
+Al-Kharid: 3288 3189
+
+Desert Mine: 3286 3023
+
+Bedabin Camp: 3171 3026
+
+Bandit Camp: 3176 2987
+
+Pollnivneach: 3365 2970
+
+Ancients Pyramid: 3233 2901
+
+Sophanem: 3305 2755
+
+Uzer: 3490 3090
+
+Mor'ton: 3489 3288
+
+Canifis: 3506 3496
+
+Phasmatys: 3687 3502
+
+Castle of Fenkenstrein: 3550 3548
+
+Digsite: 3354 3402
+
+Exam Centre: 3354 3344
+
+Varrock: 3214 3424
+
+Barbvillage: 3081 3424
+
+Edgeville: 3093 3493
+
+Port Sarim: 3023 3208
+
+Rimmington: 2957 3214
+
+Draynor Village: 3093 3244
+
+Lumbridge: 3223 3218
+
+Fight Arena: 2585 3150
+
+Gnomevillage1: 2521 3177
+
+Gnomevillage2: 2525 3167
+
+Khazard: 2665 3161
+
+Yanille: 2569 3098
+
+Monestary: 3051 3490
+
+Karamja: 2814 3182
+
+Crandor: 2851 3238
+
+Tutorial Island: 3123 3100
+
+Tzhaar: 2480 5175
+
+Mineess: 2911 4832
+
+Evil Bob's Island: 2526 4777
+
+Taverly Dungeon: 2884 9798
+
+Dramentree: 2861 9736
+
+Karamja Dungeon: 2843 9636
+
+Steel Dragons Area: 2719 9433
+
+Blue Dragons Area: 2591 9439
+
+Ogres: 2584 9737
+
+Shadow Warriors: 2705 9758 (legends basement)
+
+White Wolf Mountain: 2822 9882
+
+Fountain of Heroes: 2918 9895
+
+Swamp Dungeon: 3168 9572
+
+Center of the Barrows: 3551 9693
+
+Canifis: 3477 9845
+
+Werewolf Agility Course: 3549 9865
+
+Ele Dungeon (never heard of this, so can't say full name): 2715 9889
+
+Blurite Ore: 3007 9550
+
+Mini Agility Course: 2759 9557
+
+Runite Rocks: 3061 3886
+
+Kalphite Lair: 3485 9509
+
+Smokey Dungeon: 3207 9377
+
+Pyramid: 3233 9313
+
+Crash Island: 2893 2724
+
+Ape Atoll: 2801 2704
+
+Ape Atoll Dungeon: 2805 9142
+
+Kharazi: 2822 2911
+
+Jungle Demon Area: 2657 4568
+
+Hangar: 2584 4516
+
+Gnome Dungeon: 2596 4435
+
+Lighthouse: 2519 4642
+
+Waterfall: 2534 3511
+
+End of Wilderness: 3100 3957
+
+Varrock East Bank: 3250 3423
+
+varrock: 3210 3424
+
+King Lathas: 2516 3369
+
+Shantay Pass: 3304 3116
+
+Kalphite Lair: 3226 3107
+
+Menaphos: 3274 2784
+
+Yanille: 2606 3093
+
+Gultanoth: 2516 3044
+
+Barbarian Outpost: 3082 3420
+
+Entrana: 2834 3335
+
+Coal Trucks: 2582 3481
+
+Goblin Village: 2956 3506
+
+Rocks: 2926 3482
+
+Burthope: 2926 3559
+
+While Wolf Mountain: 2848 3498
+
+Catherby: 2813 3447
+
+Seers Village: 2708 3492
+
+Barbarian Agility Course: 2541 3546
+
+Prifdinas: 2242 3278
+
+Elven Camp: 2197 3252
+
+Isafdar: 2241 3238
+
+Duel Arena: 3360 3213
+
+Mining Camp: 3286 3023
+
+Bedabin Camp: 3171 3026
+
+Bandit Camp: 3176 2987
+
+Sophanem: 3305 2755
+
+Ruins of Uzer: 3490 3090
+
+Mor'ton: 3489 3288
+
+Canifis: 3506 3496
+
+Port Phastymas: 3687 3502
+
+Fenkenstrains Castle: 3550 3548
+
+Digsite: 3354 3402
+
+Exam Center: 3354 3344
+
+Edgeville: 3093 3493
+
+Port Sarim: 3023 3208
+
+Rimmington: 2957 3214
+
+?: 2585 3150
+
+?: 2525 3167
+
+Port Khazard: 2665 3161
+
+Ape Atoll: 3051 3490
+
+Karamja: 2948 3147
+
+Crandor: 2851 3238
+
+King Black Dragon: 2717 9816
+
+Kalphite Queen: 3487 9493
+
+----------------------------------------------------------------------------------------------------
+    ~~~~~~~~~~~~~~~~~~~ Start ~~~~~~~~~~~~~~~~~~~
+----------------------------------------------------------------------------------------------------
+::tele 2634 4694 = cool kinda enclosed castle/ faming area.
+::tele 3040 9741 = faladore mining guild
+----------------------------------------------------------------------------------------------------
+    ~~~~~~~~~~~~~~~~~~~ End ~~~~~~~~~~~~~~~~~~~
+----------------------------------------------------------------------------------------------------
+::tele 2966 9633 = somekind of rat-hole never seen this
+::tele 2929 9649 = dragon slayer mace
+::tele 2907 9705 = quest place (dont remember (or newer seen) what quest)
+::tele 2981 9914 = recipes goblin cook place
+::tele 2916 9912 = heroes guild cave
+::tele 2932 9848 = chaos druids
+::tele 2898 9766 = baby bluedragons
+::tele 3048 9582 = ice-warriors & giants
+::tele 2977 9515 = recipes crabs
+::tele 2973 9505 = recipe water "mini-quest"
+::tele 2783 9574 = agility arena
+::tele 2835 9562 = karamja lessers
+::tele 1891 4947 = quest place (dont remember (or newer seen) what quest)
+::tele 2007 4431 = x-mas workshop event wooot!
+::tele 2400 4850 = nature altar!
+::tele 3421 9622 = quest place (dont remember (or newer seen) what quest)
+::tele 1865 5330 = recipe the lum kitchen when started recipe near the secret sky must check if it is possible to see in rs.
+::tele 1860 5345 = same as above but no barrier & no chairs expet one why?
+::tele 2393 4713 = i don't know prob: quest place (dont remember (or newer seen) what quest)
+::tele 2385 4685 = have a relation to the place above what is that?
+::tele 2525 4776 = evil bob's island
+::tele 2633 4700 = quest place (dont remember (or newer seen) what quest)
+::tele 2650 4565 = monkey sadness fight the jungle demon?
+::tele 2650 4508 = monkey sadness the gnome glider puzzle!
+::tele 3300 9825 = A Soul's Bane quest
+::tele 3345 9715 = mage training arena (telegrab) ftw
+::tele 3350 9680 = mage training arena (telegrab) ftw another one
+::tele 3345 9712 = mage training arena (telegrab) ftw another one NOTE: if you see the same arenas try changin height level!
+Name                                                                                                          X-Pos        Y-Pos
+L-Shape unknown land. Good position to develop. Slightly south of archery guild.       
+ 2630         9351
+Lot’s of space to build new things. Possibly a city.
+
+Temple of Ikov. Good to turn into a fighting arena.         
+                                     2658             9828
+Tunnel from lumbridge cellar.                                                                             3222             9618
+Square Room with shapes. Good for puzzle games. (Below duel arena)  
+                  3364           9640
+Duel arena. Directly above puzzle room (above)                                                      3364             3240
+Glarials Tomb. A small Tomb, nothing special really.                                               2542      9818
+Not sure what this is. Could be a good fight arena.      
+                                         2387     9816
+The gnome workshop for making Gliders. Possibly good for training area.       
+                2396      9874 
+Possible site for a PK fightpit. With possible viewing area’s at each side.   
+                2402          9703
+A good site for mage/range training.                                                                   2397           9606 
+Castle wars underground area. Rocks block exit, so this could make a                        2401       9503
+very good fighting area. Ladders DO work though.
+Underground maze looking place. Could be great for a mini-game.         
+                       2405       9426
+ 
+
+----------------------------------------------------------------------------------------------------
+          ~~~~~~~~~~~~~~~~~~~ End ~~~~~~~~~~~~~~~~~~~
+----------------------------------------------------------------------------------------------------
+ 
+----------------------------------------------------------------------------------------------------
+   ~~~~~~~~~~~~~~~~~~~ Start ~~~~~~~~~~~~~~~~~~~
+----------------------------------------------------------------------------------------------------
+::tele 2152 5095 = Secret island
+::tele 3157 4822 = drill deamon camp
+::tele 2477 4768 = frog cave
+::tele 2596 4780 = freaky forester
+::tele 2095 4428 = prison pete
+::tele 1952 4764 = quiz show
+::tele 2338 4747 = Lost and found
+::tele 1960 4824 = Twarler Mini-Game
+::tele 2015 4826 = twarler mini-game inside
+::tele 1971 5001 = WIERD CHRUCH! NOT ON RUNESCAPE!
+::tele 1928 5002 = Grave digger
+::tele 2584 4838 = fire alter
+::tele 2721 4828 = water alter
+::tele 2784 4840 = mind alter
+::tele 2842 4835 = air alter
+::tele 2898 4819 = rune essent mining
+::tele 3029 4834 = abyss
+::tele 2528 4833 = wierd alter
+::tele 2471 4838 = law alter
+::tele 1823 4835 = two ships
+::tele 3105 3930 = mage arena
+::tele 1894 5333 = secret sky
+::tele 1865 5341 = recipie for desaster feast
+::tele 3424 9891 = under passage way to canfis
+::tele 3681 9889 = ecto plasm floor
+::tele 2470 9899 = under gnomes grand tree
+::tele 2319 9804 = i'bans trap drop
+::tele 2856 3809 = slippery ice path
+::tele 3551 9693 = barrows chest
+::tele 3177 9753 = under draynore mannor
+::tele 3040 9741 = faladore mining guild
+::tele 3079 9505 = toturial mining
+::tele 3110 9512 = toturial combat train
+::tele 3232 2896 = top of piramid for desert tresure
+::tele 3291 2764 = desert city
+::tele 3298 9179 = under desert city
+::tele 2861 3165 = volcano
+::tele 2863 9570 = under volcano
+::tele 2835 3268 = candor
+::tele 2766 3277 = fishing docks
+::tele 2446 10147 = daganoth cave ( go to "::tele 2446 9999" then keep walking the right direction then ul get there )
+::tele 2438 5172 = volcano lava
+::tele 2395 5154 = fight pits
+::tele 3234 9896 = wierd place
+::tele 3132 9909 = under edgevill
+::tele 3233 9313 = under piramid at acent alter
+::tele 3363 9639 = mage train up ( shapes )
+::tele 3363 9637 = mage train up ( bones )
+::tele 3365 9637 = mage train up ( alching )
+::tele 3363 2984 = a desert city
+::tele 2396 5093 = fight caves
+::tele 3559 9895 = football traning corse
+::tele 3541 9891 = jumping corse
+::tele 3528 9871 = zip line
+::tele 3539 9872 = jumping steps
+::tele 3555 9947 = cave
+::tele 2972 9507 = Under water
+::tele 2545 4715 = mage arena room
+::tele 2505 4707 = mage arena statues
+::tele 3551 9712 = barrows coffins
+::tele 2716 9816 = black king dragon
+::tele 3487 9493 = kaphite queen place
+::tele 2744 3444 = camalot flax
+::tele 2273 4695 = king black drags
+::tele 2516 4646 = daganoth quest place mother
+::tele 2121 4918 = Draynor private from map
+::tele 2142 4834 = cosmic alter
+::tele 2134 4717 = slave cages ( look up to see them,,cannot be walked on )
+::tele 2091 3210 = wierd grass land??
+
+----------------------------------------------------------------------------------------------------
+    ~~~~~~~~~~~~~~~~~~~ End ~~~~~~~~~~~~~~~~~~~
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+    ~~~~~~~~~~~~~~~~~~~ Start ~~~~~~~~~~~~~~~~~~~
+----------------------------------------------------------------------------------------------------
+Big water fall ::tele 2534,3511
+Very back of wild ::tele 3100,3957
+Varrock east bank ::tele 3250,3423
+Varrock ::tele 3210,3424
+Falador ::tele 2964,3378
+Lumbridge ::tele 3222,3218
+Camelot ::tele 2757,3477
+East Ardougne ::tele 2662,3305
+West Ardougne ::tele 2529,3307
+King Lathas Training Grounds ::tele 2516,3369
+Tree Gnome Stronghold ::tele 2461,3443
+Al Kharid ::tele 3293,3174
+Shantays Pass ::tele 3304,3116
+Kalphite Lair ::tele 3226,3107
+Pyramid ::tele 3233,2902
+Pollnivneach ::tele 3359,2910
+Menaphos/Sophanem ::tele 3274,2784
+Yanille ::tele 2606,3093
+Gul'Tanoth ::tele 2516,3044
+/* TuT Island! */
+Tutorial Island ::tele 3094,3107
+Barbarian Village ::tele 3082,3420
+Entrana ::tele 2834,3335
+Heroes Guild ::tele 2902,3510
+Rangers Guild ::tele 2658,3439
+Coal Trucks ::tele 2582,3481
+Goblin Village ::tele 2956,3506
+Druids Circle ::tele 2926,3482
+Burthorpe ::tele 2926,3559
+White wolf mountain ::tele 2848,3498
+Catherby ::tele 2813,3447
+Seers village ::tele 2708,3492
+Fishing guild ::tele 2603,3414
+Barbarian Agility Course ::tele 2541,3546
+Prifddinas ::tele 2242,3278
+Elf camp (Tirannwn) ::tele 2197,3252
+Isafdar (Tirannwn) ::tele 2241,3238
+Duel arena ::tele 3360,3213
+Desert mining camp ::tele 3286,3023
+Bedabin camp ::tele 3171,3026
+Bandit camp ::tele 3176,2987
+Sophanem ::tele 3305,2755
+Ruins of Uzer ::tele 3490,3090
+Mort'ton ::tele 3489,3288
+Canifis ::tele 3506,3496
+Port Phasmatys ::tele 3687,3502
+Fenkenstrain's castle ::tele 3550,3548
+Dig site ::tele 3354,3402
+Exam centre ::tele 3354,3344
+Edgeville ::tele 3093,3493
+Crafting guild ::tele 2933,3285
+Port Sarim ::tele 3023,3208
+Rimmington ::tele 2957,3214
+Draynor village ::tele 3093,3244
+Fight arena ::tele 2585,3150
+Tree gnome village ::tele 2525,3167
+Port Khazard ::tele 2665,3161
+Monastery ::tele 3051,3490
+Karamja ::tele 2948,3147
+Crandor ::tele 2851,3238
+King Black Dragon Lair ::tele 2717,9816
+KQ Lair ::tele 3487,9493
+Underground pass level 2 ::tele 2337,9798
+Weird water place ::tele 2676,3008
+Members Karajama ::tele 2815,3182
+Grave island ::tele 3504,3575
+HAM camp ::tele 3165,9629
+Pyramid under Sophanem ::tele 3277,9171
+Juna the snake (Press Burst of Strength a few times to get to it) ::tele 3251,9517
+Smoky tunnels/dark room (This place needs more tests) 3206,9379
+Underground pass level 1 ::tele 2495,9715
+Mage Arena ::tele 3107,3937
+Ape Atoll ::tele 2755,2784
+Jungle demon area bottom level ::tele 2714,9183
+Jungle demon area top level (use Burst of Strength) ::tele 2703,9178
+Wilderness Agility Course ::tele 3003,3934
+Keldagram ::tele 2937,9999 (and run north for a little while)
+(Alternate) Keldagram, if you tele to 2937,3763 then Press Clarity of Thought then you will be able to walk around in Keldagrim!
+Agility arena on Karamja ::tele 2761,9557
+Metal dragon dungeon (back) ::tele 2713,9459
+Metal dragon dungeon (front) ::tele 2713,9564
+Inside the desert treasure pyramid ::tele 3233,9315
+Tree gnome hanger ::tele 2390,9886
+Fishing platform ::tele 2782,3273
+Boat crash island place ::tele 2795,3321
+Legends quest jungle dungeon ::tele 2772,9341
+TzHaar ::tele 2480,5175
+Essence mine ::tele 2911,4832
+Morings end part 1 mine ::tele 2044,4649
+Dwarf cut scene meeting area ::tele 2035,4529
+New KBD lair ::tele 2273,4695
+Elven forest cut scene area ::tele 2309,4597
+Gold mine rock ::tele 2358,4959
+White knight tasks area ::tele 2443,4956
+Rouge maze (Press Burst of Strength) ::tele 3050,5071
+The shadow guys dungeon ::tele 2738,5081
+Barrows top ::tele 3564,3288
+Barrows tunnel ::tele 3568,9695 (Press Burst of Strength a few times to get to the barrows bros coffins)
+Barrows chest ::tele 3551,9694
+CW bank= 2441,3090
+CW center= 2400,3103
+Blue dragons= 2910,9801
+Black demons= 2860 9775
+Hell Hounds= 2867,9844
+Black dragons= 2829,9826
+Chaos rune crafting alter ::tele 2269,4843
+Legends dungeon prt2 ::tele 2375,4705
+Mage arena dungeon ::tele 2519,4719
+Evil Bobs island "scaperune" ::tele 2525,4776
+Distant kingdom (alive) 2576,4655
+Distant kingdom (dead) 2803,4723
+Forester random event ::tele 2602,4775
+Alt area ::tele 2527,4547
+Fremmy maze ::tele 2652,9999
+Death rune altar ::tele 2207,4836
+Cosmic alter ::tele 2162,4833
+Middle of under ground pass (Press Burst of Strength) ::tele 2168 4726
+Quiz random event ::tele 1952,4768
+Trawler boat ::tele 2013,4820
+Sunk trawler mini game boat ::tele 1951,4825
+Trawler boat empty of water ::tele 1886,4830
+Mime stage ::tele 2008,4762
+"Draynor" ::tele 2130,4913
+Game room ::tele 2196,4961
+Mind alter ::tele 2796,4818
+Air Alter ::tele 2845,4832
+Water Alter ::tele 2713,4836
+Earth Alter ::tele 2660,4839
+Fire Alter ::tele 2584,4836
+Body Alter ::tele 2527,4833
+Law Alter ::tele 2464,4834
+Nature Alter ::tele 2398,4841
+Gas hole ::tele 2464,4782
+Edge of maze ::tele 2885,4550
+Center of maze ::tele 2912,4576
+Falador mine ::tele 3038,9800
+
+
+Another Yanille -- 2929 4696 0

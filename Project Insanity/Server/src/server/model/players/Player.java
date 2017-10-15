@@ -7,7 +7,6 @@ import server.model.items.Item;
 import server.model.npcs.NPC;
 import server.model.npcs.NPCHandler;
 import server.model.perks.Perk;
-import server.model.players.skills.Smelting;
 import server.util.ISAACRandomGen;
 import server.util.Misc;
 import server.util.Stream;
@@ -17,7 +16,8 @@ public abstract class Player {
 
 	public ArrayList <String>killedPlayers = new ArrayList<String> ();
 	public ArrayList <Integer>attackedPlayers = new ArrayList<Integer> ();
-	
+
+        
 	public boolean	
 	initialized = false,
 	disconnected = false,
@@ -84,6 +84,7 @@ public abstract class Player {
 	barrageCount = 0,
 	delayedDamage = 0,
 	delayedDamage2 = 0,
+        tutorial = 0,        
 	pcPoints = 0,
 	magePoints = 0,
 	desertTreasure = 0,
@@ -105,6 +106,7 @@ public abstract class Player {
 	killCount = 0;
         public ArrayList<Perk> perks = new ArrayList<>();
 	public String clanName, properName;
+        public int skullIcon;
         public int[] stats = {1, 1, 1, 1, 1, 1, 1};
 	public int[] voidStatus = new int[5];
 	public int[] itemKeptId = new int [4]; 
@@ -122,8 +124,10 @@ public abstract class Player {
 	public boolean mageAllowed;
 	public byte poisonMask = 0;
 	public long lastLight;
+        public boolean isResting;
         public int runEnergy = 100;
         public long lastRunRecovery;
+        public boolean buildMode = false;
 	public final int[] BOWS = 	{9185,839,845,847,851,855,859,841,843,849,853,857,861,4212,4214,4215,11235,4216,4217,4218,4219,4220,4221,4222,4223,6724,4734,4934,4935,4936,4937};
 	public final int[] ARROWS = {882,884,886,888,890,892,4740,11212,9140,9141,4142,9143,9144,9240,9241,9242,9243,9244,9245};
 	public final int[] NO_ARROW_DROP = {4212,4214,4215,4216,4217,4218,4219,4220,4221,4222,4223,4734,4934,4935,4936,4937};
@@ -334,31 +338,23 @@ public abstract class Player {
 	public int actionID;
 	public int wearItemTimer, wearId, wearSlot, interfaceId;
 	public int XremoveSlot, XinterfaceID, XremoveID, Xamount;
-	
-	public int tutorial = 0;
+
+        public int hideId;
 	public boolean usingGlory = false;
 	public int[] woodcut = new int [3];
 	public int wcTimer = 0;
 	public int[] mining = new int [3];
 	public int miningTimer = 0;
 	public boolean fishing = false;
-	public int fishTimer = 0;    
-        
-        /**
-	 * Player Smelting Variables
-	 */
-	public int
-		smeltAmount = 0,smeltEventId = 5567, smeltType, //1 = bronze, 2 = iron, 3 = steel, 4 = gold, 5 = mith, 6 = addy, 7 = rune
-                smeltTimer = 0;
-	public String
-		barType = "";
-	public Smelting.Bars
-		bar = null;
-	public boolean
-		isSmelting = false;
-	public long
-		lastSmelt = 0;
-        
+	public int fishTimer = 0;
+	public int smeltType; //1 = bronze, 2 = iron, 3 = steel, 4 = gold, 5 = mith, 6 = addy, 7 = rune
+	public int smeltAmount;
+	public int smeltTimer = 0;
+        public int cookingTimer = 0;
+        public Recipe currentRecipe;
+        public int cookingOn;
+        public int cookAmount;
+        public boolean isCooking = false;
 	public boolean smeltInterface;
 	public boolean patchCleared;
 	public int[] farm = new int[2];
@@ -452,12 +448,17 @@ public abstract class Player {
 			(absX >= 2371 && absX <= 2422 && absY >= 5062 && absY <= 5117) ||
 			(absX >= 2896 && absX <= 2927 && absY >= 3595 && absY <= 3630) ||
 			(absX >= 2892 && absX <= 2932 && absY >= 4435 && absY <= 4464) ||
-			(absX >= 2256 && absX <= 2287 && absY >= 4680 && absY <= 4711)) {
+			(absX >= 2256 && absX <= 2287 && absY >= 4680 && absY <= 4711) ||
+                        (absX >= 3060 && absX <= 3064 && absY >= 3231 && absY <= 3251)) {
 			return true;
 		}
-		return false;
+            return false;
 	}
 	
+        public boolean inNPCMulti(){
+            return true;
+        }
+        
 	public boolean inFightCaves()
     {
         return absX >= 2360 && absX <= 2445 && absY >= 5045 && absY <= 5125;
@@ -778,8 +779,8 @@ public abstract class Player {
 				
 				teleportToX = teleportToY = -1;
 				didTeleport = true;
-			} else {			
-				dir1 = getNextWalkingDirection();
+			} else {
+                            dir1 = getNextWalkingDirection();
 				if(dir1 == -1) 
 					return;
 				if(isRunning) {
@@ -969,7 +970,7 @@ public abstract class Player {
 	}
 
 	public int DirectionCount = 0;
-	private boolean appearanceUpdateRequired = true;	
+	public boolean appearanceUpdateRequired = true;	
 	protected int hitDiff2;
 	private int hitDiff = 0;
 	protected boolean hitUpdateRequired2;

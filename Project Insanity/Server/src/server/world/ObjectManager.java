@@ -45,6 +45,15 @@ public class ObjectManager {
 			}	
 		}	
 	}
+        
+        public void addObject(int objId ,int x, int y) {
+		for (int j = 0; j < Server.playerHandler.players.length; j++) {
+			if (Server.playerHandler.players[j] != null) {
+				Client c = (Client)Server.playerHandler.players[j];
+				c.getPA().object(objId, x, y, 0, 10);			
+			}	
+		}	
+	}
 	
 	public void updateObject(Object o) {
 		for (int j = 0; j < Server.playerHandler.players.length; j++) {

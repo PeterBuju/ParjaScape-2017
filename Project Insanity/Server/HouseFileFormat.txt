@@ -1,0 +1,9 @@
+[VARIABLES]
+ownerName = Name
+heightLevel = Height
+allowVisitors = True/False
+[ROOMS]
+room = x	y	z	GARDEN
+[BLACKLIST]
+playerName = Name
+[EOF]

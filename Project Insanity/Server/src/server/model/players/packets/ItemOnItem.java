@@ -20,10 +20,11 @@ public class ItemOnItem implements PacketType {
                 if (Firemaking.isLog(itemUsed) && Firemaking.isTinderbox(useWith)) {
 				c.getFiremaking().lightFire(c, itemUsed, itemUsedSlot);
 			}
-		if (Firemaking.isLog(useWith) && Firemaking.isTinderbox(itemUsed)) {
+                else if (Firemaking.isLog(useWith) && Firemaking.isTinderbox(itemUsed)) {
 				c.getFiremaking().lightFire(c, useWith, c.getItems().getItemSlot(useWith));
 			}
-		UseItem.ItemonItem(c, itemUsed, useWith);
+                else
+                    UseItem.ItemonItem(c, itemUsed, useWith);
 	}
 
 }

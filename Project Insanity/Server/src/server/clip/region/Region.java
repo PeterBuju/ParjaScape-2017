@@ -6,6 +6,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.zip.GZIPInputStream;
 import server.Config;
+import server.model.players.Client;
+import server.model.players.Player;
+import server.world.TileControl;
 
 
 public class Region {
@@ -38,28 +41,28 @@ public class Region {
         return clips[height][x - regionAbsX][y - regionAbsY];
     }
 	
-    public boolean blockedNorth(int x, int y, int z) {
+    public static boolean blockedNorth(int x, int y, int z) {
     	return (getClipping(x, y + 1, z) & 0x1280120) != 0;
     }
-    public boolean blockedEast(int x, int y, int z) {
+    public static boolean blockedEast(int x, int y, int z) {
     	return (getClipping(x + 1, y, z) & 0x1280180) != 0;
     }
-    public boolean blockedSouth(int x, int y, int z) {
+    public static boolean blockedSouth(int x, int y, int z) {
     	return (getClipping(x, y - 1, z) & 0x1280102) != 0;
     }
-    public boolean blockedWest(int x, int y, int z) {
+    public static boolean blockedWest(int x, int y, int z) {
     	return (getClipping(x - 1, y, z) & 0x1280108) != 0;
     }
-    public boolean blockedNorthEast(int x, int y, int z) {
+    public static boolean blockedNorthEast(int x, int y, int z) {
     	return (getClipping(x + 1, y + 1, z) & 0x12801e0) != 0;
     }
-    public boolean blockedNorthWest(int x, int y, int z) {
+    public static boolean blockedNorthWest(int x, int y, int z) {
     	return (getClipping(x - 1, y + 1, z) & 0x1280138) != 0;
     }
-    public boolean blockedSouthEast(int x, int y, int z) {
+    public static boolean blockedSouthEast(int x, int y, int z) {
     	return (getClipping(x + 1, y - 1, z) & 0x1280183) != 0;
     }
-    public boolean blockedSouthWest(int x, int y, int z) {
+    public static boolean blockedSouthWest(int x, int y, int z) {
     	return (getClipping(x - 1, y - 1, z) & 0x128010e) != 0;
     }
 	
@@ -451,5 +454,78 @@ public class Region {
 		return null;
 	return buffer;
     }
+    
+    public static boolean pathBlocked(Client attacker, Client victim) {
+		
+		double offsetX = Math.abs(attacker.absX - victim.absY);
+		double offsetY = Math.abs(attacker.absX - victim.absY);
+		
+		int distance = TileControl.calculateDistance(attacker, victim);
+		
+		if (distance == 0) {
+			return true;
+		}
+		
+		offsetX = offsetX > 0 ? offsetX / distance : 0;
+		offsetY = offsetY > 0 ? offsetY / distance : 0;
 
+		int[][] path = new int[distance][5];
+		
+		int curX = attacker.absX;
+		int curY = attacker.absY;
+		int next = 0;
+		int nextMoveX = 0;
+		int nextMoveY = 0;
+		
+		double currentTileXCount = 0.0;
+		double currentTileYCount = 0.0;
+
+		while(distance > 0) {
+			distance--;
+			nextMoveX = 0;
+			nextMoveY = 0;
+			if (curX > victim.absX) {
+				currentTileXCount += offsetX;
+				if (currentTileXCount >= 1.0) {
+					nextMoveX--;
+					curX--;	
+					currentTileXCount -= offsetX;
+				}		
+			} else if (curX < victim.absX) {
+				currentTileXCount += offsetX;
+				if (currentTileXCount >= 1.0) {
+					nextMoveX++;
+					curX++;
+					currentTileXCount -= offsetX;
+				}
+			}
+			if (curY > victim.absY) {
+				currentTileYCount += offsetY;
+				if (currentTileYCount >= 1.0) {
+					nextMoveY--;
+					curY--;	
+					currentTileYCount -= offsetY;
+				}	
+			} else if (curY < victim.absY) {
+				currentTileYCount += offsetY;
+				if (currentTileYCount >= 1.0) {
+					nextMoveY++;
+					curY++;
+					currentTileYCount -= offsetY;
+				}
+			}
+			path[next][0] = curX;
+			path[next][1] = curY;
+			path[next][2] = attacker.heightLevel;
+			path[next][3] = nextMoveX;
+			path[next][4] = nextMoveY;
+			next++;	
+		}
+		for (int i = 0; i < path.length; i++) {
+			if (!Region.getClipping(path[i][0], path[i][1], path[i][2], path[i][3], path[i][4])) {
+				return true;	
+			}
+		}
+		return false;
+	}
 }

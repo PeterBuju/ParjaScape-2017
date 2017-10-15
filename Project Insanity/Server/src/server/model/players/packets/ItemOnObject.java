@@ -15,16 +15,16 @@ public class ItemOnObject implements PacketType {
 		/*
 		 * a = ?
 		 * b = ?
-		 */
-		
-		int a = c.getInStream().readUnsignedWord();
-		int objectId = c.getInStream().readSignedWordBigEndian();
-		int objectY = c.getInStream().readSignedWordBigEndianA();
-		int b = c.getInStream().readUnsignedWord();
-		int objectX = c.getInStream().readSignedWordBigEndianA();
-		int itemId = c.getInStream().readUnsignedWord();
-		UseItem.ItemonObject(c, objectId, objectX, objectY, itemId);
-		
+             */
+            int a = c.getInStream().readUnsignedWord();
+            int objectId = c.getInStream().readSignedWordBigEndian();
+            int objectY = c.getInStream().readSignedWordBigEndianA();
+            int b = c.getInStream().readUnsignedWord();
+            int objectX = c.getInStream().readSignedWordBigEndianA();
+            int itemId = c.getInStream().readUnsignedWord();
+            UseItem.ItemonObject(c, objectId, objectX, objectY, itemId);
+            c.objectX = objectX;
+            c.objectY = objectY;
 	}
 
 }

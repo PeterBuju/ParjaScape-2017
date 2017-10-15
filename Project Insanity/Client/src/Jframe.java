@@ -26,7 +26,7 @@ public class Jframe extends client implements ActionListener {
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 			JPopupMenu.setDefaultLightWeightPopupEnabled(false);
-			frame = new JFrame("Project Insanity");
+			frame = new JFrame("ParjaScape");
 			frame.setLayout(new BorderLayout());
 			frame.setResizable(false);
 			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -35,6 +35,7 @@ public class Jframe extends client implements ActionListener {
 			gamePanel.setLayout(new BorderLayout());
 			gamePanel.add(this);
 			gamePanel.setPreferredSize(new Dimension(765, 503));
+                        //gamePanel.setPreferredSize(new Dimension(1366, 768));
 
 			JMenu fileMenu = new JMenu("File");
 
@@ -60,7 +61,7 @@ public class Jframe extends client implements ActionListener {
 			frame.pack();
 
 			frame.setVisible(true); // can see the client
-			frame.setResizable(false); // resizeable frame
+			frame.setResizable(true); // resizeable frame
 
 			init();
 		} catch (Exception e) {

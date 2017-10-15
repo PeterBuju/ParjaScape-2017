@@ -3,6 +3,8 @@ package server.model.players.skills;
 import server.model.players.*;
 import server.Config;
 import server.util.Misc;
+import server.world.TreeManager;
+import server.model.objects.Tree;
 
 /**
 * @Author Sanity
@@ -25,6 +27,7 @@ public class Woodcutting {
 	}
 	
 	public void startWoodcutting(int logType, int levelReq, int exp) {
+            TreeManager.AddTree(c);
 		if (goodAxe() > 0) {
 			c.turnPlayerTo(c.objectX, c.objectY);
 			if (c.playerLevel[c.playerWoodcutting] >= levelReq) {
@@ -55,7 +58,7 @@ public class Woodcutting {
 	}
 	
 	public void cutWood() {
-		if (c.getItems().addItem(logType,1)) {
+		if (c.getItems().addItem(logType,1) && TreeManager.GetTree(c).CutTree()) {
 			c.startAnimation(EMOTE);
 			c.sendMessage("You get some logs.");
 			c.getPA().addSkillXP(exp * Config.WOODCUTTING_EXPERIENCE, c.playerWoodcutting);

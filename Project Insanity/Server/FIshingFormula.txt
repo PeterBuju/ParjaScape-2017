@@ -1,0 +1,8 @@
+int level = yourLevel * 2
+int required = requiredLevel
+
+if((randomFactor * level) / 3 > requiredLevel / 2) 
+addFish
+animate
+else
+animate

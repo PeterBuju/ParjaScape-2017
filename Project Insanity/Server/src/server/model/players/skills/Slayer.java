@@ -39,7 +39,7 @@ public class Slayer {
 	public void giveTask2() {
 		for (int j = 0; j < lowTasks.length; j++) {
 			if (lowTasks[j] == c.slayerTask) {
-				c.sendMessage("You already have an easy task... to kill " + c.taskAmount + " " + Server.npcHandler.getNpcListName(c.slayerTask) + ".");
+				c.sendMessage("You already have an easy task... to kill " + c.taskAmount + " " + Server.npcHandler.getDBNpcName(c.slayerTask) + ".");
 				return;		
 			}	
 		}
@@ -65,7 +65,7 @@ public class Slayer {
 		}
 		c.slayerTask = given;
 		c.taskAmount = Misc.random(15) + 15;
-		c.sendMessage("You have been assigned to kill " + c.taskAmount + " " + Server.npcHandler.getNpcListName(given) + " as a slayer task.");
+		c.sendMessage("You have been assigned to kill " + c.taskAmount + " " + Server.npcHandler.getDBNpcName(given) + " as a slayer task.");
 	}
 	
 	public boolean canDoTask(int taskLevel, int random) {

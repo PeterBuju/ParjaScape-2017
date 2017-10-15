@@ -2281,8 +2281,8 @@ public class CombatAssistant{
 			}
 		}
 		
-		if(Config.SINGLE_AND_MULTI_ZONES) {
-			if(!Server.playerHandler.players[c.playerIndex].inMulti()) {	// single combat zones
+		if(Config.SINGLE_AND_MULTI_ZONES) {                   
+			if(!Server.playerHandler.players[c.playerIndex].inNPCMulti()) {	// single combat zones
 				if(Server.playerHandler.players[c.playerIndex].underAttackBy != c.playerId  && Server.playerHandler.players[c.playerIndex].underAttackBy != 0) {
 					c.sendMessage("That player is already in combat.");
 					c.stopMovement();

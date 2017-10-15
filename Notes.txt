@@ -1,0 +1,173 @@
+---Player options---
+c.getDH().sendOption4(string, string, string, string);
+c.getPA().movePlayer(int,int,int) // TELEPORT
+c.getPA().walkTo(int,int) // Walk
+Player.player(); // CONSTRUCTOR
+
+---Commands.java---
+player commands
+
+
+---Issues---
+Starter pack items given every login
+Follow doesn't consider obstacles (noclip)
+
+
+*Critical strike only against NPCs
+-Combat Handler la attackplayer
+
+*Fix running when 0%
+
+
+*NPCs 
+-In isAggressive() se poate seta daca un npc e aggresive. Aici ar trebui puse
+-grouping (cand ataci un npc, te ataca tot grupul)
+-salvez npc description din spawn-config intr-o lista de clasa NPCGroup
+-la NPCHandler.process(), verific cand un NPC este atacat de un player, caut unde
+NPCGroup.name == npc.description, si acolo fac NPCGroup.attackerId == c.id, iar apoi pentru fiecare
+npc care are npc.description == NPCGroup.name, pun npc.attackerId == c.id
+Seteaza la inceputul NPCHandler.process() NPCGroup.attackerID = -1, pentru a reseta aggro-ul iar apoi in
+cod valoarea se seteaza din nou daca e cazul
+ERROR CombatAssistant:45, CombatAssistant:52, NPCHandler:960, HPCHandler:988
+Npc-ii nu pot ataca mai multi acelasi target, si daca opresc check-urile, npc-ii nu mai urmaresc playerul
+si reseteaza aggro-ul
+-clipped random movement --------done
+-NPC detection system
+-NPC multi-zone
+-Am modificat in Player.java, metoda inMulti();
+-NPCLoader incarca intr-o baza de date toti npc-ii cu id si animatii --------done
+-Program de adaugat spawn si de modificat baza de date de npc ------------done
+-NPC facingplayer() cauta daca NPC se uita la player --------------done
+-NPC ataca de la distanta mai mare daca se uita la lupta -----------done
+-Lista de atacatori in loc de un singur atacator --------------done
+-Functie speciala care muta prioritatea aggro pe un anumit player --------done
+-Aggro-ul se seteaza acum din NPCGroupHandler.GetAttacker() care cauta un atacator in functie de cat de proximitate
+si prioritate
+
+*Smelting
+-fix cand smelt-uieste mai multe decat trebuie, posibil, dupa smelting trebuie pus smeltinterface = false; ---------done
+-fix pentru celelalte butoane de smelting (x5, x10) ----------done
+-smeltinterface ramane false pana te misti in jurul furnace. trebuie pus undeva true si nu merge -------done
+-fix sa faca animatia cand face smelting ---------done
+
+*Modifica engine sa fie cycle-event based!!!!!!!!!!!!!!!!!!!!!
+-adauga cycle based event system handler -------done
+-modifica functiile sa foloseasca handler-ul
+
+*Firemaking
+-fix sa faca animatia la firemaking ----------done
+-fix sa nu poti face fire/fire
+-animatie dependenta de lvl (ar trebui pus un contor in client.process() si se decrementeaza si apoi
+ii apelata animatia de idle)
+-fire-ul dupa ceva vreme sa devina ashes (o clasa fire instantiabile, iar in firemaking sa fie o lista
+de obiecte fire. Clasa sa contina id, x, y, time, creator. -------done
+-O functie in firemaking care sa treaca prin lista de fire sa vada ce foc ar trebui transformat in ashes ----done
+-Focurile sunt acum globale, nu doar pe clientul care le face
+-Limita maxima de focuri ----done
+-Focurile sa dureze in functie logs used
+
+*Sound System
+-adauga sounds    --------done
+-adauga sounds la actiuni
+
+*Music system
+-adauga music     ---------done
+-fix cand folosesti comanda de play music sa nu dea crash clientul
+
+*Commands
+-adauga comanda de help globala	---------done
+
+*Resting
+Resting.startResting(c);
+
+*Cooking
+-am refacut clasa de cooking
+-am creat un obiect numite Recipe care contine datele necesare pentru cooking
+-am facut o functie cook() care este apelata din client.process si animeaza si gateste pestii. Aproape identic cu OSRS
+-de modificat sansa de a arde mancarea
+-de adaugat mai multe tipuri de alimente
+-de modificat sansa de a arde ceva atunci cand porti manusi sau cooking cape
+-Recipes se incarca in RecipeManager.Recipes din fisierul cooking.cfg
+
+*Fishing
+-am adaugat emotes pentru fishing	----------done
+-trebuie verificat daca animatia merge in continuu, daca nu trebuie facuta o metoda recursiva 
+de fishing care sa tot apeleze animatia	--------done
+-respawn-ul sa pozitioneze fish banks intr-o zona apropiata cu zone de inainte, si sa nu depaseasca
+o anumita distanta de zona initiala	------------done
+-sa detectez unde este apa si sa pozitionez fishing banks
+-o formula poate fi (if (getClipping(N||S||E||V al noii zone) == true) atunci inseamna ca exista land
+chiar langa noua pozitie, deci pozitia e buna	-----------done
+-de modificat animatiile pentru fiecare tip de fishing pt fiecare id
+
+
+*Fix pentru monster drops
+
+*Mining
+-de facut ceva asemanator cu firemaking	----done
+-atunci cand cinva mineaza de undeva, salvez obiectul minat intr-o lista in MineManager	------done
+-intreup playerul din mining	------done
+-transform rocile in used	-------done
+-in MineManager am un ciclu care trece prin toate obiectele din lista	------done
+-dupa un timp, reseteaza obiectul minat	-------done
+-de facut o clasa Rock cu posX, posY, id-ul obiectului initial, id-ul obiectului used, isUsed, respawnTimer	-------done
+-rocile sunt adaugate automat in lista in momentul in care sunt folosite prima data de catre oricare player	-------done
+-rocile sunt scoase din lista daca nu au mai fost folosite de 60 secunde	-----done
+-cand sunt eliminate din lista, rocile sa fie prima oara respawnate	----------done
+-mining duration sa depinda de roca si de mininglvl-ul playerului (mining - reqlvl + base mining time)
+
+
+*WoodCutting
+-de facut asemanator cu Mining	-------done
+-WoodcuttingManager	---------done
+-Tree cu posX, posY, initial obj id, used obj id, isUsed, respawnTime	--------done
+-FIX PENTRU CA RESPAWN TIME-UL PENTRU OBIECTE SA FIE IN CONFIG.JAVA
+-ceva asemanator cu mining duration
+
+
+*BASE OBJECT!!!!!!!!!!!!!!!!!
+-o clasa base object din care sa se extinda clasele Fire, Tree si Rock	----------done
+
+*Clipping
+-Region.clipping pentru a obtine clipping-ul
+-Player following si npc following e clipped acum (are cateva buguri cand mai trece prin pereti) unknown ----- done
+
+*Fishing
+-sa faca clipping in jurul ei, si daca undeva se poate umbla, inseamna ca acolo este terrain deci se poate 
+aseza langa terrain --------done
+-sa incerce sa se respawneze undeva in jurul pozitiei initiale, la o distanta maxima de 2 -----done
+-sa verifice daca pe locul ales exista deja un alt fishbank ---------done
+-in loc de despawn/respawn sa fie doar teleport in alt loc. Pozitia se schimba odata la 60 secunde
+ (5 pt debugging) ------done
+
+*WeatherSystem
+-Snow interface id 11877
+-Harta impartita pe regiuni
+-Regiunile sa aiba o lista de Weathers
+-Cand trece playerul de la o regiune la alta sa schimbe overlay-ul
+-Random sansa de evenimente de weather
+
+*Weather
+-Clasa ce reprezinta vremea
+-O metoda care sa afiseze interfata de vreme/overlay
+-Diverse bonusuri in functie de weather
+
+
+*Houses
+-atunci cand un user isi schimba username-ul, sa se reactualizeze lista de blocked din house cu numele
+actual
+-cand playerul se delogheaza, sa fie returnat la locatia initiala, oldLocation[0] = x, oldLocation[1] = y
+oldLocation[2] = height
+-implementarea packetului 228 ----------done
+-sa fac ca house loading sa incarce si obiectele cum trebuie	---------done
+-build pe o usa face ca sa se spawneze o alta camera acolo -------done
+-cand se reincarca casa, locatia playerului ramane ------------done
+-de facut interfata pentru casa
+-de adaugat la lista de obiecte ce se pot transforma
+-de sters obiectele albe cat timp playerul nu e in build mode
+
+
+*DialogueSystem
+-rescrie un base pentru dialog
+-de facut o aplicatie care sa poate crea dialoguri
+-dialogurile citite din fisiere json/xml/etc..

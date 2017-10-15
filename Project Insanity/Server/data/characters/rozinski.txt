@@ -1,0 +1,125 @@
+[ACCOUNT]
+character-username = rozinski
+character-password = 
+
+[PERKS]
+[STATS]
+wisdom = 1
+constitution = 1
+speed = 1
+endurance = 1
+intelligence = 1
+dexterity = 1
+charisma = 1
+[CHARACTER]
+character-tutorial=1
+run-energy = 100
+character-height = 0
+character-posx = 3262
+character-posy = 3234
+character-rights = 0
+crystal-bow-shots = 0
+skull-timer = 0
+magic-book = 0
+brother-info = 0	0
+brother-info = 1	0
+brother-info = 2	0
+brother-info = 3	0
+brother-info = 4	0
+brother-info = 5	0
+special-amount = 10.0
+selected-coffin = 0
+barrows-killcount = 0
+teleblock-length = 0
+pc-points = 0
+slayerTask = 0
+taskAmount = 0
+magePoints = 0
+autoRet = 1
+barrowskillcount = 0
+flagged = false
+wave = 0
+gwkc = 0
+fightMode = 0
+void = 0	0	0	0	0
+
+[EQUIPMENT]
+character-equip = 0	-1	1	
+character-equip = 1	-1	1	
+character-equip = 2	-1	1	
+character-equip = 3	1277	1	
+character-equip = 4	-1	1	
+character-equip = 5	1171	1	
+character-equip = 6	-1	0	
+character-equip = 7	-1	1	
+character-equip = 8	-1	0	
+character-equip = 9	-1	1	
+character-equip = 10	-1	1	
+character-equip = 11	-1	0	
+character-equip = 12	-1	1	
+character-equip = 13	882	21	
+
+[LOOK]
+character-look = 0	0
+character-look = 1	3
+character-look = 2	21
+character-look = 3	26
+character-look = 4	33
+character-look = 5	36
+character-look = 6	42
+character-look = 7	14
+character-look = 8	3
+character-look = 9	0
+character-look = 10	0
+character-look = 11	0
+character-look = 12	0
+
+[SKILLS]
+character-skill = 0	5	432
+character-skill = 1	1	0
+character-skill = 2	1	64
+character-skill = 3	11	1427
+character-skill = 4	1	12
+character-skill = 5	0	10
+character-skill = 6	1	0
+character-skill = 7	13	2100
+character-skill = 8	21	5424
+character-skill = 9	1	0
+character-skill = 10	23	6300
+character-skill = 11	13	2000
+character-skill = 12	1	0
+character-skill = 13	1	75
+character-skill = 14	10	1188
+character-skill = 15	1	0
+character-skill = 16	1	0
+character-skill = 17	1	0
+character-skill = 18	1	0
+character-skill = 19	1	0
+character-skill = 20	1	0
+character-skill = 21	1	0
+character-skill = 22	1	0
+character-skill = 23	1	0
+character-skill = 24	1	0
+
+[ITEMS]
+character-item = 0	1266	1
+character-item = 1	591	1
+character-item = 2	304	1
+character-item = 3	842	1
+character-item = 4	1352	1
+
+[BANK]
+character-bank = 0	316	100
+character-bank = 1	437	82
+character-bank = 2	439	31
+character-bank = 3	1620	1
+character-bank = 4	1622	2
+character-bank = 5	1512	18
+character-bank = 6	1522	15
+character-bank = 7	1352	1
+character-bank = 8	2350	1
+
+[FRIENDS]
+
+[EOF]
+

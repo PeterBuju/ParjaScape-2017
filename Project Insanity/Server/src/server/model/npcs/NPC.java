@@ -254,7 +254,7 @@ public class NPC {
 		return absY;
 	}
 	
-	public boolean inMulti() {
+	public boolean inMulti() {/*
 		if((absX >= 3136 && absX <= 3327 && absY >= 3519 && absY <= 3607) || 
 			(absX >= 3190 && absX <= 3327 && absY >= 3648 && absY <= 3839) ||  
 			(absX >= 3200 && absX <= 3390 && absY >= 3840 && absY <= 3967) || 
@@ -270,7 +270,8 @@ public class NPC {
 			(absX >= 2256 && absX <= 2287 && absY >= 4680 && absY <= 4711)) {
 			return true;
 		}
-		return false;
+		return false;*/
+            return true;
 	}
 	
 	public boolean inWild() {

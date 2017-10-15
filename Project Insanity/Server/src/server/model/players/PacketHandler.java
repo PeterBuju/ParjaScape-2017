@@ -1,5 +1,6 @@
 package server.model.players;
 
+import server.content.ConstructionPacket;
 import server.model.players.packets.AttackPlayer;
 import server.model.players.packets.Bank10;
 import server.model.players.packets.Bank5;
@@ -124,6 +125,7 @@ public class PacketHandler{
 		packetId[121] = cr;
 		packetId[210] = cr;
 		packetId[60] = new ClanChat();
+                packetId[228] = new ConstructionPacket();
 	}
 
 

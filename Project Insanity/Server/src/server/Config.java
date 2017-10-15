@@ -19,7 +19,11 @@ public class Config {
 	
 	public static final int CONNECTION_DELAY = 100; // how long one ip can keep connecting
 	public static final int IPS_ALLOWED = 3; // how many ips are allowed
-		
+        
+        public static final int IdleEmote = 65535;
+        
+        public static final boolean SOUND = true;
+        
 	public static final boolean WORLD_LIST_FIX = false; // change to true if you want to stop that world--8 thing, but it can cause the screen to freeze on silabsoft client
 	
 	public static final int[] ITEM_SELLABLE 		=	{3842,3844,3840,8844,8845,8846,8847,8848,8849,8850,10551,6570,7462,7461,7460,7459,7458,7457,7456,7455,7454,8839,8840,8842,11663,11664,11665,10499,
@@ -41,8 +45,8 @@ public class Config {
 	public static final boolean ADMIN_CAN_SELL_ITEMS = false; // can admins sell items?
 	public static final boolean ADMIN_DROP_ITEMS = false; // can admin drop items?
 	
-	public static final int START_LOCATION_X = 2640; // start here
-	public static final int START_LOCATION_Y = 4686;
+        public static final int START_LOCATION_X = 3094; // start here
+	public static final int START_LOCATION_Y = 3107;
         public static final int START_HEIGHT = 1;
 	public static final int RESPAWN_X = 3087; // when dead respawn here
 	public static final int RESPAWN_Y = 3500;
@@ -59,6 +63,9 @@ public class Config {
         public static final int INTELLIGENCE_MULTIPLIER = 1;
         public static final int CHARISMA_MULTIPLIER = 1;
         
+        //FISHING RESPAWN TIMERS (IN SECONDS)
+        public static final int MINRESPAWNTIME = 60;
+        public static final int MAXRESPAWNTIME = 300;
         
 	public static final int NO_TELEPORT_WILD_LEVEL = 20; // level you can't tele on and above
 	public static final int SKULL_TIMER = 1200; // how long does the skull last? seconds x 2

@@ -33,37 +33,32 @@ public class Smithing {
 	}
 	
 	public void sendSmelting() {
+                //c.forcedChat("Smelting");
+                c.smeltInterface = true;
 		for (int j = 0; j < SMELT_FRAME.length; j++) {
 			c.getPA().sendFrame246(SMELT_FRAME[j], 150, SMELT_BARS[j]);
 		}
-                if (Config.SERVER_DEBUG)
-                    c.sendMessage("Smelting Interface");
-		c.getPA().sendFrame164(2400);
-		c.smeltInterface = true;	
+		c.getPA().sendFrame164(2400);	
 	}
 	
 	public void startSmelting(int barType) {
 		if (canSmelt(barType)) {
-                    if (Config.SERVER_DEBUG)
-			c.sendMessage("We canSmelt");
+			//c.sendMessage("We canSmelt");
 			if (hasOres(barType)) {
-                            if (Config.SERVER_DEBUG)
-				c.sendMessage("We have ores");
+				//c.sendMessage("We have ores");
 				this.exp = getExp(barType);
 				this.oreId = getOre(barType);
 				this.oreId2 = getOre2(barType);
 				this.barId = barType;
-				c.smeltAmount = c.getItems().getItemAmount(getOre(barType));
+				//c.smeltAmount = c.getItems().getItemAmount(getOre(barType));
 				smelt(barType);		
 			} else {
 				c.sendMessage("You do not have the required ores to smelt this.");
 				c.getPA().resetVariables();
-                                c.smeltInterface = false;
 			}
 		} else {
 			c.sendMessage("You must have a higher smithing level to smith this.");
 			c.getPA().resetVariables();
-                        c.smeltInterface = false;
 		}
 	}
 	
@@ -77,12 +72,15 @@ public class Smithing {
 				c.getItems().addItem(barId,1);
 				c.getPA().addSkillXP(exp * Config.SMITHING_EXPERIENCE, c.playerSmithing);
 				c.getPA().refreshSkill(c.playerSmithing);
+                                //c.sendMessage(""+ c.smeltAmount);
 				c.smeltAmount--;
 				c.smeltTimer = 1;
+                                c.startAnimation(899);
+                                c.getPA().sendSound(2725, 100, 0);
 			} else {
 				c.sendMessage("You do not have the required ores to smelt this.");
+                                c.smeltAmount = 0;
 				c.getPA().removeAllWindows();
-                                c.smeltInterface = false;
 			}
 		} else {
 			c.getPA().resetVariables();

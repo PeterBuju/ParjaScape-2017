@@ -1,9 +1,12 @@
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
 // Decompiled by Jad v1.5.8f. Copyright 2001 Pavel Kouznetsov.
 // Jad home page: http://www.kpdus.com/jad.html
 // Decompiler options: packimports(3) 
 
-public final class RSInterface {
-
+public final class RSInterface{
     /*public static void grandExchangeBuyTab(TextDrawingArea[] tda) {
         RSInterface tab = addTabInterface(7500);     
    
@@ -291,7 +294,7 @@ public final class RSInterface {
 		clanChatTab(textDrawingAreas);
 		Sidebar0(textDrawingAreas);
 		friendsTab(textDrawingAreas);
-        ignoreTab(textDrawingAreas);
+                ignoreTab(textDrawingAreas);
 		Pestpanel(textDrawingAreas);
 		Pestpanel2(textDrawingAreas);
 		equipmentScreen(textDrawingAreas);

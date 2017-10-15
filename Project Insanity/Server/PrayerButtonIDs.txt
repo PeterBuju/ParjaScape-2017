@@ -1,0 +1,27 @@
+1562 - Protect mage
+1564 - Protect missles
+1566 - Protect melee
+1578 - Protect Summoning
+1572 - Retribution
+1574 - Redemption
+1576 - Smite
+1580 - Chivalry
+1582 - Piety
+1530 - Thick Skin
+1532 - Burst of strength
+1534 - Clarity of thought
+1536 - Sharp eye
+1538 - Mystic will
+1540 - Rock skin
+1542 - Superhuman strength
+1544 - Improved reflexes
+1546 - Rapid restore
+1548 - Rapid heal
+1550 - Protect item
+1552 - Hawk eye
+1554 - Mystic lore
+1556 - Steel Skin
+1558 - Ultimate strength
+1560 - Incredible reflexes
+1568 - Eagle eye
+1570 - Mystic might

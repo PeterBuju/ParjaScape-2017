@@ -101,7 +101,7 @@ public class RS2LoginProtocolDecoder extends CumulativeProtocolDecoder {
 						}
 						if((in.get() & 0xff) != 10) {
 							System.out.println("Encrypted id != 10.");
-							session.close();
+                                                        session.close();
 							return false;
 						}
 						long clientSessionKey = in.getLong();
