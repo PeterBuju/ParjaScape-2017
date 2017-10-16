@@ -5,6 +5,7 @@
  */
 package server.model.npcs;
 import java.util.ArrayList;
+import java.util.Random;
 import server.Server;
 import server.model.npcs.NPCGroup;
 import static server.model.npcs.NPCHandler.npcs;
@@ -16,12 +17,15 @@ import server.util.Misc;
  */
 public class NPCGroupHandler {
     public static ArrayList<NPCGroup> Groups = new ArrayList<>();
+    static Random rnd = new Random();
+    static ArrayList<Attacker> toRemove = new ArrayList<>();
+    public static int removeAttacker = 30;
     
     public static void Process(){
         for(NPCGroup group : Groups){
             for(Attacker attacker : group.attackers){
-                if(System.currentTimeMillis() - attacker.timer > 5000){
-                    group.removeAttacker(attacker);
+                if(System.currentTimeMillis() - attacker.timer > removeAttacker * 1000){
+                    toRemove.add(attacker);
                 }
                 if(System.currentTimeMillis() - attacker.priorityTimer > attacker.priorityDuration){
                     attacker.priority--;
@@ -33,6 +37,10 @@ public class NPCGroupHandler {
                         attacker.priorityDuration = 0;
                     }
                 }
+            }
+            if (toRemove.size() > 0) {
+                for (Attacker attacker : toRemove)
+                    group.removeAttacker(attacker);
             }
         }
     }
@@ -92,29 +100,39 @@ public class NPCGroupHandler {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        if (hasAttackers) {
-            ArrayList<Attacker> toRemove = new ArrayList<>();
-            int minimumProximity = GetProximity(npc, (Client) Server.playerHandler.players[possibleTargets.get(0).id]) - possibleTargets.get(0).priority;
-            for (Attacker attacker : possibleTargets) {
-                if (minimumProximity > GetProximity(npc, (Client) Server.playerHandler.players[attacker.id]) - attacker.priority) {
-                    minimumProximity = GetProximity(npc, (Client) Server.playerHandler.players[attacker.id]) - attacker.priority;
+        try {
+            if (hasAttackers) {
+                ArrayList<Attacker> toRemove = new ArrayList<>();
+                int minimumProximity = GetProximity(npc, (Client) Server.playerHandler.players[possibleTargets.get(0).id]) - possibleTargets.get(0).priority;
+                for (Attacker attacker : possibleTargets) {
+                    if (minimumProximity > GetProximity(npc, (Client) Server.playerHandler.players[attacker.id]) - attacker.priority) {
+                        minimumProximity = GetProximity(npc, (Client) Server.playerHandler.players[attacker.id]) - attacker.priority;
+                    }
                 }
-            }
-            for (Attacker attacker : possibleTargets) {
-                if (GetProximity(npc, (Client) Server.playerHandler.players[attacker.id]) - attacker.priority > minimumProximity) {
-                    toRemove.add(attacker);
+                for (Attacker attacker : possibleTargets) {
+                    if (GetProximity(npc, (Client) Server.playerHandler.players[attacker.id]) - attacker.priority > minimumProximity) {
+                        toRemove.add(attacker);
+                    }
                 }
+                for (Attacker attacker : toRemove) {
+                    possibleTargets.remove(attacker);
+                }
+                if (possibleTargets.size() >= 1) {
+                    int chosen = (int)Math.random() * possibleTargets.size();
+                    return possibleTargets.get(chosen);
+                }
+                else {
+                    return null;
+                }
+            } else {
+                return null;
             }
-            for (Attacker attacker : toRemove) {
-                possibleTargets.remove(attacker);
-            }
-            return possibleTargets.get(Misc.random(possibleTargets.size() - 1));
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        else{
-            return null;
-        }
+        return null;
     }
-    
+
     static int GetProximity(NPC npc, Client client){
         int proximity = -1;
         int prox, proy;

@@ -8,6 +8,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import server.Config;
 import server.Server;
+import server.model.npcs.NPCGroup;
 import server.model.npcs.NPCGroupHandler;
 import server.model.npcs.NPCHandler;
 import server.model.players.Client;
@@ -49,8 +50,10 @@ public class NpcCommands {
             if (NPCGroupHandler.Groups.size() == 0) {
                 c.sendMessage("No groups");
             }
-            for (int i = 0; i <= NPCGroupHandler.Groups.size(); i++) {
-                c.sendMessage(i + " : " + NPCGroupHandler.Groups.get(i).getName() + " - " + NPCGroupHandler.Groups.get(i).getAttackerId());
+            for (NPCGroup group : NPCGroupHandler.Groups) {
+                for (server.model.npcs.Attacker attacker : group.attackers) {
+                    c.sendMessage(group.getName() + " -> " + attacker.id);
+                }
             }
         } else if (args[0].equalsIgnoreCase("npcs")) {
             int npcs = 1;

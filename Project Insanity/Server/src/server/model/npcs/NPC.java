@@ -80,10 +80,10 @@ public class NPC {
 	**/	
 	
 	public int mask80var1 = 0;
-    public int mask80var2 = 0;
-    protected boolean mask80update = false;
+        public int mask80var2 = 0;
+        protected boolean mask80update = false;
 	
-    public void appendMask80Update(Stream str) {
+        public void appendMask80Update(Stream str) {
 		str.writeWord(mask80var1);
 	    str.writeDWord(mask80var2);
     }

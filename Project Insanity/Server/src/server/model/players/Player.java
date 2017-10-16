@@ -436,6 +436,7 @@ public abstract class Player {
 	}
 	
 	public boolean inMulti() {
+            /*
 		if((absX >= 3136 && absX <= 3327 && absY >= 3519 && absY <= 3607) || 
 			(absX >= 3190 && absX <= 3327 && absY >= 3648 && absY <= 3839) ||  
 			(absX >= 3200 && absX <= 3390 && absY >= 3840 && absY <= 3967) || 
@@ -452,7 +453,8 @@ public abstract class Player {
                         (absX >= 3060 && absX <= 3064 && absY >= 3231 && absY <= 3251)) {
 			return true;
 		}
-            return false;
+            return false;*/
+            return true;
 	}
 	
         public boolean inNPCMulti(){

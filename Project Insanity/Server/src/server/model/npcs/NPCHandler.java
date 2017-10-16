@@ -18,6 +18,7 @@ import server.event.Event;
 import server.event.EventContainer;
 import server.clip.region.Region;
 import server.model.objects.FishBank;
+import server.model.players.Player;
 import server.world.FishBankManager;
 
 public class NPCHandler {
@@ -983,13 +984,48 @@ public class NPCHandler {
                     npcs[i].underAttackBy = 0;
                 }
 
+                try {
+                    if ((npcs[i].killerId > 0 || npcs[i].underAttack) && !npcs[i].walkingHome && retaliates(npcs[i].npcType)) {
+                        if (!npcs[i].isDead) {
+                            int p = npcs[i].killerId;
+                            if (Server.playerHandler.players[p] != null) {
+                                Client c = (Client) Server.playerHandler.players[p];
+                                followPlayer(i, c.playerId);
+                                if (npcs[i] == null) {
+                                    continue;
+                                }
+                                if (npcs[i].attackTimer == 0 && !npcs[i].isDead) {
+                                    if (c != null) {
+                                        NPCGroup group = NPCGroupHandler.GetGroup(npcs[i].description);
+                                        if (group != null) {
+                                            NPCGroupHandler.AddAtacker(group.getName(), c.playerId);
+                                        }
+                                        attackPlayer(c, i);
+                                    } else {
+                                        npcs[i].killerId = 0;
+                                        npcs[i].underAttack = false;
+                                        npcs[i].facePlayer(0);
+                                    }
+                                }
+                            } else {
+                                npcs[i].killerId = 0;
+                                npcs[i].underAttack = false;
+                                npcs[i].facePlayer(0);
+                            }
+                        }
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                
                 //AGGRO PLAYER
-                if (!npcs[i].description.equalsIgnoreCase("") && npcs[i].description != null) {
+                if (!npcs[i].description.equalsIgnoreCase("") && npcs[i].description != null &&!npcs[i].underAttack) {
                     try {
                         if (NPCGroupHandler.ContainsGroup(npcs[i].description)) {
                             NPCGroup group = NPCGroupHandler.GetGroup(npcs[i].description);
                             Attacker attacker = NPCGroupHandler.GetAttacker(group, npcs[i]);
                             if (attacker != null) {
+                                //Misc.println(npcs[i].description + " -> " + attacker.id);
                                 if (goodDistance(npcs[i].absX, npcs[i].absY, Server.playerHandler.players[attacker.id].absX, Server.playerHandler.players[attacker.id].absY, 3)) {
                                     npcs[i].killerId = attacker.id;
                                     npcs[i].underAttack = true;
@@ -1000,37 +1036,6 @@ public class NPCHandler {
                         }
                     } catch (Exception e) {
                         e.printStackTrace();
-                    }
-                }
-
-                
-                if ((npcs[i].killerId > 0 || npcs[i].underAttack) && !npcs[i].walkingHome && retaliates(npcs[i].npcType)) {
-                    if (!npcs[i].isDead) {
-                        int p = npcs[i].killerId;
-                        if (Server.playerHandler.players[p] != null) {
-                            Client c = (Client) Server.playerHandler.players[p];
-                            followPlayer(i, c.playerId);
-                            if (npcs[i] == null) {
-                                continue;
-                            }
-                            if (npcs[i].attackTimer == 0) {
-                                if (c != null) {
-                                    NPCGroup group = NPCGroupHandler.GetGroup(npcs[i].description);
-                                    if (group != null) {
-                                        NPCGroupHandler.AddAtacker(group.getName(), c.playerId);
-                                    }
-                                    attackPlayer(c, i);
-                                } else {
-                                    npcs[i].killerId = 0;
-                                    npcs[i].underAttack = false;
-                                    npcs[i].facePlayer(0);
-                                }
-                            }
-                        } else {
-                            npcs[i].killerId = 0;
-                            npcs[i].underAttack = false;
-                            npcs[i].facePlayer(0);
-                        }
                     }
                 }
                 /**
@@ -1059,74 +1064,6 @@ public class NPCHandler {
                     }
                     if (npcs[i].walkingType == 1) {
                         if (Misc.random(3) == 1 && !npcs[i].walkingHome) {
-                            /*
-							int MoveX = 0;
-							int MoveY = 0;			
-							int Rnd = Misc.random(9);
-							if (Rnd == 1) {
-								MoveX = 1;
-								MoveY = 1;
-							} else if (Rnd == 2) {
-								MoveX = -1;
-							} else if (Rnd == 3) {
-								MoveY = -1;
-							} else if (Rnd == 4) {
-								MoveX = 1;
-							} else if (Rnd == 5) {
-								MoveY = 1;
-							} else if (Rnd == 6) {
-								MoveX = -1;
-								MoveY = -1;
-							} else if (Rnd == 7) {
-								MoveX = -1;
-								MoveY = 1;
-							} else if (Rnd == 8) {
-								MoveX = 1;
-								MoveY = -1;
-							}
-										
-							if (MoveX == 1) {
-								if (npcs[i].absX + MoveX < npcs[i].makeX + 1) {
-									npcs[i].moveX = MoveX;
-								} else {
-									npcs[i].moveX = 0;
-								}
-							}
-							
-							if (MoveX == -1) {
-								if (npcs[i].absX - MoveX > npcs[i].makeX - 1)  {
-									npcs[i].moveX = MoveX;
-								} else {
-									npcs[i].moveX = 0;
-								}
-							}
-							
-							if(MoveY == 1) {
-								if(npcs[i].absY + MoveY < npcs[i].makeY + 1) {
-									npcs[i].moveY = MoveY;
-								} else {
-									npcs[i].moveY = 0;
-								}
-							}
-							
-							if(MoveY == -1) {
-								if(npcs[i].absY - MoveY > npcs[i].makeY - 1)  {
-									npcs[i].moveY = MoveY;
-								} else {
-									npcs[i].moveY = 0;
-								}
-							}
-								
-                                                        
-							int x = (npcs[i].absX + npcs[i].moveX);
-							int y = (npcs[i].absY + npcs[i].moveY);
-							if (VirtualWorld.I(npcs[i].heightLevel, npcs[i].absX, npcs[i].absY, x, y, 0))
-								npcs[i].getNextNPCMovement(i);
-							else
-							{
-								npcs[i].moveX = 0;
-								npcs[i].moveY = 0;
-							} */
                             npcs[i].moveX = GetMove(npcs[i].absX, npcs[i].absX + (Misc.random(2) - 1));
                             npcs[i].moveY = GetMove(npcs[i].absY, npcs[i].absY + (Misc.random(2) - 1));
                             handleClipping(i);
@@ -2294,6 +2231,7 @@ public class NPCHandler {
     
     public boolean facingPlayer(NPC npc, Client c){
         double direction = Misc.direction(npc.absX, npc.absY, c.absX, c.absY);
+        c.sendMessage(direction + "");/*
         if (npc.absY < c.absY){ //PLAYER IS NORTHERN
             if (npc.absX == c.absX){ //PLAYER IS TO NORTH
                 if (direction == 15 || direction == 0 || direction == 1){
@@ -2344,7 +2282,16 @@ public class NPCHandler {
                     return true;
                 }
             }
+        }*/
+        switch((int)direction){
+            case 10:
+            case 9:
+            case 8:
+            case 7:
+            case 6:
+                return true;
+            default:
+                return false;
         }
-        return false;
     }
 }
