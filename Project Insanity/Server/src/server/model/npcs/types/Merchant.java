@@ -5,18 +5,18 @@
  */
 package server.model.npcs.types;
 
-import server.model.npcs.NPCGroup;
+import java.util.ArrayList;
+import server.model.items.Item;
 
 /**
  *
  * @author amaco
  */
-public class BaseNPC {
-    	public boolean randomWalk, aggressive, retaliates;
-        public int uId, typeId;
-        public NPCGroup group;
-        
-        public void process(){
-            
-        }
+public class Merchant extends Greeter{
+    ArrayList<Item> inventory = new ArrayList<>();
+    
+    @Override
+    public void process(){
+        super.process();
+    }
 }

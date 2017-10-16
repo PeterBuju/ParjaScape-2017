@@ -5,18 +5,14 @@
  */
 package server.model.npcs.types;
 
-import server.model.npcs.NPCGroup;
-
 /**
  *
  * @author amaco
  */
-public class BaseNPC {
-    	public boolean randomWalk, aggressive, retaliates;
-        public int uId, typeId;
-        public NPCGroup group;
-        
-        public void process(){
-            
-        }
+public class Banker extends Greeter{
+    
+    @Override
+    public void process(){
+        super.process();
+    }
 }

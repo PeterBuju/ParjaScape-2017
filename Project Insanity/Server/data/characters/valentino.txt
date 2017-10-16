@@ -13,10 +13,10 @@ dexterity = 1
 charisma = 1
 [CHARACTER]
 character-tutorial=1
-run-energy = 81
+run-energy = 100
 character-height = 0
-character-posx = 3264
-character-posy = 3227
+character-posx = 3222
+character-posy = 3218
 character-rights = 0
 crystal-bow-shots = 0
 skull-timer = 0
@@ -75,10 +75,10 @@ character-look = 11	0
 character-look = 12	0
 
 [SKILLS]
-character-skill = 0	4	340
+character-skill = 0	6	648
 character-skill = 1	2	92
 character-skill = 2	1	16
-character-skill = 3	11	1412
+character-skill = 3	11	1489
 character-skill = 4	1	0
 character-skill = 5	1	0
 character-skill = 6	1	0

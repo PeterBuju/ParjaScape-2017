@@ -5,18 +5,18 @@
  */
 package server.model.npcs.types;
 
-import server.model.npcs.NPCGroup;
+import java.util.ArrayList;
+import server.model.quests.RadiantQuest;
 
 /**
  *
  * @author amaco
  */
-public class BaseNPC {
-    	public boolean randomWalk, aggressive, retaliates;
-        public int uId, typeId;
-        public NPCGroup group;
-        
-        public void process(){
-            
-        }
+public class Quester extends Greeter{
+    public ArrayList<RadiantQuest> quests;
+    
+    @Override
+    public void process(){
+        super.process();
+    }
 }

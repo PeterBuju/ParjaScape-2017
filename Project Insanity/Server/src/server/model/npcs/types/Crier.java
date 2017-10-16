@@ -5,10 +5,17 @@
  */
 package server.model.npcs.types;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author amaco
  */
-public class Guard extends BaseNPC{
+public class Crier extends Greeter{
+    public ArrayList<String> messages;
     
+    @Override
+    public void process(){
+        super.process();
+    }
 }
