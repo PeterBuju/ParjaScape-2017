@@ -75,6 +75,7 @@ public class RadiantQuestManager {
             
             quest.combatLevelRequirement = Integer.parseInt(root_elem.getElementsByTagName("combatLevelRequirement").item(0).getTextContent());
             
+            quest.itemRewards = new ArrayList<>();
             nList = root_elem.getElementsByTagName("RadiantQuestReward");           
             for(int i = 0; i < nList.getLength(); i++){
                 RadiantQuestReward reward = new RadiantQuestReward();
@@ -90,6 +91,7 @@ public class RadiantQuestManager {
             for(int i = 0; i < nList.getLength(); i++){
                 quest.expRewards[i] = Integer.parseInt(nList.item(i).getTextContent());
             }
+            
             quest.objectives = new ArrayList<>();
             Element objectives = (Element) root_elem.getElementsByTagName("objectives").item(0);
             nList = objectives.getElementsByTagName("objective");
