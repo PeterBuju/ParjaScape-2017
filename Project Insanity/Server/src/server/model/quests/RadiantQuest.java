@@ -15,8 +15,10 @@ import server.model.items.Item;
 public class RadiantQuest {
     public int id;
     public String name, description;
-    public ArrayList<Item> itemRewards;
-    public int expReward;
+    public ArrayList<RadiantQuestReward> itemRewards;
+    public int[] skillLevelRequirements;
+    public int combatLevelRequirement;
+    public int[] expRewards;
     public ArrayList<RadiantQuestObjective> objectives;
     
     public void Start(){
