@@ -5,10 +5,17 @@
  */
 package server.model.quests;
 
+import java.util.ArrayList;
+import server.model.items.Item;
+
 /**
  *
  * @author amaco
  */
 public class RadiantQuest {
-    
+    public int id;
+    public String name, description;
+    public ArrayList<Item> itemRewards;
+    public int expReward;
+    public ArrayList<RadiantQuestObjective> objectives;
 }
