@@ -18,4 +18,16 @@ public class RadiantQuest {
     public ArrayList<Item> itemRewards;
     public int expReward;
     public ArrayList<RadiantQuestObjective> objectives;
+    
+    public void Start(){
+        
+    }
+    
+    public void OnObjectiveFinished(){
+        
+    }
+    
+    public void Finish(){
+        
+    }
 }
