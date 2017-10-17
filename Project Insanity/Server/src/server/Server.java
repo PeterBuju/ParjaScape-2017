@@ -36,6 +36,7 @@ import server.content.HouseManager;
 import server.model.npcs.NPCGroupHandler;
 import server.model.perks.PerkHandler;
 import server.model.players.RecipeManager;
+import server.model.quests.RadiantQuestManager;
 import server.world.FireManager;
 import server.world.FishBankManager;
 import server.world.RockManager;
@@ -146,6 +147,7 @@ public class Server {
         RecipeManager.LoadRecipes("cooking.cfg");
         FishBankManager.Initialize();
         HouseManager.LoadHouses();
+        RadiantQuestManager.LoadRadiantQuests();
         //PlayerSaving.initialize();
         //MysqlManager.createConnection();
 

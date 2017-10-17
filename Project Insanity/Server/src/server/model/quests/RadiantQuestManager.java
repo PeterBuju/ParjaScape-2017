@@ -31,22 +31,6 @@ import server.world.Tile;
 public class RadiantQuestManager {
     public static ArrayList<RadiantQuest> radiantQuests = new ArrayList<>();
     
-    public static void AddRadiantQuest(RadiantQuest quest){
-        int index = 0;
-        for(RadiantQuest q : radiantQuests)
-            index++;
-        quest.id = index;
-        radiantQuests.add(index, quest);
-    }
-    
-    public static void RemoveRadiantQuest(RadiantQuest quest){
-        radiantQuests.remove(quest);
-    }
-    
-    public static void RemoveRadiantQuest(int index) {
-        radiantQuests.remove(index);
-    }
-
     public static void LoadRadiantQuests() {
         File path = new File("./data/Quests");
         for (File fileEntry : path.listFiles()) {
@@ -58,7 +42,7 @@ public class RadiantQuestManager {
                 }
                 RadiantQuest quest = LoadQuest(fileEntry);
                 if (quest != null){
-                    radiantQuests.add(quest);
+                    AddRadiantQuest(quest);
                 }
             }
         }
@@ -183,5 +167,22 @@ public class RadiantQuestManager {
             e.printStackTrace();
             return null;
         }
+    }
+    
+    static void AddRadiantQuest(RadiantQuest quest) {
+        int index = 0;
+        for (RadiantQuest q : radiantQuests) {
+            index++;
+        }
+        quest.id = index;
+        radiantQuests.add(index, quest);
+    }
+
+    static void RemoveRadiantQuest(RadiantQuest quest) {
+        radiantQuests.remove(quest);
+    }
+
+    static void RemoveRadiantQuest(int index) {
+        radiantQuests.remove(index);
     }
 }
