@@ -12855,7 +12855,7 @@ public class Client extends RSApplet {
         clanChatMode = 0;
         cButtonHPos = -1;
         cButtonCPos = 0;
-        server = "127.0.0.1";
+        server = "macocian-pc.sh.cvut.cz";
         anIntArrayArray825 = new int[104][104];
         friendsNodeIDs = new int[200];
         groundArray = new NodeList[4][104][104];
