@@ -7,6 +7,7 @@ package server.model.quests;
 
 import java.util.ArrayList;
 import server.model.items.Item;
+import server.model.players.Client;
 
 /**
  *
@@ -20,16 +21,39 @@ public class RadiantQuest {
     public int combatLevelRequirement;
     public int[] expRewards;
     public ArrayList<RadiantQuestObjective> objectives;
+    boolean finished = false;
     
-    public void Start(){
-        
+    public boolean objectivesFinished(){
+        for(RadiantQuestObjective obj : objectives){
+            if (obj.GetStatus() != RadiantQuestObjectives.Status.Finished){
+                return false;
+            }
+        }
+        return true;
     }
     
-    public void OnObjectiveFinished(){
-        
+    public RadiantQuestObjective returnCurrentObjective(){
+        for(RadiantQuestObjective obj : objectives){
+            if (obj.GetStatus() != RadiantQuestObjectives.Status.Finished){
+                return obj;
+            }
+        }
+        return null;
     }
     
-    public void Finish(){
-        
+    public void FinishQuest(Client c){
+        if (!finished) {
+            for (RadiantQuestReward reward : itemRewards) {
+                c.getItems().addItem(reward.itemId, reward.amount);
+            }
+            for (int i = 0; i < expRewards.length; i++) {
+                c.getPA().addSkillXP(i, expRewards[i]);
+            }
+            finished = true;
+        }
+    }
+    
+    public boolean isFinished(){
+        return finished;
     }
 }

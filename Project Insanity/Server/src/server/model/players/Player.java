@@ -8,6 +8,7 @@ import server.model.items.Item;
 import server.model.npcs.NPC;
 import server.model.npcs.NPCHandler;
 import server.model.perks.Perk;
+import server.model.quests.RadiantQuest;
 import server.util.ISAACRandomGen;
 import server.util.Misc;
 import server.util.Stream;
@@ -15,9 +16,10 @@ import server.world.map.VirtualWorld;
 
 public abstract class Player {
 
-    public ArrayList<String> killedPlayers = new ArrayList<String>();
-    public ArrayList<Integer> attackedPlayers = new ArrayList<Integer>();
-
+    public ArrayList<String> killedPlayers = new ArrayList<>();
+    public ArrayList<Integer> attackedPlayers = new ArrayList<>();
+    public ArrayList<RadiantQuest> radiantQuests = new ArrayList<>();
+    
     public boolean initialized = false,
             disconnected = false,
             ruleAgreeButton = false,

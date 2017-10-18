@@ -17,6 +17,8 @@ import server.model.perks.PerkHandler;
 import server.model.players.Client;
 import server.model.players.Stats;
 import static server.model.players.packets.Commands.SendSyntaxError;
+import server.model.quests.RadiantQuest;
+import server.model.quests.RadiantQuestManager;
 import server.util.Misc;
 
 /**
@@ -69,9 +71,12 @@ public class PlayerCommands {
                 } else if (args[1].equalsIgnoreCase("additem")) {
                     c.sendMessage("Usage: ::player.additem <id> [<amount>]");
                     c.sendMessage("Adds an item with the specified amount");
-                } else if (args[1].equalsIgnoreCase("inMulti")) {
-                    c.sendMessage("Usage: ::player.inMulti");
-                    c.sendMessage("True if the player is in multi, false otherwise");
+                } else if (args[1].equalsIgnoreCase("addquest")) {
+                    c.sendMessage("Usage: ::player.addquest <id>");
+                    c.sendMessage("Adds the quest to the player");
+                } else if (args[1].equalsIgnoreCase("showquests")) {
+                    c.sendMessage("Usage: ::player.showquests");
+                    c.sendMessage("Shows a list of quests that the player has");
                 } else {
                     SendSyntaxError(c, "player.help <command>");
                 }
@@ -88,6 +93,8 @@ public class PlayerCommands {
             c.sendMessage(" addperk");
             c.sendMessage(" additem");
             c.sendMessage(" inMulti");
+            c.sendMessage(" addQuest");
+            c.sendMessage(" showquests");
         } else if (args[0].equalsIgnoreCase("addperk")) {
             try {
                 if (args.length != 2) {
@@ -150,6 +157,28 @@ public class PlayerCommands {
                 }
             } else {
                 SendSyntaxError(c, "::player.showstat <id>");
+            }
+        } else if (args[0].equalsIgnoreCase("addquest")) {
+            if (args.length == 2) {
+                try {
+                    c.radiantQuests.add(RadiantQuestManager.radiantQuests.get(Integer.parseInt(args[1])));
+                } catch (Exception e) {
+                    SendSyntaxError(c, "::player.addquest <id>");
+                }
+            } else {
+                SendSyntaxError(c, "::player.addquest <id>");
+            }
+        } else if (args[0].equalsIgnoreCase("showquests")) {
+            if (args.length == 1) {
+                try {
+                    for(RadiantQuest quest : c.radiantQuests){
+                        c.sendMessage(quest.name);
+                    }
+                } catch (Exception e) {
+                    SendSyntaxError(c, "::player.showquests");
+                }
+            } else {
+                SendSyntaxError(c, "::player.showquests");
             }
         } else if (args[0].equalsIgnoreCase("emote")) {
             if (args.length == 3) {
