@@ -10,8 +10,11 @@ import java.io.IOException;
 
 import server.Server;
 import server.content.HouseBackup;
+import server.model.items.Item;
 import server.model.perks.Perk;
 import server.model.perks.PerkHandler;
+import server.model.quests.RadiantQuest;
+import server.model.quests.RadiantQuestObjective;
 import server.util.Misc;
 
 public class PlayerSave {
@@ -274,6 +277,7 @@ public class PlayerSave {
                 characterfile.write(Integer.toString(perk.getId()), 0, Integer.toString(perk.getId()).length());
                 characterfile.newLine();
             }
+            characterfile.newLine();
             /*STATS*/
             characterfile.write("[STATS]", 0, 7);
             characterfile.newLine();
@@ -297,6 +301,7 @@ public class PlayerSave {
             characterfile.newLine();
             characterfile.write("charisma = ", 0, 11);
             characterfile.write(Integer.toString(p.stats[6]), 0, Integer.toString(p.stats[6]).length());
+            characterfile.newLine();
             characterfile.newLine();
             /*CHARACTER*/
             characterfile.write("[CHARACTER]", 0, 11);
@@ -484,6 +489,14 @@ public class PlayerSave {
 			}
 			characterfile.newLine();*/
  /*EOF*/
+            characterfile.write("[QUESTS]");
+            characterfile.newLine();
+            for (RadiantQuest quest : p.radiantQuests) {
+                characterfile.write("quest-id = " + quest.id);
+                for (RadiantQuestObjective obj : quest.objectives) {
+                    characterfile.write("obj-score" + obj.score);
+                }
+            }
             characterfile.write("[EOF]", 0, 5);
             characterfile.newLine();
             characterfile.newLine();
@@ -493,6 +506,151 @@ public class PlayerSave {
             return false;
         }
         return true;
+    }
+
+    public static boolean XMLSaver(Client p) {
+        BufferedWriter file = null;
+        try {
+            file = new BufferedWriter(new FileWriter("./Data/characters/" + p.playerName + ".txt"));
+            file.write("<player>");
+            file.newLine();
+            file.write("<username>" + p.playerName + "</username>");
+            file.newLine();
+            file.write("<password>" + Misc.basicEncrypt(p.playerPass) + "</password>");
+            file.newLine();
+            file.write("<perks>");
+            file.newLine();
+            for(Perk perk : p.perks){
+                file.write("<stat>" + perk.getId() + "</stat>");
+                file.newLine();
+            }
+            file.write("</perks>");
+            file.newLine();
+            file.write("<stats>");
+            file.newLine();
+            for(int i : p.stats){
+                file.write("<stat>" + i + "</stat>");
+                file.newLine();
+            }
+            file.write("</stats>");
+            file.newLine();
+            file.write("<energy>" + p.runEnergy + "</energy>");
+            file.newLine();
+            file.write("<coords>");
+            file.newLine();
+            file.write("<x>" + p.absX + "</x>");
+            file.newLine();
+            file.write("<y>" + p.absY + "</y>");
+            file.newLine();
+            file.write("<z>" + p.heightLevel + "</z>");
+            file.newLine();
+            file.write("</coords>");
+            file.newLine();
+            file.write("<outfit>");
+            file.newLine();
+            for(int i = 0; i < p.playerEquipment.length; i++){
+                file.write("<equipment>");
+                file.newLine();
+                file.write("<position>" + i + "</position>");
+                file.newLine();
+                file.write("<equipment>" + p.playerEquipment[i] + "</equipment>");
+                file.newLine();
+                file.write("<equipmentN>" + p.playerEquipmentN[i] + "</equipmentN>");
+                file.newLine();
+                file.write("</equipment>");
+                file.newLine();
+            }
+            file.write("</outfit>");
+            file.newLine();
+            file.write("<look>");
+            file.newLine();
+            for(int i = 0; i < p.playerAppearance.length; i++){
+                file.write("<position>" + i + "</position>");
+                file.newLine();
+                file.write("<value>" + p.playerAppearance[i] + "</value>");
+                file.newLine();
+            }
+            file.write("</look>");
+            file.newLine();
+            file.write("<skills>");
+            file.newLine();
+            for(int i = 0; i < p.playerLevel.length; i++){
+                file.write("<skill>");
+                file.newLine();
+                file.write("<id>" + i + "</id>");
+                file.newLine();
+                file.write("<level>" + p.playerLevel[i] + "</level>");
+                file.newLine();
+                file.write("<xp>" + p.playerXP[i] + "</xp>");
+                file.newLine();
+                file.write("</skill>");
+                file.newLine();
+            }
+            file.write("</skills>");
+            file.newLine();
+            file.write("<inventory>");
+            file.newLine();
+            for(int i = 0; i < p.playerItems.length; i++){
+                file.write("<slot>");
+                file.newLine();
+                file.write("<position>" + i + "</position>");
+                file.newLine();
+                file.write("<id>" + p.playerItems[i] + "</id>");
+                file.newLine();
+                file.write("<amount>" + p.playerItemsN[i] + "</amount>");
+                file.newLine();
+                file.write("</slot>");
+                file.newLine();
+            }
+            file.write("</inventory>");
+            file.newLine();
+            file.write("<bank>");
+            file.newLine();
+            for(int i = 0; i < p.bankItems.length; i++){
+                file.write("<slot>");
+                file.newLine();
+                file.write("<position>" + i + "</position>");
+                file.newLine();
+                file.write("<id>" + p.bankItems[i] + "</id>");
+                file.newLine();
+                file.write("<amount>" + p.bankItemsN[i] + "</amount>");
+                file.newLine();
+                file.write("</slot>");
+                file.newLine();
+            }
+            file.write("</bank>");
+            file.newLine();
+            /* HAVE TO IMPLEMENT FRIENDS
+            file.write("<friends>");
+            file.newLine();
+            for(long i = 0; i < p.playerItems.length; i++){
+                file.write("<name>" + p.friends + "</name>");
+                file.newLine();
+            }
+            file.write("</friends>");
+            */
+            file.write("<radiantquests>");
+            file.newLine();
+            for(RadiantQuest quest : p.radiantQuests){
+                file.write("<quest>");
+                file.newLine();
+                file.write("<id>" + quest.id + "</id>");
+                file.newLine();
+                for(RadiantQuestObjective obj : quest.objectives){
+                    file.write("<score>" + obj.score + "</score>");
+                    file.newLine();
+                }
+                file.write("</quest>");
+                file.newLine();
+            }
+            file.write("</radiantquests>");
+            file.newLine();
+            file.write("</player>");
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 
 }

@@ -22,6 +22,11 @@ public class RadiantQuest {
     public int[] expRewards;
     public ArrayList<RadiantQuestObjective> objectives;
     boolean finished = false;
+    int currentObjectiveIndex = 0;
+    
+    public void Load(int[] objScores){
+        
+    }
     
     public boolean objectivesFinished(){
         for(RadiantQuestObjective obj : objectives){
@@ -32,7 +37,7 @@ public class RadiantQuest {
         return true;
     }
     
-    public RadiantQuestObjective returnCurrentObjective(){
+    RadiantQuestObjective returnCurrentObjective(){
         for(RadiantQuestObjective obj : objectives){
             if (obj.GetStatus() != RadiantQuestObjectives.Status.Finished){
                 return obj;

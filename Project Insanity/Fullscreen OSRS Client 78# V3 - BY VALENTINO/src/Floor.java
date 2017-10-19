@@ -25,8 +25,10 @@ public final class Floor {
 			else
 			if(i == 1)
 			{
-				anInt390 = stream.read3Bytes();
-				method262(anInt390);
+                            /*if(anInt390 == 0x35720A || anInt390 == 0x50680B || anInt390 == 0x78680B || anInt390 == 0x6CAC10 || anInt390 == 0x819531)//snow 
+                                anInt390 = 0xffffff;*/
+                            anInt390 = stream.read3Bytes();
+                            method262(anInt390);
 			} else
 			if(i == 2)
 				anInt391 = stream.readUnsignedByte();
