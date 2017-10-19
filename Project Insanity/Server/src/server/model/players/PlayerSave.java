@@ -511,7 +511,7 @@ public class PlayerSave {
     public static boolean XMLSaver(Client p) {
         BufferedWriter file = null;
         try {
-            file = new BufferedWriter(new FileWriter("./Data/characters/" + p.playerName + ".txt"));
+            file = new BufferedWriter(new FileWriter("./Data/characters/" + p.playerName + ".xml"));
             file.write("<player>");
             file.newLine();
             file.write("<username>" + p.playerName + "</username>");
