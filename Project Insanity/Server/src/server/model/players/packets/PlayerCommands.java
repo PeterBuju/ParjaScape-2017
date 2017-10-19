@@ -15,6 +15,7 @@ import server.event.CycleEventHandler;
 import server.model.perks.Perk;
 import server.model.perks.PerkHandler;
 import server.model.players.Client;
+import server.model.players.PlayerSave;
 import server.model.players.Stats;
 import static server.model.players.packets.Commands.SendSyntaxError;
 import server.model.quests.RadiantQuest;
@@ -77,6 +78,9 @@ public class PlayerCommands {
                 } else if (args[1].equalsIgnoreCase("showquests")) {
                     c.sendMessage("Usage: ::player.showquests");
                     c.sendMessage("Shows a list of quests that the player has");
+                } else if (args[1].equalsIgnoreCase("exportXML")) {
+                    c.sendMessage("Usage: ::player.exportXML");
+                    c.sendMessage("Exports player file as XML");
                 } else {
                     SendSyntaxError(c, "player.help <command>");
                 }
@@ -95,6 +99,7 @@ public class PlayerCommands {
             c.sendMessage(" inMulti");
             c.sendMessage(" addQuest");
             c.sendMessage(" showquests");
+            c.sendMessage(" exportXML");
         } else if (args[0].equalsIgnoreCase("addperk")) {
             try {
                 if (args.length != 2) {
@@ -114,6 +119,8 @@ public class PlayerCommands {
             for (Perk perk : c.perks) {
                 c.sendMessage(perk.getId() + " : " + perk.getName());
             }
+        } else if (args[0].equalsIgnoreCase("exportXML")) {
+            PlayerSave.XMLSaver(c);
         } else if (args[0].equalsIgnoreCase("additem")) {
             try {
                 if (args.length < 2 || args.length > 3) {
