@@ -646,6 +646,7 @@ public class PlayerSave {
             file.write("</radiantquests>");
             file.newLine();
             file.write("</player>");
+            file.close();
             return true;
         } catch (Exception e) {
             e.printStackTrace();
