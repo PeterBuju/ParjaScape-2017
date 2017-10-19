@@ -549,15 +549,13 @@ public class PlayerSave {
             file.write("<outfit>");
             file.newLine();
             for(int i = 0; i < p.playerEquipment.length; i++){
-                file.write("<equipment>");
-                file.newLine();
-                file.write("<position>" + i + "</position>");
+                file.write("<equipped>");
                 file.newLine();
                 file.write("<equipment>" + p.playerEquipment[i] + "</equipment>");
                 file.newLine();
                 file.write("<equipmentN>" + p.playerEquipmentN[i] + "</equipmentN>");
                 file.newLine();
-                file.write("</equipment>");
+                file.write("</equipped>");
                 file.newLine();
             }
             file.write("</outfit>");
@@ -565,8 +563,6 @@ public class PlayerSave {
             file.write("<look>");
             file.newLine();
             for(int i = 0; i < p.playerAppearance.length; i++){
-                file.write("<position>" + i + "</position>");
-                file.newLine();
                 file.write("<value>" + p.playerAppearance[i] + "</value>");
                 file.newLine();
             }
@@ -576,8 +572,6 @@ public class PlayerSave {
             file.newLine();
             for(int i = 0; i < p.playerLevel.length; i++){
                 file.write("<skill>");
-                file.newLine();
-                file.write("<id>" + i + "</id>");
                 file.newLine();
                 file.write("<level>" + p.playerLevel[i] + "</level>");
                 file.newLine();
@@ -593,8 +587,6 @@ public class PlayerSave {
             for(int i = 0; i < p.playerItems.length; i++){
                 file.write("<slot>");
                 file.newLine();
-                file.write("<position>" + i + "</position>");
-                file.newLine();
                 file.write("<id>" + p.playerItems[i] + "</id>");
                 file.newLine();
                 file.write("<amount>" + p.playerItemsN[i] + "</amount>");
@@ -608,8 +600,6 @@ public class PlayerSave {
             file.newLine();
             for(int i = 0; i < p.bankItems.length; i++){
                 file.write("<slot>");
-                file.newLine();
-                file.write("<position>" + i + "</position>");
                 file.newLine();
                 file.write("<id>" + p.bankItems[i] + "</id>");
                 file.newLine();
