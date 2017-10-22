@@ -208,6 +208,9 @@ public class RS2LoginProtocolDecoder extends CumulativeProtocolDecoder {
                         Misc.println("New client: " + cl.playerName);
                     }
 			int load = PlayerSave.XMLLoader(cl, cl.playerName, cl.playerPass);
+                        if (Config.SERVER_DEBUG){
+                            Misc.println("Client " + cl.playerName + "returned value " + load);
+                        }
 			if (load == 0)
                                 /*cl.getDH().sendDialogues(20, -1);*/
 				cl.addStarter = true;
