@@ -277,7 +277,7 @@ public class PlayerSave {
 
             p.runEnergy = Integer.parseInt(root.getElementsByTagName("energy").item(0).getTextContent());
 
-            Element coords = (Element)root.getElementsByTagName("coords");
+            Element coords = (Element)root.getElementsByTagName("coords").item(0);
             p.absX = Integer.parseInt(coords.getElementsByTagName("x").item(0).getTextContent());
             p.absY = Integer.parseInt(coords.getElementsByTagName("y").item(0).getTextContent());
             p.heightLevel = Integer.parseInt(coords.getElementsByTagName("z").item(0).getTextContent());
