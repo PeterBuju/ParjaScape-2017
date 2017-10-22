@@ -234,7 +234,7 @@ public class DebuggingCommands {
                 }
                 Client cl = (Client) p;
                 cl.getPA().movePlayer(cl.oldLocation[0], cl.oldLocation[1], cl.oldLocation[2]);
-                PlayerSave.saveGame((Client) p);
+                PlayerSave.XMLSaver((Client) p);
             }
             HouseManager.SaveHouses();
             System.exit(0);
@@ -245,7 +245,7 @@ public class DebuggingCommands {
                 }
                 Client cl = (Client) p;
                 cl.getPA().movePlayer(cl.oldLocation[0], cl.oldLocation[1], cl.oldLocation[2]);
-                PlayerSave.saveGame((Client) p);
+                PlayerSave.XMLSaver((Client) p);
             }
             HouseManager.SaveHouses();
             System.exit(1);

@@ -12,7 +12,7 @@ public class ShutDownHook extends Thread {
 		for (int j = 0; j < Server.playerHandler.players.length; j++) {
 			if (Server.playerHandler.players[j] != null) {
 				Client c = (Client)Server.playerHandler.players[j];
-				server.model.players.PlayerSave.saveGame(c);			
+				server.model.players.PlayerSave.XMLSaver(c);			
 			}		
 		}
 		System.out.println("Shutting down...");

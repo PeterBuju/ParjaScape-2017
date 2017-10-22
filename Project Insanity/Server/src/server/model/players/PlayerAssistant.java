@@ -985,7 +985,7 @@ public class PlayerAssistant {
             }
         }
         //PlayerSaving.getSingleton().requestSave(c.playerId);
-        PlayerSave.saveGame(c);
+        PlayerSave.XMLSaver(c);
         c.getCombat().resetPlayerAttack();
         resetAnimation();
         c.startAnimation(65535);

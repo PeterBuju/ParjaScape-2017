@@ -50,7 +50,7 @@ public class PlayerSaving implements Runnable {
 		long start = lastGroupSave;
 		for (Player p : PlayerHandler.players) {
 			if (p != null)
-				PlayerSave.saveGame((Client)p);
+				PlayerSave.XMLSaver((Client)p);
 			if (System.currentTimeMillis() - start >= (Server.getSleepTimer() - 5)) {
 				System.out.println("Aborted all saving to prevent lag.");
 				return;
@@ -64,7 +64,7 @@ public class PlayerSaving implements Runnable {
 		for (int id : requests) {
 			if (PlayerHandler.players[id] != null) {
 				Client c = (Client)PlayerHandler.players[id];
-				PlayerSave.saveGame((Client)PlayerHandler.players[id]);
+				PlayerSave.XMLSaver((Client)PlayerHandler.players[id]);
 				totalSave++;
 			}		
 		}

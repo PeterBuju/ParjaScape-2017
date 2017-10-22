@@ -132,7 +132,7 @@ public class PlayerHandler {
                             }
                         }
                         Client o = (Client) Server.playerHandler.players[i];
-                        if (PlayerSave.saveGame(o)) {
+                        if (PlayerSave.XMLSaver(o)) {
                             System.out.println("Game saved for player " + players[i].playerName);
                         } else {
                             System.out.println("Could not save for " + players[i].playerName);
@@ -178,7 +178,7 @@ public class PlayerHandler {
                         }
 
                         Client o1 = (Client) Server.playerHandler.players[i];
-                        if (PlayerSave.saveGame(o1)) {
+                        if (PlayerSave.XMLSaver(o1)) {
                             System.out.println("Game saved for player " + players[i].playerName);
                         } else {
                             System.out.println("Could not save for " + players[i].playerName);

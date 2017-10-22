@@ -192,7 +192,7 @@ public class Server {
                         if (p == null) {
                             continue;
                         }
-                        PlayerSave.saveGame((Client) p);
+                        PlayerSave.XMLSaver((Client) p);
                         System.out.println("Saved game for " + p.playerName + ".");
                         lastMassSave = System.currentTimeMillis();
                     }
@@ -208,7 +208,7 @@ public class Server {
                 }
                 Client cl = (Client)p;
                 cl.getPA().movePlayer(cl.oldLocation[0], cl.oldLocation[1], cl.oldLocation[2]);
-                PlayerSave.saveGame((Client) p);
+                PlayerSave.XMLSaver((Client) p);
                 System.out.println("Saved game for " + p.playerName + ".");
             }
         }
