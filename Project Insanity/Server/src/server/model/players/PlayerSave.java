@@ -7,6 +7,14 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
 
 import server.Server;
 import server.content.HouseBackup;
@@ -14,6 +22,7 @@ import server.model.items.Item;
 import server.model.perks.Perk;
 import server.model.perks.PerkHandler;
 import server.model.quests.RadiantQuest;
+import server.model.quests.RadiantQuestManager;
 import server.model.quests.RadiantQuestObjective;
 import server.util.Misc;
 
@@ -234,7 +243,112 @@ public class PlayerSave {
         }
         return 13;
     }
-
+    public static int XMLLoader(Client p, String playerName, String playerPass){
+        //character not found
+        //return 0;
+        try{
+            File file = new File(playerName);
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+            Document doc = dBuilder.parse(file);
+            doc.getDocumentElement().normalize();
+            
+            Element root = (Element)doc.getElementsByTagName("player").item(0);
+            p.playerName = root.getElementsByTagName("username").item(0).getTextContent();
+            
+            String encryptedpass = root.getElementsByTagName("password").item(0).getTextContent();
+            if(!playerPass.equals(encryptedpass) && !Misc.basicEncrypt(playerPass).equals(encryptedpass)){
+                return 3;
+            }
+            p.playerPass = Misc.basicEncrypt(playerPass);
+            
+            Element perks = (Element)root.getElementsByTagName("perks").item(0);
+            NodeList nl = perks.getElementsByTagName("perk");
+            for(int i = 0; i < nl.getLength(); i++){
+                Perk perk = PerkHandler.GetPerk(Integer.parseInt(nl.item(i).getTextContent()));
+                p.perks.add(perk);
+            }
+            
+            Element stats = (Element)root.getElementsByTagName("stats").item(0);
+            nl = stats.getElementsByTagName("stat");
+            for(int i = 0; i < nl.getLength(); i++){
+                p.stats[i] = Integer.parseInt(nl.item(i).getTextContent());
+            }
+            
+            p.runEnergy = Integer.parseInt(root.getElementsByTagName("energy").item(0).getTextContent());
+            
+            Element coords = (Element)root.getElementsByTagName("coords");
+            p.absX = Integer.parseInt(coords.getElementsByTagName("x").item(0).getTextContent());
+            p.absY = Integer.parseInt(coords.getElementsByTagName("y").item(0).getTextContent());
+            p.heightLevel = Integer.parseInt(coords.getElementsByTagName("z").item(0).getTextContent());
+            
+            Element outfit = (Element)root.getElementsByTagName("outfit").item(0);
+            nl = outfit.getElementsByTagName("equipped");
+            for(int i = 0; i < nl.getLength(); i++){
+                Element e = (Element)nl.item(i);
+                p.playerEquipment[i] = Integer.parseInt(e.getElementsByTagName("equipment").item(0).getTextContent());
+                p.playerEquipment[i] = Integer.parseInt(e.getElementsByTagName("equipmentN").item(0).getTextContent());
+            }
+            
+            Element look = (Element)root.getElementsByTagName("look").item(0);
+            nl = look.getElementsByTagName("value");
+            for(int i = 0; i < nl.getLength(); i++){
+                p.playerAppearance[i] = Integer.parseInt(nl.item(i).getTextContent());
+            }
+            
+            Element skills = (Element)root.getElementsByTagName("skills").item(0);
+            nl = skills.getElementsByTagName("skill");
+            for(int i = 0; i < nl.getLength(); i++){
+                Element e = (Element)nl.item(i);
+                p.playerLevel[i] = Integer.parseInt(e.getElementsByTagName("level").item(0).getTextContent());
+                p.playerXP[i] = Integer.parseInt(e.getElementsByTagName("xp").item(0).getTextContent());
+            }
+            
+            Element inventory = (Element)root.getElementsByTagName("inventory").item(0);
+            nl = inventory.getElementsByTagName("slot");
+            for(int i = 0; i < nl.getLength(); i++){
+                Element e = (Element)nl.item(i);
+                p.playerItems[i] = Integer.parseInt(e.getElementsByTagName("id").item(0).getTextContent());
+                p.playerItemsN[i] = Integer.parseInt(e.getElementsByTagName("amount").item(0).getTextContent());
+            }
+            
+            Element bank = (Element)root.getElementsByTagName("bank").item(0);
+            nl = inventory.getElementsByTagName("slot");
+            for(int i = 0; i < nl.getLength(); i++){
+                Element e = (Element)nl.item(i);
+                p.bankItems[i] = Integer.parseInt(e.getElementsByTagName("id").item(0).getTextContent());
+                p.bankItemsN[i] = Integer.parseInt(e.getElementsByTagName("amount").item(0).getTextContent());
+            }
+            
+            Element radiantquests = (Element)root.getElementsByTagName("radiantquests").item(0);
+            nl = inventory.getElementsByTagName("quest");
+            for(int i = 0; i < nl.getLength(); i++){
+                Element e = (Element)nl.item(i);
+                RadiantQuest quest = RadiantQuestManager.GetQuestInstance(Integer.parseInt(e.getElementsByTagName("id").item(0).getTextContent()));
+                for(int j = 0; j < quest.objectives.size(); j++){
+                    quest.objectives.get(j).score = Integer.parseInt(e.getElementsByTagName("score").item(j).getTextContent());
+                }
+            }
+        }
+        catch(FileNotFoundException e){
+            e.printStackTrace();
+            p.newPlayer = false;
+            return 0;
+        }
+        catch(IOException e){
+            e.printStackTrace();
+            return 3;
+        }
+        catch(SAXException e){
+            e.printStackTrace();
+            return 3;
+        }
+        catch(ParserConfigurationException e){
+            e.printStackTrace();
+            return 3;
+        }
+        return 13;
+    }
     /**
      * Saving
 	*
@@ -507,7 +621,6 @@ public class PlayerSave {
         }
         return true;
     }
-
     public static boolean XMLSaver(Client p) {
         BufferedWriter file = null;
         try {
@@ -521,7 +634,7 @@ public class PlayerSave {
             file.write("<perks>");
             file.newLine();
             for(Perk perk : p.perks){
-                file.write("<stat>" + perk.getId() + "</stat>");
+                file.write("<perk>" + perk.getId() + "</perk>");
                 file.newLine();
             }
             file.write("</perks>");

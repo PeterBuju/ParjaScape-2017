@@ -1717,7 +1717,7 @@ public class Client extends RSApplet {
                     musicEnabled = true;
                 }
                 if (k == 4) {
-                    musicEnabled = false;
+                    //musicEnabled = false;
                 }
                 if (musicEnabled != flag1 && !lowMem) {
                     if (musicEnabled) {
@@ -13287,7 +13287,7 @@ public class Client extends RSApplet {
     private int energy;
     private boolean aBoolean1149;
     private Sprite[] crosses;
-    private boolean musicEnabled;
+    private boolean musicEnabled = true;
     private Background[] aBackgroundArray1152s;
     private int unreadMessages;
     private static int anInt1155;

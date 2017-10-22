@@ -187,4 +187,62 @@ public class RadiantQuestManager {
     static void RemoveRadiantQuest(int index) {
         radiantQuests.remove(index);
     }
+    
+    static RadiantQuest FindQuest(int id){
+        for(RadiantQuest quest : radiantQuests){
+            if(quest.id == id)
+                return quest;
+        }
+        return null;
+    }
+    
+    static RadiantQuest FindQuest(String name){
+        for(RadiantQuest quest : radiantQuests){
+            if(quest.name.equalsIgnoreCase(name))
+                return quest;
+        }
+        return null;
+    }
+    
+    public static RadiantQuest GetQuestInstance(int id){
+        RadiantQuest quest = FindQuest(id);
+        RadiantQuest newInstance = new RadiantQuest();
+        newInstance.name = quest.name;
+        newInstance.id = quest.id;
+        newInstance.description = quest.description;
+        newInstance.skillLevelRequirements = quest.skillLevelRequirements;
+        newInstance.combatLevelRequirement = quest.combatLevelRequirement;
+        newInstance.expRewards = quest.expRewards;
+        newInstance.itemRewards = quest.itemRewards;
+        newInstance.objectives.clear();
+        for(RadiantQuestObjective obj : quest.objectives){
+            RadiantQuestObjective newobj = new RadiantQuestObjective();
+            newobj.description = obj.description;
+            newobj.location = obj.location;
+            newobj.locationAreaSize = obj.locationAreaSize;
+            newobj.objectiveInt = obj.objectiveInt;
+            newobj.objectiveType = obj.objectiveType;
+            newobj.targetNPCId = obj.targetNPCId;
+            newobj.score = obj.score;
+            newInstance.objectives.add(newobj);
+        }
+        return newInstance;
+    }
+    
+    public static boolean QuestExists(int id){
+        for(RadiantQuest quest : radiantQuests){
+            if(quest.id == id)
+                return true;
+        }
+        return false;
+    }
+    
+    public static boolean QuestExists(String name) {
+        for (RadiantQuest quest : radiantQuests) {
+            if (quest.name.equalsIgnoreCase(name)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

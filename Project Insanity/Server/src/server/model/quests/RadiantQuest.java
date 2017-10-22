@@ -21,12 +21,6 @@ public class RadiantQuest {
     public int combatLevelRequirement;
     public int[] expRewards;
     public ArrayList<RadiantQuestObjective> objectives;
-    boolean finished = false;
-    int currentObjectiveIndex = 0;
-    
-    public void Load(int[] objScores){
-        
-    }
     
     public boolean objectivesFinished(){
         for(RadiantQuestObjective obj : objectives){
@@ -47,18 +41,13 @@ public class RadiantQuest {
     }
     
     public void FinishQuest(Client c){
-        if (!finished) {
+        if (objectivesFinished()) {
             for (RadiantQuestReward reward : itemRewards) {
                 c.getItems().addItem(reward.itemId, reward.amount);
             }
             for (int i = 0; i < expRewards.length; i++) {
                 c.getPA().addSkillXP(i, expRewards[i]);
             }
-            finished = true;
         }
-    }
-    
-    public boolean isFinished(){
-        return finished;
     }
 }

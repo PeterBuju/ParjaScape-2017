@@ -13,10 +13,10 @@ dexterity = 3
 charisma = 1
 [CHARACTER]
 character-tutorial=0
-run-energy = 100
+run-energy = 62
 character-height = 0
-character-posx = 3226
-character-posy = 3219
+character-posx = 3243
+character-posy = 3237
 character-rights = 0
 crystal-bow-shots = 0
 skull-timer = -1

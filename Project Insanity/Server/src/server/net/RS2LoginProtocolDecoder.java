@@ -203,7 +203,7 @@ public class RS2LoginProtocolDecoder extends CumulativeProtocolDecoder {
 //		}
 		
 		if(returnCode == 2) {
-			int load = PlayerSave.loadGame(cl, cl.playerName, cl.playerPass);
+			int load = PlayerSave.XMLLoader(cl, cl.playerName, cl.playerPass);
 			if (load == 0)
                                 /*cl.getDH().sendDialogues(20, -1);*/
 				cl.addStarter = true;
