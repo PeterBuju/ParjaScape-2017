@@ -329,6 +329,7 @@ public class PlayerSave {
                     quest.objectives.get(j).score = Integer.parseInt(e.getElementsByTagName("score").item(j).getTextContent());
                 }
             }
+            return 1;
         }
         catch(FileNotFoundException e){
             e.printStackTrace();
@@ -347,7 +348,6 @@ public class PlayerSave {
             e.printStackTrace();
             return 3;
         }
-        return 13;
     }
     /**
      * Saving
