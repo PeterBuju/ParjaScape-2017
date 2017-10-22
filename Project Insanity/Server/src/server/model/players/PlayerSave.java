@@ -247,7 +247,7 @@ public class PlayerSave {
         //character not found
         //return 0;
         try{
-            File file = new File(playerName);
+            File file = new File("./Data/characters/" + playerName + ".xml");
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(file);
