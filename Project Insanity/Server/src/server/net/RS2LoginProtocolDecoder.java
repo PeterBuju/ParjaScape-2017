@@ -15,6 +15,7 @@ import server.model.players.Client;
 import server.model.players.PlayerHandler;
 import server.model.players.PlayerSave;
 import server.util.ISAACRandomGen;
+import server.util.Misc;
 
 /**
  * Login protocol decoder.
@@ -203,6 +204,9 @@ public class RS2LoginProtocolDecoder extends CumulativeProtocolDecoder {
 //		}
 		
 		if(returnCode == 2) {
+                    if (Config.SERVER_DEBUG){
+                        Misc.println("New client: " + cl.playerName);
+                    }
 			int load = PlayerSave.XMLLoader(cl, cl.playerName, cl.playerPass);
 			if (load == 0)
                                 /*cl.getDH().sendDialogues(20, -1);*/
