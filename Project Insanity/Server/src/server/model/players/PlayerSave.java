@@ -252,36 +252,36 @@ public class PlayerSave {
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(file);
             doc.getDocumentElement().normalize();
-            Misc.println("USERNAME");
+
             Element root = (Element)doc.getElementsByTagName("player").item(0);
             p.playerName = root.getElementsByTagName("username").item(0).getTextContent();
-            Misc.println("PASSWORD");
+
             String encryptedpass = root.getElementsByTagName("password").item(0).getTextContent();
             if(!playerPass.equals(encryptedpass) && !Misc.basicEncrypt(playerPass).equals(encryptedpass)){
                 return 3;
             }
             p.playerPass = Misc.basicEncrypt(playerPass);
-            Misc.println("PERKS");
+
             Element perks = (Element)root.getElementsByTagName("perks").item(0);
             NodeList nl = perks.getElementsByTagName("perk");
             for(int i = 0; i < nl.getLength(); i++){
                 Perk perk = PerkHandler.GetPerk(Integer.parseInt(nl.item(i).getTextContent()));
                 p.perks.add(perk);
             }
-            Misc.println("STATS");
+
             Element stats = (Element)root.getElementsByTagName("stats").item(0);
             nl = stats.getElementsByTagName("stat");
             for(int i = 0; i < nl.getLength(); i++){
                 p.stats[i] = Integer.parseInt(nl.item(i).getTextContent());
             }
-            Misc.println("ENERGY");
+
             p.runEnergy = Integer.parseInt(root.getElementsByTagName("energy").item(0).getTextContent());
-            Misc.println("COORDS");
+
             Element coords = (Element)root.getElementsByTagName("coords");
             p.absX = Integer.parseInt(coords.getElementsByTagName("x").item(0).getTextContent());
             p.absY = Integer.parseInt(coords.getElementsByTagName("y").item(0).getTextContent());
             p.heightLevel = Integer.parseInt(coords.getElementsByTagName("z").item(0).getTextContent());
-            Misc.println("OUTFIT");
+
             Element outfit = (Element)root.getElementsByTagName("outfit").item(0);
             nl = outfit.getElementsByTagName("equipped");
             for(int i = 0; i < nl.getLength(); i++){
@@ -289,13 +289,13 @@ public class PlayerSave {
                 p.playerEquipment[i] = Integer.parseInt(e.getElementsByTagName("equipment").item(0).getTextContent());
                 p.playerEquipment[i] = Integer.parseInt(e.getElementsByTagName("equipmentN").item(0).getTextContent());
             }
-            Misc.println("LOOK");
+
             Element look = (Element)root.getElementsByTagName("look").item(0);
             nl = look.getElementsByTagName("value");
             for(int i = 0; i < nl.getLength(); i++){
                 p.playerAppearance[i] = Integer.parseInt(nl.item(i).getTextContent());
             }
-            Misc.println("SKILLS");
+
             Element skills = (Element)root.getElementsByTagName("skills").item(0);
             nl = skills.getElementsByTagName("skill");
             for(int i = 0; i < nl.getLength(); i++){
@@ -303,7 +303,7 @@ public class PlayerSave {
                 p.playerLevel[i] = Integer.parseInt(e.getElementsByTagName("level").item(0).getTextContent());
                 p.playerXP[i] = Integer.parseInt(e.getElementsByTagName("xp").item(0).getTextContent());
             }
-            Misc.println("INVENTORY");
+
             Element inventory = (Element)root.getElementsByTagName("inventory").item(0);
             nl = inventory.getElementsByTagName("slot");
             for(int i = 0; i < nl.getLength(); i++){
@@ -311,7 +311,7 @@ public class PlayerSave {
                 p.playerItems[i] = Integer.parseInt(e.getElementsByTagName("id").item(0).getTextContent());
                 p.playerItemsN[i] = Integer.parseInt(e.getElementsByTagName("amount").item(0).getTextContent());
             }
-            Misc.println("BANK");
+
             Element bank = (Element)root.getElementsByTagName("bank").item(0);
             nl = inventory.getElementsByTagName("slot");
             for(int i = 0; i < nl.getLength(); i++){
@@ -319,7 +319,7 @@ public class PlayerSave {
                 p.bankItems[i] = Integer.parseInt(e.getElementsByTagName("id").item(0).getTextContent());
                 p.bankItemsN[i] = Integer.parseInt(e.getElementsByTagName("amount").item(0).getTextContent());
             }
-            Misc.println("RADIANTQUESTS");
+            
             Element radiantquests = (Element)root.getElementsByTagName("radiantquests").item(0);
             nl = inventory.getElementsByTagName("quest");
             for(int i = 0; i < nl.getLength(); i++){
@@ -345,6 +345,10 @@ public class PlayerSave {
             return 3;
         }
         catch(ParserConfigurationException e){
+            e.printStackTrace();
+            return 3;
+        }
+        catch(Exception e){
             e.printStackTrace();
             return 3;
         }
