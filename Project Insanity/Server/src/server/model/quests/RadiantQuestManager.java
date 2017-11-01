@@ -40,7 +40,7 @@ public class RadiantQuestManager {
             Document doc = dBuilder.parse(path);
             doc.getDocumentElement().normalize();
 
-            NodeList quests = doc.getElementsByTagName("Quest");
+            NodeList quests = doc.getElementsByTagName("quest");
             for (int index = 0; index < quests.getLength(); index++) {
                 Element root_elem = (Element) quests.item(index);
 
