@@ -33,6 +33,8 @@ public class NPCDataBase {
         BufferedWriter file;
         try{
             file = new BufferedWriter(new FileWriter("./data/Npcs/NPCDB.xml"));
+            file.write("<database>");
+            file.newLine();
             for (DBNPC npc : NPCDatabase) {
                 file.write("<npc>");
                 file.newLine();
@@ -49,7 +51,9 @@ public class NPCDataBase {
                 file.write("<health>" + npc.id + "</health>");
                 file.newLine();
                 file.write("</npc>");
+                file.newLine();
             }
+            file.write("</database>");
             file.close();
         }
         catch(IOException e){
