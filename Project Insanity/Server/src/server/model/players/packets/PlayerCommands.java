@@ -171,6 +171,7 @@ public class PlayerCommands {
                     c.radiantQuests.add(RadiantQuestManager.radiantQuests.get(Integer.parseInt(args[1])));
                 } catch (Exception e) {
                     SendSyntaxError(c, "::player.addquest <id>");
+                    e.printStackTrace();
                 }
             } else {
                 SendSyntaxError(c, "::player.addquest <id>");
