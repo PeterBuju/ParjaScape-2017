@@ -152,6 +152,7 @@ public class RadiantQuestManager {
             }
         } catch (Exception e) {
             e.printStackTrace();
+            Misc.println(e.getMessage());
         }
     }
 
