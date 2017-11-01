@@ -49,8 +49,8 @@ public class NPCDataBase {
                 file.write("<health>" + npc.id + "</health>");
                 file.newLine();
                 file.write("</npc>");
-                file.close();
             }
+            file.close();
         }
         catch(IOException e){
             e.printStackTrace();
