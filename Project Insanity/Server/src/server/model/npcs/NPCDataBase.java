@@ -17,6 +17,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
 import server.Config;
 import server.util.Misc;
 
@@ -28,7 +29,8 @@ public class NPCDataBase {
     public static ArrayList<DBNPC> NPCDatabase = new ArrayList<>();
     
     public static void InitializeNPCDB(){
-        LoadNPC("./data/Npcs/Npc_List.txt");
+        //LoadNPC("./data/Npcs/Npc_List.txt");
+        ImportXML();
         LoadAnimation("./data/Npcs/Animation_List.txt");
         ExportXML();
     }
@@ -75,7 +77,31 @@ public class NPCDataBase {
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(file);
             doc.getDocumentElement().normalize();
-            Element root = (Element)doc.getElementsByTagName("player").item(0);
+            Element root = (Element)doc.getElementsByTagName("database").item(0);
+            NodeList nl = root.getElementsByTagName("npc");
+            for(int i = 0; i < nl.getLength(); i++){
+                DBNPC npc = new DBNPC();
+                Element npc_el = (Element)nl.item(i);
+                Element id = (Element)npc_el.getElementsByTagName("id").item(0);
+                npc.id = Integer.parseInt(id.getTextContent());
+                
+                Element name = (Element)npc_el.getElementsByTagName("name").item(0);
+                npc.name = name.getTextContent();
+                
+                Element desc = (Element)npc_el.getElementsByTagName("description").item(0);
+                npc.description = desc.getTextContent();
+                
+                Element tiles = (Element)npc_el.getElementsByTagName("tilesOccupied").item(0);
+                npc.tilesOccupied = Integer.parseInt(tiles.getTextContent());
+                
+                Element combat = (Element)npc_el.getElementsByTagName("combat").item(0);
+                npc.combat = Integer.parseInt(combat.getTextContent());
+                
+                Element hp = (Element)npc_el.getElementsByTagName("health").item(0);
+                npc.hp = Integer.parseInt(hp.getTextContent());
+                
+                NPCDatabase.add(npc);
+            }
         }
         catch(Exception e){
             e.printStackTrace();
