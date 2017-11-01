@@ -13,6 +13,10 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import server.Config;
 import server.util.Misc;
 
@@ -58,6 +62,20 @@ public class NPCDataBase {
         }
         catch(IOException e){
             e.printStackTrace();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+    
+    public static void ImportXML(){
+        try{
+            File file = new File("./data/Npcs/NPCDB.xml");
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+            Document doc = dBuilder.parse(file);
+            doc.getDocumentElement().normalize();
+            Element root = (Element)doc.getElementsByTagName("player").item(0);
         }
         catch(Exception e){
             e.printStackTrace();
