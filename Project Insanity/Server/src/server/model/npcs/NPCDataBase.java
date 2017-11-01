@@ -30,8 +30,9 @@ public class NPCDataBase {
     }
     
     public static void ExportXML(){
+        BufferedWriter file;
         try{
-            BufferedWriter file = new BufferedWriter(new FileWriter("./data/Npcs/Npc_List.txt"));
+            file = new BufferedWriter(new FileWriter("./data/Npcs/Npc_List.txt"));
             for (DBNPC npc : NPCDatabase) {
                 file.write("<npc>");
                 file.newLine();
