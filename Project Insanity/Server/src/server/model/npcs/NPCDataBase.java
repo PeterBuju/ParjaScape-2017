@@ -32,7 +32,7 @@ public class NPCDataBase {
     public static void ExportXML(){
         BufferedWriter file;
         try{
-            file = new BufferedWriter(new FileWriter("./data/Npcs/Npc_List.txt"));
+            file = new BufferedWriter(new FileWriter("./data/Npcs/NPCDB.xml"));
             for (DBNPC npc : NPCDatabase) {
                 file.write("<npc>");
                 file.newLine();
