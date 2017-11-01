@@ -6,8 +6,11 @@
 package server.model.npcs;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import server.Config;
@@ -23,6 +26,37 @@ public class NPCDataBase {
     public static void InitializeNPCDB(){
         LoadNPC("./data/Npcs/Npc_List.txt");
         LoadAnimation("./data/Npcs/Animation_List.txt");
+        ExportXML();
+    }
+    
+    public static void ExportXML(){
+        try{
+            BufferedWriter file = new BufferedWriter(new FileWriter("./data/Npcs/Npc_List.txt"));
+            for (DBNPC npc : NPCDatabase) {
+                file.write("<npc>");
+                file.newLine();
+                file.write("<id>" + npc.id + "</id>");
+                file.newLine();
+                file.write("<name>" + npc.name + "</name>");
+                file.newLine();
+                file.write("<description>" + npc.description + "</description>");
+                file.newLine();
+                file.write("<tilesOccupied>" + npc.tilesOccupied + "</tilesOccupied>");
+                file.newLine();
+                file.write("<combat>" + npc.id + "</combat>");
+                file.newLine();
+                file.write("<health>" + npc.id + "</health>");
+                file.newLine();
+                file.write("</npc>");
+                file.close();
+            }
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
     }
     
     static boolean LoadNPC(String FileName){
