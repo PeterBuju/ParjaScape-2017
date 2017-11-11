@@ -29,8 +29,8 @@ public class NPCDataBase {
     public static ArrayList<DBNPC> NPCDatabase = new ArrayList<>();
     
     public static void InitializeNPCDB(){
-        //LoadNPC("./data/Npcs/Npc_List.txt");
-        ImportXML();
+        LoadNPC("./data/Npcs/Npc_List.txt");
+        //ImportXML();
         LoadAnimation("./data/Npcs/Animation_List.txt");
         ExportXML();
     }
