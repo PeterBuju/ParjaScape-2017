@@ -52,9 +52,9 @@ public class NPCDataBase {
                 file.newLine();
                 file.write("<tilesOccupied>" + npc.tilesOccupied + "</tilesOccupied>");
                 file.newLine();
-                file.write("<combat>" + npc.id + "</combat>");
+                file.write("<combat>" + npc.combat + "</combat>");
                 file.newLine();
-                file.write("<health>" + npc.id + "</health>");
+                file.write("<health>" + npc.hp + "</health>");
                 file.newLine();
                 file.write("</npc>");
                 file.newLine();
